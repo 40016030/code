@@ -1,0 +1,105 @@
+Task A(i) – <Appendix 1>
+I have been asked to carry out research for developing a proposal for the digital solution
+
+My research consists of how digital solutions are used to meet the needs of different users within the energy sector
+
+Task A(ii)
+Business context
+Our client, Rolsa Technologies, is a well-established green technological company dedicated to providing sustainable solutions for a cleaner and healthier plane. Rolsa Technologies is interested in digitalisation to enhance customer satisfactions and attract new clients. Currently, Rolsa Technologies which specialises in solar panel installation and maintenance, electric vehicle (EV) charging stations, smart home energy management systems.
+The client is looking for a digital solution that will provide comprehensive information that would provide customers with information about green energy products currently on the market and how to reduce their carbon footprint. Additionally, the solution should allow customers to schedule consultations and installations, as well as calculate their carbon footprint.
+I am proposing to develop an interactive website that would include all the features that the client
+requires and some more. In the following sections, I will be explaining and justifying my proposal.
+
+SWOT Analysis
+Strengths
+-	Strong commitment to sustainability
+-	Innovate product development
+-	Robust customer support	Weaknesses
+-	Limited brand recognition in new markets
+Opportunities
+-	Growing demand for green technologies
+-	Government incentives for sustainable practices	Threats
+-	Increased competition from similar companies
+-	Economic downturns affecting consumer spending
+-	Regulatory changes impacting operations
+-	Rapid technological advancements requiring constant updates
+
+Stakeholders
+General Stakeholders
+Primary Stakeholders
+
+Empathy Map
+Says
+-	I talk about the importance of sustainability and ask for advice on eco-friendly practices.
+-	I share my experiences with green products and recommend them to others.
+-	I ask for tips on reducing my carbon footprint and living sustainably.	Thinks
+-	I want to make sustainable choices and reduce my carbon footprint.
+-	I'm looking for ways to live more eco-friendly and make a positive impact.
+-	I need reliable information on green technology products.
+Does
+-	I look for green technology solutions, schedule consultations, and use tools to track my carbon footprint.
+-	I participate in sustainability initiatives and make eco-friendly purchases.
+-	I actively seek out information and resources on green living.	Feels
+-	I am concerned about climate change and feel motivated to help the planet.
+-	I feel empowered when I can make eco-friendly choices.
+-	I feel responsible for my environmental impact and want to do better.
+
+User Stories
+As a user	I want	So that	Acceptance Criteria
+First time customer	to learn about green energy products and how they can benefit me.	I can make informed decisions about purchasing eco-friendly products to reduce my carbon footprint and save on energy costs.	The website provides detailed information on various green energy products.
+There are educational resources explaining the benefits of green technology.
+The user can easily navigate the site to find relevant information.
+Student	As a student, I want access to educational materials about sustainability and green technology for my studies.	I need reliable information to complete my assignments and projects on environmental topics.	The website offers a dedicated section with educational resources and materials.
+There are interactive tools and content to enhance learning.
+The user can download or access information easily for their studies.
+Parent	I want to find ways to make my home more energy-efficient and environmentally friendly.	I want to create a healthier living environment for my family and teach my children about sustainability.	The website provides practical tips and guides on making homes more energy-efficient.
+There are product recommendations suitable for family use.
+The user can schedule consultations for personalized advice on home improvements.
+Loyal Customer	I want to track my energy usage and carbon footprint over time.	I want to monitor my progress in reducing my environmental impact and continue improving my sustainability efforts.	The website includes a tool for calculating and tracking energy usage and carbon footprint.
+The user can view historical data and trends.
+There are personalized recommendations for further reducing their carbon footprint.
+
+Functional Requirements
+Homepage
+The system should display homepage that consists of navigation bar, main section and footer. In the main section website provides pictures that prompt the user to other areas of the website.
+Navigation Bar consists of:
+
+Educational visits page
+<…>
+Personal account
+
+Non functional requirements
+Security
+Maintainability
+Performance
+Usability -> Accessibility
+
+Decomposition
+
+KPI’s
+Business KPI’s
+Website KPI’s
+Page Load Time
+It is essential how long it takes to load and appear on the user’s screen. It is crucial that this time is as low as possible. Even few seconds can result into the loss of the potential client. With the development of the digital sector, people tend to wait less and less if there are any troubles accessing website, as they are aware of the vast amounts of options they have got
+This KPI can be seen using reporting tool, for example Google Analytics.
+Bounce Rate
+This KPI shows the percentage of users that visit the website and then leave immediately
+
+
+A description of proposed solution
+
+Justification
+How the recommended solution meets the needs of the client
+How protentional risks will be mitigated
+Regulatory guidelines and legal requirements will be addressed
+
+Appendix 1
+Hardware and Software
+Emerging technologies
+Meeting different user needs
+Guidelines and Regulations
+
+Appendix 2
+Links
+Top Greentech Companies 2025 | Built In – for exploring companies
+https://solarthermuk.co.uk - example
