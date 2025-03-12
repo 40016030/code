@@ -1,61 +1,34 @@
 Business Context
-Our client, Rolsa Technologies, is a well-established green technological company dedicated to 
-providing sustainable solutions for a cleaner and healthier plane. Rolsa Technologies is interested in 
-digitalisation to enhance customer satisfactions and attract new clients. Currently, Rolsa Technologies 
-which specialises in solar panel installation and maintenance, electric vehicle (EV) charging stations, 
-smart home energy management systems.
-The client is looking for a digital solution that will provide comprehensive information that would 
-provide customers with information about green energy products currently on the market and how 
-to reduce their carbon footprint. Additionally, the solution should allow customers to schedule 
-consultations and installations, as well as calculate their carbon footprint.
+Our client, Rolsa Technologies, is a well-established green technological company dedicated to providing sustainable solutions for a cleaner and healthier plane. Rolsa Technologies is interested in digitalisation to enhance customer satisfactions and attract new clients. Currently, Rolsa Technologies which specialises in solar panel installation and maintenance, electric vehicle (EV) charging stations, smart home energy management systems.
+The client is looking for a digital solution that will provide comprehensive information that would provide customers with information about green energy products currently on the market and how to reduce their carbon footprint. Additionally, the solution should allow customers to schedule consultations and installations, as well as calculate their carbon footprint.
 I am proposing to develop an interactive website that would include all the features that the client
 requires and some more. In the following sections, I will be explaining and justifying my proposal.
+
 SWOT Analysis
-A SWOT (Strengths, Weaknesses, Opportunities, and Threats) analysis helps assess how the proposed 
-Rolsa Smart Energy Hub can succeed in the green technology sector.
-Strength (Internal, Positive Factors):
-- Established expertise in green technology – Rolsa Technologies already 
-specializes in solar panel installations, EV charging, and smart home energy 
-management, giving credibility to its digital platform.
-- Growing market demand for green solutions – Consumers and businesses are 
-actively seeking ways to reduce their carbon footprint and save on energy costs, 
-ensuring a high adoption rate.
-- All-in-one customer portal – Offering consultation scheduling, energy tracking, 
-and carbon footprint calculations in one place improves user convenience and 
-engagement.
+A SWOT (Strengths, Weaknesses, Opportunities, and Threats) analysis helps assess how the proposed Rolsa Smart Energy Hub can succeed in the green technology sector.
+	Strength (Internal, Positive Factors):
+-	Established expertise in green technology – Rolsa Technologies already specializes in solar panel installations, EV charging, and smart home energy management, giving credibility to its digital platform.
+-	Growing market demand for green solutions – Consumers and businesses are actively seeking ways to reduce their carbon footprint and save on energy costs, ensuring a high adoption rate.
+-	All-in-one customer portal – Offering consultation scheduling, energy tracking, and carbon footprint calculations in one place improves user convenience and engagement.
 Weaknesses (Internal, Negative Factors):
-- High initial development costs – The project requires significant investment in 
-software development, UI/UX design, cloud infrastructure, and security 
-measures.
-- User adoption challenges – Some customers may be unfamiliar with digital 
-energy management tools, requiring educational resources and customer 
-support.
-- Data privacy concerns – The platform will handle sensitive user data (energy 
-consumption patterns, payment details, personal preferences), necessitating 
-strong GDPR compliance and security measures.
+-	High initial development costs – The project requires significant investment in software development, UI/UX design, cloud infrastructure, and security measures.
+-	User adoption challenges – Some customers may be unfamiliar with digital energy management tools, requiring educational resources and customer support.
+-	Data privacy concerns – The platform will handle sensitive user data (energy consumption patterns, payment details, personal preferences), necessitating strong GDPR compliance and security measures.
 Opportunities (External, Positive Factor):
-- Growing electric vehicle adoption – With more electric vehicles on the road, 
-users need better charging station management tools, which the platform can 
-integrate.
-- Government incentives & sustainability push – Many governments provide 
-grants, tax credits, and rebates for businesses and consumers who adopt 
-renewable energy solutions, making the platform more attractive.
-- B2B partnerships with energy providers – The solution can be expanded to 
-business clients, allowing corporate customers to monitor and reduce their 
-carbon footprint.
+-	Growing electric vehicle adoption – With more electric vehicles on the road, users need better charging station management tools, which the platform can integrate.
+-	Government incentives & sustainability push – Many governments provide grants, tax credits, and rebates for businesses and consumers who adopt renewable energy solutions, making the platform more attractive.
+-	B2B partnerships with energy providers – The solution can be expanded to business clients, allowing corporate customers to monitor and reduce their carbon footprint.
 Threats (External, Negative Factrors)
-- Fluctuating energy policies & regulations – Changes in government policies, tax 
-credits, and carbon emission laws could impact the financial viability of the 
-platform.
-- Competition from established energy platforms – Large companies already offer 
-similar solutions, requiring strong differentiation from them.
-- Cybersecurity threats & data breaches – The platform could be targeted by 
-hackers, necessitating strong encryption, and secure system.
+-	Fluctuating energy policies & regulations – Changes in government policies, tax credits, and carbon emission laws could impact the financial viability of the platform.
+-	Competition from established energy platforms – Large companies already offer similar solutions, requiring strong differentiation from them.
+-	Cybersecurity threats & data breaches – The platform could be targeted by hackers, necessitating strong encryption, and secure system.
+
 Stakeholders
 ?
-Primary Stakeholders (Directly Affected)
-Clients – Rolsa Technologies (Business Owners)
+	Primary Stakeholders (Directly Affected)
+		Clients – Rolsa Technologies (Business Owners)
 Role: The company funding and managing the project.
+
 User Stories
 ?
 User Acceptance Criteria
@@ -65,148 +38,127 @@ UML Case Diagrams
 Empathy Map
 ?
 Functional Requirements
-Functional requirements define the core functionalities that the system must provide to meet the 
-needs of Rolsa Technologies, its customers, and other stakeholders. These requirements focus on 
-specific features, behaviours, and system responses to user interactions.
-Since Rolsa Technologies specializes in solar panel installation, EV charging stations, and smart home 
-energy management, the digital solution must offer functionalities such as customer account 
-management, appointment scheduling, carbon footprint calculation, and payment processing.
+Functional requirements define the core functionalities that the system must provide to meet the needs of Rolsa Technologies, its customers, and other stakeholders. These requirements focus on specific features, behaviours, and system responses to user interactions.
+Since Rolsa Technologies specializes in solar panel installation, EV charging stations, and smart home energy management, the digital solution must offer functionalities such as customer account management, appointment scheduling, carbon footprint calculation, and payment processing.
+
 1. User Account Management
-User Registration → Customers must be able to create an account using an email address and 
-password or social login (Google, Facebook).
-User Authentication → Customers must log in securely using their credentials.
-Password Management → Users can reset forgotten passwords through email verification.
-Profile Management → Users must be able to update their profile information, such as name, 
-address, and contact details.
-Account Deactivation → Users should be able to deactivate or delete their accounts if needed.
+User Registration → Customers must be able to create an account using an email address and password or social login (Google, Facebook).
+ User Authentication → Customers must log in securely using their credentials.
+ Password Management → Users can reset forgotten passwords through email verification.
+ Profile Management → Users must be able to update their profile information, such as name, address, and contact details.
+ Account Deactivation → Users should be able to deactivate or delete their accounts if needed.
+________________________________________
 2. Booking & Scheduling System
-Schedule Consultation → Customers can select available time slots for an energy consultation.
-Installation Booking → Users can request appointments for solar panel or EV charger installation.
-Real-Time Availability Check → The system must show available time slots dynamically.
-Appointment Rescheduling & Cancellation → Users can modify or cancel their bookings.
-Booking Confirmation & Reminders → The system must send email/SMS confirmations and 
-reminders before appointments.
+ Schedule Consultation → Customers can select available time slots for an energy consultation.
+ Installation Booking → Users can request appointments for solar panel or EV charger installation.
+ Real-Time Availability Check → The system must show available time slots dynamically.
+ Appointment Rescheduling & Cancellation → Users can modify or cancel their bookings.
+ Booking Confirmation & Reminders → The system must send email/SMS confirmations and reminders before appointments.
+________________________________________
 3. Carbon Footprint Calculator
-User Input Collection → Customers enter data such as energy consumption, number of appliances, 
-and transport usage.
-Data Processing & Calculation → The system computes the user’s carbon footprint based on their 
-input.
-Personalized Recommendations → The system provides customized energy-saving suggestions 
-based on the user's footprint.
-Track Energy Usage Over Time → Users can save past calculations and view their energy 
-consumption trends.
+ User Input Collection → Customers enter data such as energy consumption, number of appliances, and transport usage.
+ Data Processing & Calculation → The system computes the user’s carbon footprint based on their input.
+ Personalized Recommendations → The system provides customized energy-saving suggestions based on the user's footprint.
+ Track Energy Usage Over Time → Users can save past calculations and view their energy consumption trends.
+________________________________________
 4. Product & Service Catalog
-View Green Energy Products → Customers can browse solar panels, EV chargers, and smart home 
-solutions.
-Filter & Search → Users can filter products based on price, efficiency, and category.
-Detailed Product Descriptions → Each product must have specifications, benefits, and pricing 
-details.
-Add to Wishlist or Compare Products → Customers can save or compare products before 
-purchasing.
+ View Green Energy Products → Customers can browse solar panels, EV chargers, and smart home solutions.
+ Filter & Search → Users can filter products based on price, efficiency, and category.
+ Detailed Product Descriptions → Each product must have specifications, benefits, and pricing details.
+ Add to Wishlist or Compare Products → Customers can save or compare products before purchasing.
+________________________________________
 5. Online Payment & Transaction Management
-Secure Payment Processing → Customers can pay for consultations and installations via 
-credit/debit cards, PayPal, or digital wallets.
-Transaction Confirmation → Users must receive a payment receipt via email.
-Refund & Cancellation Policy → Customers must have an option to request refunds if they cancel 
-an appointment.
-Admin Dashboard for Payments → Administrators must be able to view, verify, and process 
-transactions.
+ Secure Payment Processing → Customers can pay for consultations and installations via credit/debit cards, PayPal, or digital wallets.
+ Transaction Confirmation → Users must receive a payment receipt via email.
+Refund & Cancellation Policy → Customers must have an option to request refunds if they cancel an appointment.
+ Admin Dashboard for Payments → Administrators must be able to view, verify, and process transactions.
+________________________________________
 6. Accessibility & User Experience Features
-Multi-Device Compatibility → The system must be fully responsive on desktop, tablet, and mobile 
-devices.
-Language Support → The platform should offer multi-language support (e.g., English, Spanish, 
-French).
-Dark Mode & High Contrast Mode → Users should be able to switch to an accessible color scheme 
-for better readability.
-Screen Reader & Keyboard Navigation → The platform must be compatible with assistive 
-technologies for users with disabilities.
+ Multi-Device Compatibility → The system must be fully responsive on desktop, tablet, and mobile devices.
+ Language Support → The platform should offer multi-language support (e.g., English, Spanish, French).
+ Dark Mode & High Contrast Mode → Users should be able to switch to an accessible color scheme for better readability.
+ Screen Reader & Keyboard Navigation → The platform must be compatible with assistive technologies for users with disabilities.
+
 Non-functional Requirements
+
 1. Performance
 Response Time
-• The system should have an average response time of less than 2 seconds for all user 
-actions, such as logging in, making bookings, or processing payments.
-• For heavy operations like generating carbon footprint reports or processing large amounts 
-of product data, the system should respond within 5 seconds to ensure a seamless 
-experience.
+•	The system should have an average response time of less than 2 seconds for all user actions, such as logging in, making bookings, or processing payments.
+•	For heavy operations like generating carbon footprint reports or processing large amounts of product data, the system should respond within 5 seconds to ensure a seamless experience.
 Throughput & Scalability
-• The solution should handle at least 10,000 concurrent users without performance 
-degradation.
-• The system must be scalable to accommodate future growth. As Rolsa Technologies 
-expands, the system must support a 20% increase in traffic annually without affecting 
-performance.
+•	The solution should handle at least 10,000 concurrent users without performance degradation.
+•	The system must be scalable to accommodate future growth. As Rolsa Technologies expands, the system must support a 20% increase in traffic annually without affecting performance.
 Load Handling
-• The system should load test and function optimally under high traffic conditions, such as 
-during peak booking seasons (e.g., holiday periods).
-• The website should be able to handle high spikes in traffic from social media promotions or 
-marketing campaigns.
+•	The system should load test and function optimally under high traffic conditions, such as during peak booking seasons (e.g., holiday periods).
+•	The website should be able to handle high spikes in traffic from social media promotions or marketing campaigns.
+________________________________________
 2. Reliability & Availability
 Uptime
-• The system must achieve an uptime of 99.9% over a rolling 12-month period, ensuring 
-minimal downtime for users.
-• Scheduled maintenance should occur during low-traffic periods, and customers must be 
-notified in advance.
+•	The system must achieve an uptime of 99.9% over a rolling 12-month period, ensuring minimal downtime for users.
+•	Scheduled maintenance should occur during low-traffic periods, and customers must be notified in advance.
 Fault Tolerance
-• The system should be fault-tolerant, meaning that if one component fails, it does not take 
-the entire system down. For example, the payment gateway or user profile management 
-system should be isolated from other modules to prevent cascading failures.
+•	The system should be fault-tolerant, meaning that if one component fails, it does not take the entire system down. For example, the payment gateway or user profile management system should be isolated from other modules to prevent cascading failures.
 Backup & Recovery
-• The system should back up critical data every 24 hours, and backups should be stored in 
-secure, geographically dispersed locations to prevent data loss in the event of a failure.
-• In case of failure, the system should have a disaster recovery plan to restore services in 
-under 2 hours.
+•	The system should back up critical data every 24 hours, and backups should be stored in secure, geographically dispersed locations to prevent data loss in the event of a failure.
+•	In case of failure, the system should have a disaster recovery plan to restore services in under 2 hours.
+________________________________________
 3. Security
 Data Protection
-• All user data, including personal and financial information, must be encrypted both at rest 
-and in transit using industry-standard protocols such as AES-256 and TLS 1.2.
-• Sensitive user data (e.g., payment details, home addresses) should be encrypted and 
-stored in secure databases with access control policies in place.
+•	All user data, including personal and financial information, must be encrypted both at rest and in transit using industry-standard protocols such as AES-256 and TLS 1.2.
+•	Sensitive user data (e.g., payment details, home addresses) should be encrypted and stored in secure databases with access control policies in place.
 Authentication & Authorization
-• The system must implement multi-factor authentication (MFA) for users accessing their 
-profiles, especially for sensitive operations like updating personal details or making 
-payments.
-• Role-based access control (RBAC) should be enforced, ensuring that only authorized 
-personnel (e.g., admins, technicians) can access specific system modules (e.g., user 
-management, financial data).
+•	The system must implement multi-factor authentication (MFA) for users accessing their profiles, especially for sensitive operations like updating personal details or making payments.
+•	Role-based access control (RBAC) should be enforced, ensuring that only authorized personnel (e.g., admins, technicians) can access specific system modules (e.g., user management, financial data).
 Compliance
-• The system must adhere to GDPR, CCPA, and other relevant data protection laws to ensure 
-user privacy and data security.
-• Regular security audits should be conducted to ensure compliance with security standards 
-and regulations, such as ISO 27001.
+•	The system must adhere to GDPR, CCPA, and other relevant data protection laws to ensure user privacy and data security.
+•	Regular security audits should be conducted to ensure compliance with security standards and regulations, such as ISO 27001.
+________________________________________
 4. Usability
 Ease of Use
-• The system should be intuitive and easy to use, with minimal user training required. Users 
-should be able to complete core tasks such as booking consultations, making payments, 
-and tracking their carbon footprint with just a few clicks.
-• The platform must include tooltips or help icons for new users to easily understand 
-features and functionalities.
+•	The system should be intuitive and easy to use, with minimal user training required. Users should be able to complete core tasks such as booking consultations, making payments, and tracking their carbon footprint with just a few clicks.
+•	The platform must include tooltips or help icons for new users to easily understand features and functionalities.
 Accessibility
-• The digital solution must meet WCAG 2.1 Level AA accessibility standards to ensure that 
-users with disabilities (e.g., visual impairments, hearing loss) can access and use the 
-system effectively.
-• Keyboard navigation and screen reader compatibility should be fully supported across all 
-pages and features.
-• Color contrast must be high, and text should be resizable for users with visual 
-impairments.
+•	The digital solution must meet WCAG 2.1 Level AA accessibility standards to ensure that users with disabilities (e.g., visual impairments, hearing loss) can access and use the system effectively.
+•	Keyboard navigation and screen reader compatibility should be fully supported across all pages and features.
+•	Color contrast must be high, and text should be resizable for users with visual impairments.
 Multilingual Support
-• The system should support multiple languages, including English, Spanish, French, and 
-other relevant languages, to accommodate a diverse user base.
-• Language selection should be easy to access from the homepage or user settings.
+•	The system should support multiple languages, including English, Spanish, French, and other relevant languages, to accommodate a diverse user base.
+•	Language selection should be easy to access from the homepage or user settings.
+
 Decomposition of Problem
+
 TechStack of Solution
+
 Key Performance Indicators (KPI)
-Business KPI
-Website KPI
+	Business KPI
+
+	Website KPI
+
 Legal Regulatory and Ethical Considerations
+
 Cookies
+
 Security
+
 Proposed Solution Description
+
 Justification
+
 How the recommended solution meets the needs of the client
+
 How Protentional risks will be mitigated
+
 Appendix 1
+
 Hardware and Software
+
 Emerging technologies
+
 Meeting different users needs
+
 Guidelines and Regulations
+
 Appendix 2
-Links to everythin
+
+Links to everything
+
