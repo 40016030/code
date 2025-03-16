@@ -1,0 +1,349 @@
+Business Context
+Our client, Rolsa Technologies, is a well-established green technological company dedicated to providing sustainable solutions for a cleaner and healthier plane. Rolsa Technologies is interested in digitalisation to enhance customer satisfactions and attract new clients. Currently, Rolsa Technologies which specialises in solar panel installation and maintenance, electric vehicle (EV) charging stations, smart home energy management systems.
+The client is looking for a digital solution that will provide comprehensive information that would provide customers with information about green energy products currently on the market and how to reduce their carbon footprint. Additionally, the solution should allow customers to schedule consultations and installations, as well as calculate their carbon footprint.
+I am proposing to develop an interactive website that would include all the features that the client
+requires and some more. In the following sections, I will be explaining and justifying my proposal.
+
+SWOT Analysis
+A SWOT (Strengths, Weaknesses, Opportunities, and Threats) analysis helps assess how the proposed Rolsa Smart Energy Hub can succeed in the green technology sector.
+	Strength (Internal, Positive Factors):
+-	Established expertise in green technology – Rolsa Technologies already specializes in solar panel installations, EV charging, and smart home energy management systems, giving credibility to its digital platform.
+-	Growing market demand for green solutions – Consumers and businesses are actively seeking ways to reduce their carbon footprint and save on energy costs, ensuring a high adoption rate.
+-	All-in-one customer portal – Offering consultation scheduling, energy tracking, and carbon footprint calculations in one place improves user convenience and engagement.
+Weaknesses (Internal, Negative Factors):
+-	High initial development costs – The project requires significant investment in software development, UI/UX design, cloud infrastructure, and security measures.
+-	User adoption challenges – Some customers may be unfamiliar with digital energy management tools, requiring educational resources and customer support.
+-	Data privacy concerns – The platform will handle sensitive user data (energy consumption patterns, payment details, personal preferences), necessitating strong GDPR compliance and security measures.
+Opportunities (External, Positive Factor):
+-	Growing electric vehicle adoption – With more electric vehicles on the road, users need better charging station management tools, which the platform can integrate.
+-	Government incentives & sustainability push – Many governments provide grants, tax credits, and rebates for businesses and consumers who adopt renewable energy solutions, making the platform more attractive.
+-	B2B partnerships with energy providers – The solution can be expanded to business clients, allowing corporate customers to monitor and reduce their carbon footprint.
+Threats (External, Negative Factrors)
+-	Fluctuating energy policies & regulations – Changes in government policies, tax credits, and carbon emission laws could impact the financial viability of the platform.
+-	Competition from established energy platforms – Large companies already offer similar solutions, requiring strong differentiation from them.
+-	Cybersecurity threats & data breaches – The platform could be targeted by hackers, necessitating strong encryption, and secure system.
+
+Stakeholders
+	Primary Stakeholders (Directly Affected)
+		Clients – Rolsa Technologies (Business Owners)
+Role: The company funding and managing the project.
+		Customers (Residential and Commercial Users)
+			Role: End users who will interact with the platform for consultation bookings
+	Secondary Stakeholders (Indirectly Affected)
+		Government
+Role: Ensure the solution complies with data protection laws, and environmental policies
+		Staff
+			Role: Handles user inquiries, troubleshooting, and system maintenance
+		Software development team
+Role: Responsible for designing, developing, and maintaining the digital platform
+		Investors and Business Partners
+			Role: Individuals or organisations investing in Rolsa Technologies
+
+User Stories
+As a business owner,
+I want to monitor customer bookings, platform performance, and revenue trends,
+So that I can make informed business decisions and improve services to create a competitive advantage in the market.
+
+As a first-time customer,
+I want to access clear, beginner-friendly information about solar panels, EV charging, and energy management,
+So that I can understand the benefits and decide which solution best fits my needs.
+
+As a loyal customer,
+I want to schedule a consultation for solar panel installation easily,
+So that I can plan my energy solutions efficiently without hassle.
+
+As a residential customer,
+I want to calculate my carbon footprint based on my current energy usage,
+So that I can take steps to reduce it and make sustainable choices.
+
+As a government official,
+I want the platform to comply with data protection and environmental regulations,
+So that consumer rights and sustainability policies are upheld.
+
+As a staff member,
+I want to help users by access their accounts with appropriate permission,
+So that I can provide accurate and efficient assistance.
+
+User Acceptance Criteria
+
+As a first-time customer,
+Acceptance Criteria: Information is displayed in simple language with clear definitions of each product and service. Users can choose a page based on their interest (e.g., solar panels, EV charging, energy management). The page layout is easy to navigate, with minimal text blocks and plenty of visual content.
+
+As a loyal customer,
+Acceptance Criteria: A simple form to schedule consultations is provided with a user-friendly interface. Customers can select preferred dates and times from an available calendar. The platform allows customers to cancel appointments easily.
+
+As a residential customer,
+Acceptance Criteria: The carbon footprint calculator asks for basic energy consumption details, such as monthly energy bills, household size, etc. The tool provides suggestions for reducing carbon footprint (for example installing solar panels, energy-saving tips). Results are displayed in an user friendly format.
+
+As a government official,
+Acceptance Criteria: The platform adheres to GDPR and other data protection regulations. Customer data is securely stored and managed.
+
+UML Case Diagrams
+?
+Empathy Map
+Say
+-	I want to reduce my electricity bills and carbon footprint.
+-	I don’t know much about solar panels or EV chargers.
+-	How much will I save if I install solar panels?
+-	I need to book an installation, but I don’t have time for calls.	Thinks
+-	Is this really worth the investment?
+-	What if I make the wrong choice?
+-	I hope the process is quick and easy.
+-	I wish there was a website where I could see all the green energy options
+Does
+-	Searches online for green energy options
+-	Compares different products and companies
+-	Looks for a calendar to select a time slot	Feels
+-	Overwhelmed by complex technical terms
+-	Excited about the possibility of saving money
+-	Wants a hassle free booking process
+
+Functional Requirements
+Functional requirements define the core functionalities that the system must provide to meet the needs of Rolsa Technologies, its customers, and other stakeholders. These requirements focus on specific features, behaviours, and system responses to user interactions.
+Since Rolsa Technologies specializes in solar panel installation, EV charging stations, and smart home energy management systems, the digital solution must offer functionalities such as customer account management, appointment scheduling, carbon footprint calculation.
+Homepage
+The system should display a homepage consisting of a navigation bar, main section, and footer. The main section should clearly explain the purpose of the company and provide links to product pages, such as information pages about different energy solutions. The footer should contain essential company details, quick links, and contact information.
+The navigation bar should be consistently visible across all pages and should include links to the:
+-	Home Page (redirects to homepage)
+-	Information (redirects to information pages about energy solutions)
+-	Calculators (redirects to carbon footprint and energy usage calculators)
+-	Consultation/Installation (redirects to the consultation booking page)
+-	Register/Log in (redirects to the login page)
+Clicking on any of these navigation options should instantly redirect the user to the corresponding page.
+The homepage doesn’t require any user data input.
+
+Information Page
+
+The system should contain four separate information pages: Solar Panels, Electric Vehicle (EV) Chargers, Smart Home energy management system, and How to Reduce Carbon Footprint. Each page should consist of a navigation bar, main section, and footer.
+
+The main section of each page should display detailed descriptions of the selected topic, including a comparison of different product options within that category. Each page should also contain a direct link to the consultation booking page. Users should be able to navigate easily between different information pages.
+
+Clicking on the "Book a Consultation" button should redirect the user to the consultation booking system. Additionally, clicking on the links to other product pages should allow seamless navigation between different product categories.
+
+No user data input is required for these pages.
+
+Booking system
+
+The system should provide users with the ability to book two types of services: booking a consultation and booking an installation. A form should be displayed where users enter their details and select available time slots. The system should store the booking details securely in a database. If an error occurs, the system should prompt an error message and suggest corrective action.
+
+Users must select a date and time from the available slots before submitting their booking request.
+
+For a consultation, users must provide their full name, email address, select the date and time and select the type of installation (solar panel, EV charger, or smart home energy management system).
+
+For an installation, users must provide their full name, email address, date and time and physical address.
+
+User input requirements:
+
+Booking a consultation
+	Booking an installation
+-	Date and time
+-	Installation type (Solar Panel, Electric Vehicle charger, Smart Home energy management system)
+-	Full Name
+-	Email	-	Date and time
+-	Full Name
+-	Email
+-	Address
+
+	Personal Account
+The system should allow users to create an account or log in if they already have one. Once logged in, users should be able to view their bookings, and to cancel them if needed. Users should also have the ability to log out when needed.
+
+	User Input requirements to create an account:
+To create an account, users must provide their full name, email address, username, password, and repeat their password.
+
+	User input requirements to login into the account:
+To log in, users must enter their username and password. The system should securely authenticate user credentials before giving access to their account.
+
+Calculators
+The system should provide two calculators: a Carbon Footprint Calculator and an Energy Usage Calculator.
+Carbon Footprint Calculator:
+The system should allow users to enter details about their household energy consumption. There are two options electricity usage, and gas usage. Based on the inputs, the system should calculate the user's carbon footprint and provide recommendations on how to reduce it.
+User Input Requirements:
+-	Heating type: The user selects the heating type electric or gas using radio buttons.
+-	Monthly energy consumption: The user enters their monthly energy consumption in kWh or cubic meters. The slider's minimum value is 0, and the maximum value is 1000. The user can adjust the slider to select their value.
+The carbon footprint calculator features a predefined list of common energy sources such as electricity and natural gas.
+Users can easily adjust their energy consumption using a movable slider, which allows them to see their updated carbon footprint in real time.
+This approach makes easier the process for users who may not be familiar with the exact emissions for each energy source, but still providing accurate estimates of their overall carbon impact based on their usage.
+	
+
+Energy Usage Calculator:
+The system should allow users to input their current energy consumption objects, then enter for how many hours a day it is being used and number of objects that are being used. The system should calculate the user's energy usage and provide recommendations on how to reduce it. The results should be displayed in a user-friendly format.
+
+User Input Requirements:
+-	Appliance type: a dropdown or selection menu where the user can choose the type of appliance, for example: Refrigerator, Washing Machine, Light Bulb, Microwave.
+-	Usage Time Per Day: The user enters how many hours the appliance is used daily, for example: if the refrigerator runs 24/7, the user will enter 24 hours. If a light bulb is used for 5 hours a day, the user will input 5 hours.
+-	Number of Appliances: The user can input how many appliances of that type they have, for example: 1 refrigerator, 2 light bulbs.
+The energy usage calculator includes a predefined list of appliances with typical wattages, allowing users to quickly calculate their energy consumption.
+The movable slider will allow users to easily adjust the number of hours they use an appliance and see the updated energy consumption in real-time.
+This method reduces the complexity for users who may not know exact wattage values for their appliances while still providing accurate calculations for their energy usage.
+
+Non-functional Requirements
+	Security
+The system must validate all data inputs to prevent security vulnerabilities. Secure cookies should be used to store session data, and all passwords must be encrypted using SHA-256 encryption before storage.
+
+Maintainability
+The system should be developed with clean, modular code to allow for easy maintenance and future updates. 
+
+Naming conventions should follow standardized best practices to enhance readability. 
+
+Standard API formats should be used to ensure compatibility with future system improvements.
+
+	Performance
+The system must be optimized for high performance to ensure a seamless user experience. All web pages should load within two to six seconds under normal traffic conditions which can be achieved through efficient code structuring. The platform should respond to user actions, such as form submissions and page navigation, within one hundred milliseconds to provide a smooth browsing experience. The system should minimize unnecessary API requests and optimize data retrieval to prevent server overload and improve response times.
+	Usability and Accessibility
+The website should be intuitive and easy to navigate for users of all experience levels. The system should be designed to accommodate different user needs by adhering to Web Content Accessibility Guidelines (WCAG). The website should be fully functional on various screen sizes.
+Decomposition of Problem
+Home Page	Information	Consultation/Installation	Calculators	Personal Account
+-	Navigation Bar
+-	Shows the company’s purpose
+-	Links to the product pages
+-	Testimonials
+-	Footer	-	Navigation Bar
+-	Description of the selected product
+-	Comparison of different product options
+-	Link to the consultation page
+-	Links to the product pages
+-	Footer	-	Navigation Bar
+-	Book a consultation
+-	Book an installation
+-	Footer	-	Navigation Bar
+-	Energy usage slider
+-	Provides calculation
+-	Recommendation to reduce carbon emissions
+-	Radio buttons list of appliances
+-	Slider of hours the appliances are being used
+-	Slider of number of appliances
+-	Footer	-	Navigation Bar
+-	Register/Log in
+-	Cancel booking
+-	Log out
+-	Footer
+
+[Tech Stack of Solution]
+Type	Name	Description
+Back End	MySQL	A database management system, which is easily used and widely known.
+Back End	PHP	A language used for making dynamic web pages and manipulating databases.
+Front End	HTML	A language used to layout elements on a web page.
+Front End	CSS	A language used to style elements on a web page.
+Front End	JavaScript	A coding language commonly used for scripting within websites.
+Front End	Tailwind CSS	It adds lots of pre-made classes to quickly style elements
+	React	
+
+[Key Performance Indicators (KPI)]
+	Business KPI
+		Reviews
+Customer reviews play a crucial role in establishing the company's reputation. A high review user rating (for example Trustpilot) builds credibility and increases customer trust, leading to higher conversion rates.
+		Revenue Growth
+Revenue growth is a key indicator that reflects the company’s success giving it opportunities by expanding its renewable energy solutions. A steady increase in revenue signifies strong market penetration, and an expanding customer base. Monitoring revenue trends will help evaluate the effectiveness of marketing campaigns and overall business performance.
+
+	Website KPI
+		Page Load Time
+Page load time measures how quickly a webpage fully loads on a user’s device. It is important to keep a website quick in loading as this parameter is crucially important for user, as even a slight delay can lead to visitors leaving before interacting with content. Optimising page speed enhances user experience and reduces bounce rates.
+Bounce Rate
+Bounce rate shows the percentage of visitors who leave the website without taking any action. A high bounce rate may suggest issues with content relevance, poor navigation, or an unappealing user interface. Reducing bounce rates through engaging content, intuitive design, and better audience targeting ensures visitors stay longer and interact with the website.
+Traffic by Source
+This KPI tracks the sources of website traffic, for example where website visitors come from, such as search engines, social media, direct visits, or paid ads. It also shows which devices people use to access the site. Analysing these sources provides insights into the most effective marketing channels, allowing the business to allocate resources strategically.
+Conversion Rate
+Conversion rate measures how effectively the website turns visitors into customers. Whether it’s creating an account, booking a consultation, or using websites features, a high conversion rate indicates an optimised user journey. If conversions are low, it suggests the need for improvements in website design, or overall usability.
+Average Time on Page
+This indicator evaluates user engagement by tracking the amount of time visitors spend on individual pages. Longer engagement on educational content suggests valuable information, but extended time on checkout or booking pages may indicate that the visitor is confused or a there is a complex process. Analysing this data helps refine content strategy and optimise key user interactions.
+
+Legal Regulatory and Ethical Considerations
+	Legal Considerations
+The system must comply with the UK General Data Protection Regulation (UK GDPR) to protect users' personal data.
+To protect user accounts and personal data, the platform must implement robust security measures. Passwords should be securely stored using SHA-256 encryption.
+The platform should adhere to the Web Content Accessibility Guidelines (WCAG) to ensure it is accessible to users with disabilities.
+The website must comply with the Privacy and Electronic Communications Regulations (PECR) by informing users about the use of cookies and providing an option to manage their cookie preferences.
+
+Cookies
+Cookies store data on user’s device to track their interactions with a website helping to personalise content and optimise performance for a better user experience. 
+Security
+	The security methods I will use in my digital solution:
+
+Validating all data inputs to prevent security vulnerabilities such as SQL injection and cross-site scripting (XSS).
+Using secure cookies to protect session data and prevent unauthorised access.
+Implementing strong encryption methods for password hashing, such as bcrypt, Argon2i, or SHA256, to safeguard user credentials.
+Adhering to ISO 27001 standards to ensure information security management best practices.
+Complying with industry Data Security Standards to maintain confidentiality, integrity, and availability of data.
+Proposed Solution Description
+The proposed solution is a dynamic and user-friendly web platform designed to educate users on renewable energy solutions, provide interactive tools for energy analysis, and add consultation and installation bookings. The platform will feature a structured and intuitive interface, ensuring accessibility for a wide range of users, including residential customers looking to enhance their energy efficiency, and businesses stakeholders.
+The Homepage will serve as an entry point, introducing the company’s mission and services while providing quick access to essential features through a well-structured navigation bar, testimonials section and a footer.
+The Information Pages will educate users about solar panels, electric vehicle chargers, smart home energy management systems, and ways to reduce carbon footprint. These pages will contain easy-to-understand content with visuals, ensuring accessibility for users with varying levels of knowledge about green technologies.
+The Consultation and Installation Booking System will allow users to book appointments by selecting their preferred service, date, and time. The system will include automated appointment confirmation and management, enabling users to modify or cancel bookings easily.
+The Personal Account Section will provide registered users with access to their bookings and personal details. Users will have the ability to manage appointments, view recommendations based on their energy consumption, and securely update account details.
+The Calculators Section will include two key tools:
+The Carbon Footprint Calculator, which allows users to estimate their carbon emissions based on household energy usage, transportation habits, and heating type. A movable slider will enable users to adjust their inputs dynamically, with instant feedback on their carbon footprint and suggestions for reduction.
+The Energy Usage Calculator, which helps users estimate their daily and monthly energy consumption. It will feature a predefined list of common household appliances with typical wattages, allowing users to select appliances and adjust their daily usage using sliders. The tool will then calculate the total energy consumption, encouraging users to explore energy-efficient solutions.
+Security will be prioritised through secure authentication methods, data encryption, and compliance with GDPR and ISO 27001 standards. The platform will use secure cookies to enhance the user experience while protecting sensitive information.
+Overall, the system is designed to be highly responsive, and very flexible, as there are links to different pages on every page improving navigation and ensuring smooth performance across all devices. It will adhere to accessibility standards (WCAG) to accommodate users with disabilities. With its interactive tools, seamless booking process, and engaging educational content, this digital solution will enable users to make informed decisions about renewable energy while optimising business efficiency for the company.
+
+Justification
+How the recommended solution meets the needs of the client
+The recommended solution effectively meets the needs of the client by addressing key objectives, such as promoting renewable energy education, streamlining service bookings, enhancing user engagement, and ensuring security and accessibility.
+Firstly, the platform educates users on green energy solutions, such as solar panels, electric vehicle chargers, and smart home energy management systems, in line with the client’s goal to raise awareness about these solutions. By providing easily digestible information, interactive calculators, and user-friendly features, the platform simplifies complex topics, making them accessible to a wide range of users, from first time customers to experienced customers.
+The inclusion of the Carbon Footprint Calculator and Energy Usage Calculator directly aligns with the client’s objective to help users make informed decisions regarding their energy consumption. These tools allow users to assess their environmental impact and energy usage, providing individual suggestions for improvement and motivating users to consider renewable energy options that can lead to cost savings. The dynamic sliders and predefined appliance list further enhance user engagement by enabling real-time adjustments to energy consumption scenarios, providing immediate and clear feedback.
+The Consultation and Installation Booking System fulfils the client’s need to offer a smooth, efficient way for users to schedule consultations and installations. This reduces the complexity of the booking process, providing users with flexibility while ensuring automated confirmations and reminders. It also frees up staff time by automating appointment scheduling, thus improving operational efficiency.
+The Personal Account Section supports the client’s goal to offer a more individual experience for registered users, allowing them to easily manage their bookings, track their energy usage, and receive personalised recommendations based on their consumption data. This section adds value by increasing customer satisfaction and encouraging repeat engagement with the platform.
+Security and data protection are in the top priority, and the solution fully meets the client’s security requirements. It employs secure authentication methods, encryption protocols for password storage, and complies with GDPR and ISO 27001 standards, ensuring user data is protected. This guarantees users’ trust in the platform and aligns with the client’s need for a secure, reliable, and compliant digital solution.
+The digital solution is also designed with accessibility and performance in mind, ensuring that it meets the client’s need for a responsive, inclusive platform. By adhering to Web Content Accessibility Guidelines (WCAG), the digital solution is compatible for users with disabilities, ensuring a broad audience can engage with the site. The system’s performance is optimised to deliver quick response times, ensuring users have a seamless experience, regardless of the device they are using.
+The recommended solution meets the client’s needs by providing an intuitive, educational, and secure platform that enhances user engagement, offers service bookings, and drives the distribution of green energy solutions. The platform is designed to scale, allowing the client to adapt and expand as their business grows, and also gives opportunity to improve efficiency and customer satisfaction.
+How potential risks will be mitigated
+User engagement:
+A major risk is that users might find it difficult to adopt and use the platform. To mitigate this, the platform will be developed with an intuitive and user-friendly interface, ensuring easy navigation even for non-technical users. User training and detailed onboarding steps will be provided. Continuous user feedback will be gathered to improve the system based on user experience.
+Data Security and Privacy Risks:
+The platform will handle sensitive user information, such as personal data and energy consumption details. To mitigate the risk of data breaches, the platform will implement strong encryption methods (for example SHA256 for password hashing). Regular security checks will be carried out, and all user data will be stored securely and in compliance with GDPR guidelines.
+Data loss from the booking system:
+A key risk in the booking system is data loss, which could damage the company’s reputation. For example, if a customer's booking is lost, it would create a frustrating experience for them. To mitigate this, the system must go through testing, and regular data backups should be implemented to ensure that booking information is securely stored and can be quickly restored if needed. This approach will help minimize the risk and maintain customer trust.
+Appendix 1
+
+Hardware and Software
+	Hardware:
+Hardware such as solar panels, electric vehicle chargers, energy storage systems are fundamental to the industry. The common thing between them is that they produce the least amount of CO2 emission to an environment
+	Software:
+Software applications allow for the monitoring and optimization of energy consumption. These platforms often integrate data from renewable energy systems (for example solar panels) and energy storage devices to help users track their energy production and usage patterns. They also provide information on how to improve energy efficiency.
+
+Emerging technologies
+Energy Storage Systems (ESS):
+Advanced energy storage technologies, such as solid-state batteries and flow batteries, are emerging as key components for renewable energy systems. These systems store excess energy produced by green sources like solar, making it available when production is low, such as at night or during periods of low wind. This helps to balance supply and demand and stabilise the grid.
+Smart Grids:
+Smart grids use digital technology to monitor and manage energy usage efficiently. By integrating real-time data and advanced communication systems, smart grids can automatically adjust energy distribution, improve grid reliability, and integrate renewable energy sources more effectively. These grids also allow consumers to interact with the grid, such as adjusting energy consumption based on price signals or availability of renewable energy.
+Meeting different users needs
+A clear and easy site to navigate, adapted so people who are new at this can look through it as well. The examples that I have researched are: solarthermuk, devon energy solutions, chargepoint, Vivint.
+
+ 
+ 
+ 
+ 
+Navigation bar and options for different users:
+ 
+ 
+ 
+ 
+How the information about company is presented:
+ 
+ 
+ 
+ 
+ 
+Educational Visit:
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Energy calculator:
+ 
+
+
+Guidelines and Regulations
+GDPR - Data privacy is a critical concern for companies that collect data on users' energy consumption patterns or usage of renewable technologies. Regulations such as GDPR (General Data Protection Regulation) ensure that companies within the renewable energy sector adhere to strict standards for the collection, storage, and processing of personal data.
+ISO - International certification standards like the International Organization for Standardization (ISO) offer guidelines for the operation, maintenance, and training within the renewable energy industry. These certifications ensure that renewable energy companies adhere to internationally recognised standards for safety, quality, and operational procedures.
+Appendix 2
+Links to everything
+Examples of websites:
+Solarthermuk
+devon energy solutions
+chargepoint
+Vivint
