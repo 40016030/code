@@ -1,0 +1,149 @@
+Wireframes
+	Low Fidelity Wireframes for
+
+	High Fidelity Wireframes for
+
+Page Specification (Home page Screenshot)
+Why I make the exact design, what is the reason of it, include that people like it the most
+Maybe include:
+-	Why I used specifically this colour palette (maybe write about people associations with green technologies, for example green for grass, and blue for sky, white for clouds)
+-	Explain The reason of using such font to website and the picture to your logo
+-	How you show interactive elements and inputs (maybe to make it user friendly, and you should present calmness as you provide alternative solution instead of aggressive pollution towards our nature, so be like pacifist)
+-	About the overall layout, just add that you want to show the message of the company in the first place
+Overall explain why you have made these design choices. (You have to include at least something to get marks)
+Colours
+
+Sources (Links to every picture)
+	Image Source   Description   Usage Licence   License   Link
+	Stocksnap   An image of solar   Used In             Free         link
+Site Map
+
+Navigation Flow Diagram
+
+Data Tables / Data Types
+	Customer ID
+Field	Data Type
+CustomerID	int(11)
+firstname	varchar(255)
+lastname	varchar(255)
+email	varchar(255)
+password	varchar(255)
+
+	Consultations
+Field	Data Type
+consultationID	int(11)
+consultation_type	varchar(255)
+
+	Consultation Booking
+Field	Data Type
+bookingID	int(11)
+customerID	int(11)
+consultationID	int(11)
+selectedDate	date
+selectedTime	time
+
+	Installation
+Field	Data Type
+installationID	int(11)
+installation_type	varchar(255)
+
+	Installation Booking
+Field	Data Type
+bookingID	int(11)
+customerID	int(11)
+installationID	int(11)
+selectedDate	date
+selectedTime	time
+
+	Carbon Footprint Calculator
+Field	Data Type
+calculationID	int(11)
+customerID	Int(11)
+energy_source	varchar(255)
+consumption	float(5)
+emission_factor	float(5)
+total_emission	float(5)
+
+	Energy Usage Calculator
+Field	Data Type
+calculationID	int(11)
+customerID	int(11)
+appliance_type	varchar(255)
+typical_wattage	int(11)
+working_hours	int(11)
+appliance_number	int(11)
+total_consumption	float(5)
+
+Data Dictionary
+Customer ID
+Field	Data Type	Data Format	Field Size	Description	Example
+CustomerID	Integer	-	11	Unique ID	5
+firstname	Variable Character	-	255	Customer’s first name	John
+lastname	Variable Character	-	255	Customer’s last name	Doe
+email	Variable Character	name@mail.com	255	Customer's email address	johndoe@example.com
+password	Variable Character	-	255	Customer's password	John123
+
+	Consultations
+Field	Data Type	Data Format	Field Size	Description	Example
+consultationID	Integer	-	11	Unique identifier for each consultation	5
+consultation_type	Variable Character	-	255	Type of consultation (Smart Home Energy Management System, Solar Panels, EV Chargers)	Solar Panels
+
+	Consultation Booking
+Field	Data Type	Data Format	Field Size	Description	Example
+bookingID	Integer	-	11	Unique identifier for each booking	5
+customerID	Integer	-	11	Reference to the customer booking the consultation	5
+consultationID	Integer	-	11	Reference to the consultation being booked	5
+selectedDate	Date	YYYY-MM-DD	11	Date of the booked consultation	2020-04-02
+selectedTime	Time	HH:MM:SS	11	Time of the booked consultation	12:30:00
+
+	Installation
+Field	Data Type	Data Format	Field Size	Description	Example
+installationID	Integer	-	11	Unique identifier for each installation service	5
+installation_type	Variable Character	-	255	Type of installation (Smart Home Energy Management System, Solar Panels, EV Chargers) 	Solar Panels
+
+	Installation Booking
+Field	Data Type	Data Format	Field Size	Description	Example
+bookingID	Integer	-	11	Unique identifier for each installation booking	5
+customerID	Integer	-	11	Reference to the customer booking the installation	5
+installationID	Integer	-	11	Reference to the installation being booked	5
+selectedDate	Date	YYYY-MM-DD	11	Date of the booked installation	2020-04-02
+selectedTime	Time	HH:MM:SS	11	Time of the booked installation	12:30:00
+
+	Carbon Footprint Calculator
+Field	Data Type	Data Format	Field Size	Description	Example
+calculationID	Integer	-	11	Unique identifier for each carbon footprint calculation	5
+customerID	Integer	-	11	Reference to the customer performing the carbon footprint calculation	5
+energy_source	Variable Character	-	255	Type of energy used	Electricity
+consumption	Float	-	5	The amount of energy consumed in kWh or cubic meters	295.5
+emission_factor	Float	-	5	Emission factor based on the energy source	0.3
+total_emission	Float	-	5	Total carbon emissions in kilograms	40.8
+
+	Energy Usage Calculator
+Field	Data Type	Data Format	Field Size	Description	Example
+calculationID	Integer	-	11	Unique identifier for each energy usage calculation	5
+customerID	Integer	-	11	Reference to the customer performing the energy usage calculation	5
+appliance_type	Variable Character	-	-	Type of appliance (Refrigerator, Washing Machine…)	Refrigerator
+typical_wattage	Integer	-	11	Wattage of the appliance based on typical usage	150
+working_hours	Integer	-	11	Number of hours the appliance is used per day	8
+appliance_number	Integer	-	11	Number of appliances of that type	1
+total_consumption	Float	-	5	Total energy consumption for the selected appliances	3.4
+
+ERD Diagram
+ 
+Data Flow Diagram
+	Booking Process
+ 
+	Carbon Footprint and Energy Usage Calculators
+ 
+Flowcharts/Pseudocode/Natural Language
+	Register/Login
+ 
+	Consultation Page
+ 
+	Installation Page
+ 
+A test strategy
+
+“EXTRA FOR TASK Aii”:
+UML diagram
+	 
