@@ -1,0 +1,291 @@
+IMG Source	Description	Usage	License	Link
+Pixabay	Solar Panel 	Used in	free	https://pixabay.com/photos/solar-panels-solar-energy-8244680/
+Pixabay	Installation worker
+ 	Used in	free	https://pixabay.com/photos/solar-panel-installation-worker-7518786/
+*Pixabay	Panels placement 	Used in	free	https://pixabay.com/photos/solar-panels-placement-green-energy-944000/
+Pixabay	Solar panels on roof 	Used in	free	https://pixabay.com/photos/solar-panels-heating-1477987/
+Pexels	Solar panel and sky 	Used in	free	https://www.pexels.com/photo/blue-solar-panel-board-356036/
+Pexels	Solar panels in forest 	Used in	free	https://www.pexels.com/photo/a-house-in-the-mountains-with-a-solar-panel-on-the-roof-28286652/
+*Pexels	Charge point 1 	Used in	free	https://www.pexels.com/photo/close-up-view-of-a-person-holding-the-ev-charger-5391511/
+Pexels	Charging station 	Used in	free	https://www.pexels.com/photo/road-industry-cable-charging-9800002/
+*Pexels	Charger  	Used in	free	https://www.pexels.com/photo/person-holding-black-and-gray-metal-tool-9799725/
+Pexels	Charging station 2 	Used in	free	https://www.pexels.com/photo/fuel-dispenser-in-black-and-white-18328715/
+*Pexels	Sakura  	Used in	free	https://www.pexels.com/photo/close-up-shot-of-an-electirc-car-charging-9799729/
+Pexels	Charging station 3  	Used in	free	https://www.pexels.com/photo/electric-car-while-charging-24376862/
+Unsplash	Thermostat  	Used in	free	https://unsplash.com/photos/gray-nest-thermostat-displaying-at-63-RFAHj4tI37Y
+Unsplash	Lightbulb in grass  	Used in	free	https://unsplash.com/photos/bulb-photography-UfEyDdXlRp8
+Pexels	Speaker  	Used in	free	https://www.pexels.com/photo/round-grey-speaker-on-brown-board-1072851/
+Pexels	Speaker 2  	Used in	free	https://www.pexels.com/photo/black-amazon-echo-on-table-977296/
+
+Logo
+I created the Rolsa Technologies logo using Canva. I chose an icon of a solar panel with the sun above it to directly represent a purpose of the company. I selected a user-friendly font for the company name placed beneath the icon, to make sure that it is clear, easy to read, and professional, which enhances the overall design.
+ 
+Colours
+When I was choosing colours for the Rolsa Technologies website, I focused on how these colours would represent the company’s message, ensuring that users could clearly understand they were on a green energy company's website. I decided to use the colours grey, white, black, and dark green. Dark green symbolizes nature, connecting the website to the environment and emphasizing the company’s core purpose. White represents clarity and professionalism. Black provides contrast, making the website visually appealing. Grey creates balance by softening the sharp contrast between white and black, while also representing the calm and stability of the company.
+Dark green: #266429
+Black: #000000
+White: #FFFFFF
+Grey: #E8E8E8
+
+
+I used WebAIM website to check the contrast of the colours I was using.
+
+ 
+All the attached designs for Rolsa Technologies digital solution were created using Figma. The designs may undergo minor changes during future development.
+Pseudocode for calculators:
+	Carbon footprint calculator:
+BEGIN
+    DISPLAY "Select Heating Type: Gas, Electric, Solar"
+    heating_type ← USER_INPUT
+
+    DISPLAY "Adjust Energy Consumption (0 - 1000 kWh/cubic meters)"
+    energy_consumption ← USER_INPUT
+
+    // Retrieve emission factor based on selected heating type
+    IF heating_type = "Gas" THEN
+        emission_factor ← GAS_EMISSION_FACTOR
+    ELSE IF heating_type = "Electric" THEN
+        emission_factor ← ELECTRIC_EMISSION_FACTOR
+    ELSE
+        emission_factor ← SOLAR_EMISSION_FACTOR
+
+    // Calculate carbon footprint
+    total_emission ← energy_consumption * emission_factor
+
+    DISPLAY "Your estimated carbon footprint is: " + total_emission + " kg CO2"
+
+    // Provide a consistent recommendation
+    DISPLAY "Consider switching to renewable energy sources and reduce energy consumption with energy-efficient appliances."
+
+END
+	Energy Consumption Calculator:
+BEGIN
+    DISPLAY "Select Appliance Type (e.g., Refrigerator, Light Bulb, Microwave)"
+    appliance_type ← USER_INPUT
+
+    DISPLAY "Enter Usage Time Per Day (hours)"
+    usage_time ← USER_INPUT
+
+    DISPLAY "Enter Number of Appliances"
+    num_appliances ← USER_INPUT
+
+    // Retrieve typical wattage for selected appliance
+    wattage ← GET_WATTAGE(appliance_type)
+
+    // Calculate total energy consumption
+    total_consumption ← wattage * usage_time * num_appliances
+
+    DISPLAY "Your total daily energy consumption is: " + total_consumption + " kWh"
+
+    // Provide a consistent energy-saving recommendation
+    DISPLAY "Consider switching to energy-efficient appliances and reducing usage where possible."
+
+END
+
+Links for Ai:
+Web Development & UI/UX Design
+WCAG Accessibility Guidelines: https://www.w3.org/WAI/standards-guidelines/wcag/
+User Experience Best Practices: https://www.nngroup.com/
+Security & Data Protection
+GDPR Compliance Guide: https://gdpr.eu/
+
+Testing Strategy
+Date of test	Component to be tested	Type of test to be carried out	Prerequisites and Dependencies
+23 April 2025	Navigation bar	Black box testing: Functional testing: Integration testing	No data inputs needed, navigation bar will be checked for page loading if clicked on it
+23 April 2025	Home page	White box
+testing,
+Black box
+Testing:
+Functional
+testing:
+Integration
+testing, Unit
+testing	No data inputs are needed, Testing if all the
+buttons are
+functional, testing
+homepage unit,
+testing integration of
+homepage within
+the website.
+
+23 April 2025	Information page (Solar Panels)	White box
+testing,
+Black box
+Testing:
+Functional
+testing:
+Integration
+testing, Unit
+testing	No data inputs are needed. Testing if all the
+buttons are
+functional, testing
+information page unit,
+testing integration of
+information page within
+the website.
+
+23 April 2025	Information page (EV chargers)	White box
+testing,
+Black box
+Testing:
+Functional
+testing:
+Integration
+testing, Unit
+testing	No data inputs are needed. Testing if all the
+buttons are
+functional, testing
+information page unit,
+testing integration of
+information page within
+the website.
+
+23 April 2025	Information page (Smart Home Systems)	White box
+testing,
+Black box
+Testing:
+Functional
+testing:
+Integration
+testing, Unit
+testing	No data inputs are needed. Testing if all the
+buttons are
+functional, testing
+information page unit,
+testing integration of
+information page within
+the website.
+
+23 April 2025	Information page (How to reduce carbon footprint)	White box
+testing,
+Black box
+Testing:
+Functional
+testing:
+Integration
+testing, Unit
+testing	No data inputs are needed. Testing if all the
+buttons are
+functional, testing
+information page unit,
+testing integration of
+information page within
+the website.
+
+23 April 2025	Booking page	White box
+testing,
+Black box
+Testing:
+Functional
+testing:
+Integration
+testing, Unit
+testing	No data inputs are needed. Testing if all the
+buttons are
+functional, testing
+booking page unit,
+testing integration of
+booking page within
+the website.
+
+24 April 2025	Booking system	Backend: database testing	Test if any errors
+are shown while
+executing queries.
+Test data needed for
+booking a consultation:
+bookingID
+customerID
+consultationID
+selectedDate
+selectedTime
+
+Test data needed for
+installation booking:
+bookingID
+customerID
+installationID
+selectedDate
+selectedTime
+
+23 April 2025	Login page	White box
+testing,
+Black box
+Testing:
+Functional
+testing:
+Integration
+testing, Unit
+testing	No data inputs are needed. Testing if all the
+buttons are
+functional, testing
+login page unit,
+testing integration of
+login page within
+the website.
+
+24 April 2025	Login system	Backend: database testing	Test data needed:
+Valid username and
+password and invalid
+to check the
+robustness
+
+23 April 2025	Register page	White box
+testing,
+Black box
+Testing:
+Functional
+testing:
+Integration
+testing, Unit
+testing	No data inputs are needed. Testing if all the
+buttons are
+functional, testing
+register page unit,
+testing integration of
+register page within
+the website.
+
+24 April 2025	Register system	Backend: database testing	Test data needed:
+Name, username,
+password, repeat
+password, email
+
+23 April 2025	Carbon footprint calculator page	White box
+testing,
+Black box
+Testing:
+Functional
+testing:
+Integration
+testing, Unit
+testing	Heating type data, and monthly energy consumption data are needed
+
+23 April 2025	Energy usage calculator page	White box
+testing,
+Black box
+Testing:
+Functional
+testing:
+Integration
+testing, Unit
+testing	Appliances data, appliance use hours data, and number of appliances data are needed
+
+Every “page”	Every “page”	Black box
+
+testing -> Non-
+Functional
+
+testing:
+Compatibility
+testing	OS needed: IOS,
+MacOS, Windows,
+Android
+Browsers: Chrome,
+Edge, Firefox,
+Opera, or Safari
+
+
+“Extra”:
+Add legal about energy sector
+
+Dropdown -> Radio Buttons
