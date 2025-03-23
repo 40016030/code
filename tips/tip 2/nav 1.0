@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Navigation Bar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        /* Navbar styles */
+        .navbar {
+            background-color: #FFFFFF !important;
+            padding: 40px 60px;
+        }
+
+        /* Logotype */
+        .navbar-brand img {
+            height: 50px; /* Adjust as needed */
+        }
+
+        /* Links Styling */
+        .navbar-nav .nav-link {
+            color: #266429 !important;
+            font-weight: bold;
+            padding: 10px 20px; /* Adds space between items */
+        }
+        .navbar-nav .nav-link:hover {
+            color: #1d4d23 !important;
+        }
+
+        /* Centered Navigation */
+        .navbar-nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px; /* Adds space between menu items */
+        }
+
+        /* Dropdown Menu Styling */
+        .dropdown-menu {
+            border: none;
+            background-color: #FFFFFF;
+            width: auto;
+        }
+
+        .dropdown-menu .dropdown-item {
+            display: inline-block; /* Shrinks the width to fit content */
+            color: #266429 !important;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .dropdown-menu .dropdown-item:hover {
+            background-color: #e6f2e6 !important;
+        }
+
+        /* Account Dropdown */
+        .account-nav {
+            margin-left: auto;
+        }
+
+        /* Dropdown hover */
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+
+        /* Navbar Toggler (Hamburger menu for mobile view) */
+        @media (max-width: 991px) {
+            .navbar-toggler {
+                display: block !important; /* Shows the toggler button on small screens */
+            }
+        }
+
+        @media (min-width: 992px) {
+            .navbar-toggler {
+                display: none !important; /* Hides the toggler button on large screens */
+            }
+        }
+
+        /* Remove unwanted space in the navbar */
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <!-- Logotype (Always Left) -->
+        <a class="navbar-brand" href="index.php">
+            <img src="logotype.png" alt="Logotype">
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Centered Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto"> <!-- Ensures center alignment -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php">Home</a>
+                </li>
+
+                <!-- Information Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#">Information</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                        <li><a class="dropdown-item" href="#">Option 4</a></li>
+                    </ul>
+                </li>
+
+                <!-- Calculators Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#">Calculators</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                    </ul>
+                </li>
+
+                <!-- Services Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Account Dropdown (Always Right) -->
+        <ul class="navbar-nav account-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#">Account</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Option 1</a></li>
+                    <li><a class="dropdown-item" href="#">Option 2</a></li>
+                    <li><a class="dropdown-item" href="#">Option 3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+</body>
+</html>
