@@ -1,0 +1,45 @@
+Developing the prototype
+Develop a functional prototype of your proposed digital solution to meet the 
+client’s needs.
+During development, make sure you:
+• implement secure code in at least two appropriate languages to implement frontend and back-end processes
+• gather and prepare appropriate assets to be used in the development of your 
+digital solution
+• make use of, and document, iterative testing
+• document the iterative development process, including changes made to the 
+solution during development
+• produce code that can be maintained by a third party
+• ensure a high-quality user experience
+• follow legal and regulatory guidelines and standards.
+When gathering assets, you need to record the sources you use in an assets log. 
+Your log must:
+• record all the sources you have used
+• describe the content and its intended purpose
+• log the date on which you retrieved the information.
+Your testing documentation does not need to include details of every test carried out. 
+However, it should demonstrate:
+• an iterative approach to testing
+• understanding of how to test inputs, calculations, validation and processes using 
+appropriate test data.
+
+Outcomes for submission
+Prototype
+Save copies of key versions of your functional prototype in your folder for submission.
+Use any sensible folder structure and naming convention.
+Development documentation
+Save your development documents as PDF files in your folder for submission. Use this 
+naming convention:
+• Task2[Document name]_[Registration number]_[Surname]_[First letter of first name]
+Save your content and assets log as a PDF in your folder for submission. Use this 
+naming convention:
+• Task2ContentAssetsLog_[Registration number]_[Surname]_[First letter of first name]
+Test log
+Save your test log as a PDF file in your folder for submission. Use this 
+naming convention:
+• Task2_Test_Log_[Registration number]_[Surname]_[First letter of first name]
+Code for prototype solution
+Save copies of key versions of the source code for your prototype in your folder 
+for submission.
+Use any sensible folder structure and naming convention.
+Note: Ensure you submit your source code files in the original file format, and not as 
+PDF files
