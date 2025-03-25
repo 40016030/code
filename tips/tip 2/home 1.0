@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolsa Technologies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-text">
+                Trusted <br>
+                Company that <br>
+                specializes in <br>
+                <span class="green-text">green energy</span> <br>
+                solutions
+            </h1>
+            <a href="#" class="hero-button">Find out more</a>
+        </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section class="about-section">
+        <h2 class="about-title">Who we are:</h2>
+        <p class="about-text">
+            At Leaf Technologies, we are committed <br>
+            to providing cutting-edge green energy <br>
+            solutions that drive sustainability and <br>
+            environmental stewardship globally.
+        </p>
+    </section>
+
+    <!-- We Provide Section -->
+    <section class="services-section">
+        <h2 class="services-title">We provide:</h2>
+        <div class="services-container">
+            <div class="service-item">
+                <a href="solar-panels.html">
+                    <img src="../images/solpanel2.jpg" alt="Solar Panels">
+                    <p>Solar Panels Installation and Maintenance</p>
+                </a>
+            </div>
+            <div class="service-item-m">
+                <a href="ev-charging.html">
+                    <img src="../images/evcharger1.jpg" alt="EV Charging">
+                    <p>Electric Vehicle Charging Stations</p>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="smart-home.html">
+                    <img src="../images/smarthome1.jpg" alt="Smart Home Energy">
+                    <p>Smart Home Energy Management Systems</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carbon Footprint Section -->
+    <section class="carbon-footprint">
+        <div class="carbon-footprint-content">
+            <h1 class="carbon-footprint-text">
+                Measure your carbon footprint with our calculator
+            </h1>
+            <a href="#" class="carbon-footprint-button">Calculator</a>
+        </div>
+    </section>
+
+    <!-- Carbon Footprint Section -->
+    <section class="energy-usage">
+        <div class="energy-usage-content">
+            <h1 class="energy-usage-text">
+                Measure your energy usage with our calculator
+            </h1>
+            <a href="#" class="energy-usage-button">Calculator</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section-->
+    <section class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-box">
+                <h3>Name</h3>
+                <p>Feedback</p>
+            </div>
+            <div class="testimonial-box">
+                <h3>Name</h3>
+                <p>Feedback</p>
+            </div>
+            <div class="testimonial-box">
+                <h3>Name</h3>
+                <p>Feedback</p>
+            </div>
+        </div>
+    </section>
+    
+    <!--Footer-->
+    <?php include 'includes/footer.php'; ?>
+</body>
+</html>
+
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../images/solpanel1.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0 10%;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-text {
+    font-size: 48px;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 1.2;
+    max-width: 40%;
+    margin-left: 5%;
+}
+
+.green-text {
+    color: #63E768;
+}
+
+.hero-button {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    border-radius: 30px;
+    margin-right: 5%;
+}
+
+.hero-button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* About Section */
+.about-section {
+    background-color: #E8E8E8;
+    text-align: center;
+    padding: 80px 10%;
+}
+
+.about-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.about-text {
+    font-size: 24px;
+    font-weight: normal;
+    color: #000000;
+    line-height: 1.5;
+}
+
+/* Services Section */
+.services-section {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 80px 10%;
+}
+
+.services-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 80px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.service-item {
+    text-align: center;
+    max-width: 300px;
+    max-height: 300px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.service-item img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.service-item p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 10px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.service-item a:hover p {
+    text-decoration: underline;
+}
+
+.service-item-m {
+    text-align: center;
+    max-width: 300px;
+    max-height: 400px;
+    margin-bottom: 60px;
+}
+
+.service-item-m img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 400px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.service-item-m p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 10px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-item-m a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.service-item-m a:hover p {
+    text-decoration: underline;
+}
+
+/* Link to the Carbon Footprint Calculator */
+
+/* Carbon Footprint Section */
+.carbon-footprint {
+    background: url('../images/solpanel3.jpg') center/cover no-repeat;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0 10%;
+    background-position: top; /* Shows the upper part of the image */
+}
+
+.carbon-footprint-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.carbon-footprint-text {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+    line-height: 1.2;
+    max-width: 40%;
+    margin-left: 0%;
+}
+
+.carbon-footprint-button {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    border: 3px solid #000000;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    border-radius: 30px;
+    margin-right: 5%;
+}
+
+.carbon-footprint-button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Energy Usage Section */
+.energy-usage {
+    background: url('../images/lightbulb.jpg') center/cover no-repeat;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0 10%;
+}
+
+.energy-usage-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.energy-usage-text {
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 1.2;
+    max-width: 40%;
+    margin-left: 0%;
+}
+
+.energy-usage-button {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    border-radius: 30px;
+    margin-right: 5%;
+}
+
+.energy-usage-button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.testimonials {
+    background-color: #E8E8E8;
+    text-align: center;
+    padding: 80px 10%;
+}
+
+.testimonials h2 {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: Inter, sans-serif;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.testimonial-box {
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+}
+
+.testimonial-box h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.testimonial-box p {
+    font-size: 18px;
+    color: #333333;
+}
