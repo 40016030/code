@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Panels</title>
+    <link rel="stylesheet" href="infostyle.css">
+</head>
+<body>
+
+    <!--Navbar-->
+    <?php include '../global/navbar.php'; ?>
+
+    <!--Solar Banner -->
+    <section class="info-reduce-section">
+        <h1>How to reduce carbon footprint</h1>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section class="about-section">
+        <h2 class="about-title">Information about how to reduce carbon footprint:</h2>
+        <p class="about-text">
+        Reducing your carbon footprint starts with using less energy. 
+        A few examples include turning off unused electronics, using public transport, 
+        or switching to an electric vehicle. Small daily actions add up, 
+        helping to protect the planet for the future.
+        </p>
+    </section>
+
+    <!-- Carbon Footprint Section -->
+    <section class="carbon-footprint">
+        <div class="carbon-footprint-content">
+            <h1 class="carbon-footprint-text">
+                Measure your carbon footprint with our calculator
+            </h1>
+            <a href="#" class="carbon-footprint-button">Calculator</a>
+        </div>
+    </section>
+
+    <!-- Energy Usage Section -->
+    <section class="energy-usage">
+        <div class="energy-usage-content">
+            <h1 class="energy-usage-text">
+                Measure your energy usage with our calculator
+            </h1>
+            <a href="#" class="energy-usage-button">Calculator</a>
+        </div>
+    </section>
+
+    <!-- Links to other pages Section -->
+
+    <section class="other-links-reduce">
+        <div class="other-links-container">
+            <p>Check our solar panel <a href="#" class="other-links-button">Link</a></p>
+            <p>Check our electric vehicle page <a href="#" class="other-links-button">Link</a></p>
+            <p>Check our smart home system <a href="#" class="other-links-button">Link</a></p>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <?php include '../global/footer.php'; ?>
+
+</body>
+</html>
+
+/* Import Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+/* solar panel background section */
+.info-solar-section {
+    background: url('../images/solpanel4.jpg') no-repeat center center/cover;
+    height: auto;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-position: top;
+}
+
+/* Text styling */
+.info-solar-section h1 {
+    color: #FFFFFF;
+    font-size: 7rem;
+    font-weight: bold;
+}
+
+/* EV charger background section */
+.info-charger-section {
+    background: url('../images/evcharger2.jpg') no-repeat center center/cover;
+    height: auto;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Text styling */
+.info-charger-section h1 {
+    color: #FFFFFF;
+    font-size: 7rem;
+    font-weight: bold;
+}
+
+/* home system background section */
+.info-home-section {
+    background: url('../images/smarthome1.jpg') no-repeat center center/cover;
+    height: auto;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Text styling */
+.info-home-section h1 {
+    color: #FFFFFF;
+    font-size: 7rem;
+    font-weight: bold;
+}
+
+/* solar panel background section */
+.info-reduce-section {
+    background: url('../images/solpanel3.jpg') no-repeat center center/cover;
+    height: auto;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-position: top;
+}
+
+/* Text styling */
+.info-reduce-section h1 {
+    color: #FFFFFF;
+    font-size: 7rem;
+    font-weight: bold;
+}
+
+/*Info*/
+/* About Section */
+.about-section {
+    background-color: #E8E8E8;
+    text-align: center;
+    padding: 100px 10%;
+}
+
+.about-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.about-text {
+    font-size: 24px;
+    font-weight: normal;
+    color: #000000;
+    line-height: 1.5;
+}
+
+/* Comparison */
+.comparison-section {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.comparison-section h2 {
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.comparison-table {
+    background-color: #E8E8E8;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Inter', sans-serif;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+th {
+    background-color: #D6D6D6;
+    font-weight: bold;
+}
+
+/* consultation link section */
+
+.consultation-link {
+    background-color: #E8E8E8;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 80 10%;
+    background-position: top; /* Shows the upper part of the image */
+}
+
+.consultation-link-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.consultation-link-text {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+    line-height: 1.2;
+    max-width: 40%;
+    margin-left: 10%;
+}
+
+.consultation-link-button {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    border: 3px solid #000000;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    border-radius: 30px;
+    margin-right: 10%;
+}
+
+.consultation-link-button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* links to other pages section */
+
+.other-links-solar {
+    background-image: url('../images/solpanel5.jpg'); /* Replace with your actual image */
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.other-links-charger {
+    background-image: url('../images/evcharger3.jpg'); /* Replace with your actual image */
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.other-links-home {
+    background-image: url('../images/smarthome2.jpg'); /* Replace with your actual image */
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.other-links-reduce {
+    background-image: url('../images/solpanel3.jpg'); /* Replace with your actual image */
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    background-position: bottom;
+}
+
+.other-links-container {
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.other-links-container p {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Ensures spacing between text and button */
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+.other-links-button {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    border-radius: 30px;
+    margin-right: 5%;
+}
+
+.other-links-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Carbon Footprint Section */
+.carbon-footprint {
+    background: url('../images/solpanel3.jpg') center/cover no-repeat;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0 10%;
+    background-position: top; /* Shows the upper part of the image */
+}
+
+.carbon-footprint-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.carbon-footprint-text {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+    line-height: 1.2;
+    max-width: 40%;
+    margin-left: 0%;
+}
+
+.carbon-footprint-button {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    border: 3px solid #000000;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    border-radius: 30px;
+    margin-right: 5%;
+}
+
+.carbon-footprint-button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Energy Usage Section */
+.energy-usage {
+    background: url('../images/lightbulb.jpg') center/cover no-repeat;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0 10%;
+}
+
+.energy-usage-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.energy-usage-text {
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 1.2;
+    max-width: 40%;
+    margin-left: 0%;
+}
+
+.energy-usage-button {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    border-radius: 30px;
+    margin-right: 5%;
+}
+
+.energy-usage-button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
