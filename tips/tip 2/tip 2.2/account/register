@@ -1,0 +1,179 @@
+<?php
+session_start();
+include '../account/db.php';
+
+// Redirect logged-in users
+if (isset($_SESSION['user_id'])) {
+    header("Location: personal.php");
+    exit();
+}
+
+$error = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $firstname = trim($_POST['first-name']);
+    $lastname = trim($_POST['last-name']);
+    $email = trim($_POST['email']);
+    $password = $_POST['password'];
+    $repeat_password = $_POST['repeat-password'];
+
+    if ($password !== $repeat_password) {
+        $error = "Passwords do not match!";
+    } else {
+        $hashed_password = password_hash($password, PASSWORD_BCRYPT);
+        $stmt = $conn->prepare("INSERT INTO users (firstname, lastname, email, password) VALUES (?, ?, ?, ?)");
+        $stmt->bind_param("ssss", $firstname, $lastname, $email, $hashed_password);
+        
+        if ($stmt->execute()) {
+            $_SESSION['user_id'] = $stmt->insert_id;
+            $_SESSION['firstname'] = $firstname;
+            header("Location: personal.php");
+            exit();
+        } else {
+            $error = "Email already exists!";
+        }
+
+        $stmt->close();
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="registerstyle.css">
+</head>
+<body>
+    <?php include '../global/navbar.php'; ?>
+
+    <div class="register-container">
+        <h1>Register</h1>
+        <div class="login-section">
+            Have an account?  
+            <button class="login-button" onclick="window.location.href='login.php'">Log In</button>
+        </div>
+
+        <form method="post">
+            <div class="input-container">
+                <input type="text" name="first-name" class="input-field" required>
+                <label class="input-label">First Name</label>
+            </div>
+
+            <div class="input-container">
+                <input type="text" name="last-name" class="input-field" required>
+                <label class="input-label">Last Name</label>
+            </div>
+
+            <div class="input-container">
+                <input type="email" name="email" class="input-field" required>
+                <label class="input-label">Email</label>
+            </div>
+
+            <div class="input-container">
+                <input type="password" name="password" class="input-field" required>
+                <label class="input-label">Password</label>
+            </div>
+
+            <div class="input-container">
+                <input type="password" name="repeat-password" class="input-field" required>
+                <label class="input-label">Repeat Password</label>
+            </div>
+
+            <button type="submit" class="login-button">Register</button>
+        </form>
+
+        <?php if ($error) echo "<p style='color: red;'>$error</p>"; ?>
+    </div>
+
+    <?php include '../global/footer.php'; ?>
+</body>
+</html>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: url('../images/solpanel3.jpg') no-repeat center center/cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.register-container {
+    text-align: center;
+    color: #FFFFFF;
+    width: 90%;
+    max-width: 400px;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.login-section {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.login-button {
+    background: transparent;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 8px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.input-container {
+    text-align: left;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.input-label {
+    font-size: 16px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    transition: 0.3s ease-in-out;
+    opacity: 0.8;
+}
+
+.input-field {
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+    outline: none;
+}
+
+.input-field:focus + .input-label, 
+.input-field:not(:placeholder-shown) + .input-label {
+    top: -15px;
+    font-size: 12px;
+    opacity: 1;
+}
