@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Usage Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .appliance-container {
+            background: #eaeaea;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+        .slider-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+        .result {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: green;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+        .info-section {
+            background-color: #E8E8E8;
+            height: auto;
+            width: 100%;
+            min-height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-position: top;
+        }
+
+        /* Text styling */
+        .info-section h1 {
+            color: #FFFFFF;
+            font-size: 7rem;
+            font-weight: bold;
+        }
+
+        /* About Section */
+        .about-section {
+            background-color: #E8E8E8;
+            text-align: center;
+            padding: 80px 10%;
+        }
+
+        .about-title {
+            font-size: 48px;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 30px;
+        }
+
+        .about-text {
+            font-size: 24px;
+            font-weight: normal;
+            color: #000000;
+            line-height: 1.5;
+        }
+
+        .text-center {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+<!--Navbar-->
+<?php include '../global/navbar.php'; ?>
+
+<!--Solar Banner -->
+<section class="info-section">
+    <h1>Energy Usage Calculator</h1>
+</section>
+
+<div class="container">
+    <!-- Appliance Selection -->
+    <p class="text-center"><strong>Select Appliances:</strong></p>
+    <label class="text-center"><input type="checkbox" class="appliance-checkbox" value="refrigerator"> Refrigerator</label>
+    <label class="text-center"><input type="checkbox" class="appliance-checkbox" value="washing_machine"> Washing Machine</label>
+    <label class="text-center"><input type="checkbox" class="appliance-checkbox" value="light_bulb"> Light Bulb</label>
+    <label class="text-center"><input type="checkbox" class="appliance-checkbox" value="microwave"> Microwave</label>
+
+    <!-- Dynamic Appliance Input Section -->
+    <div id="applianceInputs"></div>
+
+    <!-- Total Energy Consumption -->
+    <p class="result">Total Estimated Energy Usage: <span id="totalEnergyUsage">0</span> kWh/month</p>
+</div>
+
+<section class="about-section">
+        <h2 class="about-title">Recommendations:</h2>
+        <p class="about-text">
+        To save energy, avoid using appliances during peak hours when electricity rates are higher. 
+        Try to reduce the number of appliances running at the same time, 
+        and make sure to turn off appliances when they are not in use.
+        </p>
+</section>
+
+<!--Footer-->
+<?php include '../global/footer.php'; ?>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const applianceCheckboxes = document.querySelectorAll(".appliance-checkbox");
+        const applianceInputsContainer = document.getElementById("applianceInputs");
+        const totalEnergyUsageElement = document.getElementById("totalEnergyUsage");
+
+        // Predefined wattage values for appliances (in watts)
+        const applianceWattages = {
+            refrigerator: 150,  // 150W
+            washing_machine: 500,  // 500W
+            light_bulb: 60,  // 60W
+            microwave: 800   // 800W
+        };
+
+        function updateEnergyUsage() {
+            let totalEnergyUsage = 0;
+
+            document.querySelectorAll(".appliance-container").forEach(container => {
+                const appliance = container.dataset.appliance;
+                const hoursPerDay = parseInt(container.querySelector(".hours-slider").value);
+                const applianceCount = parseInt(container.querySelector(".count-slider").value);
+
+                const watts = applianceWattages[appliance];
+                const energyUsage = ((watts * hoursPerDay * 30) / 1000) * applianceCount;
+
+                totalEnergyUsage += energyUsage;
+            });
+
+            totalEnergyUsageElement.textContent = totalEnergyUsage.toFixed(2);
+        }
+
+        function createApplianceInputs(appliance) {
+            // Check if the appliance inputs already exist
+            if (document.getElementById(`container-${appliance}`)) return;
+
+            const container = document.createElement("div");
+            container.classList.add("appliance-container");
+            container.dataset.appliance = appliance;
+            container.id = `container-${appliance}`;
+
+            container.innerHTML = `
+                <p class="text-center"><strong>${appliance.replace("_", " ").toUpperCase()}</strong></p>
+
+                <!-- Usage Time Slider -->
+                <p class="text-center">Usage Time Per Day: <span class="hoursValue">24</span> hours</p>
+                <div class="slider-container">
+                    <span>0</span>
+                    <input type="range" class="hours-slider" min="0" max="24" value="24">
+                    <span>24</span>
+                </div>
+
+                <!-- Number of Appliances Slider -->
+                <p class="text-center">Number of Appliances: <span class="countValue">1</span></p>
+                <div class="slider-container">
+                    <span>1</span>
+                    <input type="range" class="count-slider" min="1" max="10" value="1">
+                    <span>10</span>
+                </div>
+            `;
+
+            applianceInputsContainer.appendChild(container);
+
+            // Add event listeners to new sliders
+            container.querySelector(".hours-slider").addEventListener("input", function () {
+                container.querySelector(".hoursValue").textContent = this.value;
+                updateEnergyUsage();
+            });
+
+            container.querySelector(".count-slider").addEventListener("input", function () {
+                container.querySelector(".countValue").textContent = this.value;
+                updateEnergyUsage();
+            });
+
+            updateEnergyUsage();
+        }
+
+        function removeApplianceInputs(appliance) {
+            const container = document.getElementById(`container-${appliance}`);
+            if (container) {
+                container.remove();
+                updateEnergyUsage();
+            }
+        }
+
+        // Listen for checkbox changes
+        applianceCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener("change", function () {
+                if (this.checked) {
+                    createApplianceInputs(this.value);
+                } else {
+                    removeApplianceInputs(this.value);
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
