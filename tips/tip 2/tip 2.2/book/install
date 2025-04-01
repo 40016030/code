@@ -1,0 +1,203 @@
+<?php
+session_start();
+include '../account/db.php';
+
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+    exit();
+}
+
+$customerID = $_SESSION['user_id'];
+$today = date('Y-m-d');
+
+// Ensure selected date is valid and not in the past
+if (isset($_GET['date']) && $_GET['date'] >= $today) {
+    $selectedDate = $_GET['date'];
+} else {
+    $selectedDate = $today;
+}
+
+// Fetch booked time slots
+$bookedSlots = [];
+$query = "SELECT selectedTime FROM installations WHERE selectedDate = ?";
+$stmt = $conn->prepare($query);
+$stmt->bind_param("s", $selectedDate);
+$stmt->execute();
+$result = $stmt->get_result();
+
+while ($row = $result->fetch_assoc()) {
+    $bookedSlots[] = $row['selectedTime'];
+}
+
+$timeSlots = ["09:00", "09:30", "10:00", "10:30", "11:00", "11:30",
+              "12:00", "12:30", "13:00", "13:30", "14:00", "14:30",
+              "15:00", "15:30", "16:00", "16:30", "17:00", "17:30"];
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Installation</title>
+    <link rel="stylesheet" href="../booking/insstyle.css">
+</head>
+<body>
+    <?php include '../global/navbar.php'; ?>
+
+    <div class="booking-container">
+        <h1>Book an Installation</h1>
+
+        <form method="POST" action="acc_installation.php">
+            <label for="installation_type">Installation Type:</label>
+            <select name="installation_type" required>
+                <option value="Solar Panel">Solar Panel</option>
+                <option value="EV Charger">EV Charger</option>
+                <option value="Home System">Home System</option>
+            </select>
+
+            <label for="p_address">Installation Address:</label>
+            <input type="text" name="p_address" id="p_address" placeholder="Enter your address" required>
+
+            <div class="date-selector">
+                <button type="button" onclick="changeDate(-1)">&#9665;</button>
+                <span id="selectedDate"><?php echo $selectedDate; ?></span>
+                <button type="button" onclick="changeDate(1)">&#9655;</button>
+            </div>
+
+            <input type="hidden" name="selectedDate" id="hiddenDate" value="<?php echo $selectedDate; ?>">
+
+            <div class="time-slots">
+                <?php foreach ($timeSlots as $time): ?>
+                    <?php $isBooked = in_array($time, $bookedSlots); ?>
+                    <button type="submit"
+                            name="selectedTime"
+                            value="<?php echo $time; ?>"
+                            class="time-slot <?php echo $isBooked ? 'booked' : 'available'; ?>"
+                            <?php echo $isBooked ? 'disabled' : ''; ?>>
+                        <?php echo $time; ?>
+                    </button>
+                <?php endforeach; ?>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function changeDate(offset) {
+            let hiddenDateElem = document.getElementById('hiddenDate');
+            let selectedDateElem = document.getElementById('selectedDate');
+            let currentDate = new Date(hiddenDateElem.value);
+            let today = new Date();
+            today.setHours(0, 0, 0, 0);
+
+            currentDate.setDate(currentDate.getDate() + offset);
+
+            if (currentDate < today) {
+                return;
+            }
+
+            let newDate = currentDate.toISOString().split('T')[0];
+
+            selectedDateElem.textContent = newDate;
+            hiddenDateElem.value = newDate;
+            window.location.href = "?date=" + newDate;
+        }
+    </script>
+
+    <?php include '../global/footer.php'; ?>
+</body>
+</html>
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('../images/solpanel3.jpg') no-repeat center center/cover;
+}
+
+.booking-container {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin-left: 30%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin-top: 15px;
+}
+
+select, input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.date-selector {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.date-selector button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+#selectedDate {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.time-slots {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.time-slot {
+    background-color: #266429;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.time-slot.booked {
+    background: #d9534f;
+    cursor: not-allowed;
+}
+
+.time-slot:hover:not(.booked) {
+    background: #218838;
+}
