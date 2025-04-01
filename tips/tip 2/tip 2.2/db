@@ -1,0 +1,32 @@
+CREATE DATABASE user_system;
+
+USE user_system;
+
+CREATE TABLE users (
+    CustomerID INT(11) AUTO_INCREMENT PRIMARY KEY,
+    firstname VARCHAR(255) NOT NULL,
+    lastname VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE consultations (
+    bookingID INT(11) AUTO_INCREMENT PRIMARY KEY,
+    customerID INT(11),
+    consultationID INT(11),
+    consultation_type VARCHAR(255),
+    selectedDate DATE,
+    selectedTime TIME,
+    FOREIGN KEY (customerID) REFERENCES users(CustomerID)
+);
+
+CREATE TABLE installations (
+    bookingID INT(11) AUTO_INCREMENT PRIMARY KEY,
+    customerID INT(11),
+    installationID INT(11),
+    installation_type VARCHAR(255),
+    p_address VARCHAR(255),
+    selectedDate DATE,
+    selectedTime TIME,
+    FOREIGN KEY (customerID) REFERENCES users(CustomerID)
+);
