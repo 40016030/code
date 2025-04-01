@@ -1,0 +1,127 @@
+<?php
+session_start();
+include '../account/db.php';
+
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+    exit();
+}
+
+$customerID = $_SESSION['user_id'];
+$selectedDate = $_POST['selectedDate'];
+$selectedTime = $_POST['selectedTime'];
+$installationType = $_POST['installation_type'];
+$p_address = $_POST['p_address']; 
+
+// Ensure date is in YYYY-MM-DD format
+$selectedDate = date('Y-m-d', strtotime($selectedDate));
+
+// Check if the user has booked a consultation of the same type
+$query = "SELECT selectedDate FROM consultations WHERE customerID = ? AND consultation_type = ? ORDER BY selectedDate DESC LIMIT 1";
+$stmt = $conn->prepare($query);
+$stmt->bind_param("is", $customerID, $installationType);
+$stmt->execute();
+$result = $stmt->get_result();
+
+if ($row = $result->fetch_assoc()) {
+    $consultationDate = $row['selectedDate'];
+
+    // Ensure installation is booked on the next day **or any future day**
+    $nextAvailableDay = date('Y-m-d', strtotime($consultationDate . ' +1 day'));
+    
+    if ($selectedDate < $nextAvailableDay) {
+        echo "<script>alert('You can only book an installation for the day after your consultation or later.'); window.location.href='installation.php';</script>";
+        exit();
+    }
+} else {
+    // If no consultation found, prevent installation booking
+    echo "<script>alert('You must book a consultation for $installationType before booking an installation.'); window.location.href='installation.php';</script>";
+    exit();
+}
+
+$stmt->close();
+
+// Insert the installation booking into the database
+$query = "INSERT INTO installations (customerID, installation_type, p_address, selectedDate, selectedTime) 
+          VALUES (?, ?, ?, ?, ?)";
+$stmt = $conn->prepare($query);
+$stmt->bind_param("issss", $customerID, $installationType, $p_address, $selectedDate, $selectedTime);
+
+if ($stmt->execute()) {
+    echo "<script>alert('Installation successfully booked at $p_address on $selectedDate at $selectedTime'); window.location.href='../account/personal.php';</script>";
+} else {
+    echo "<script>alert('Error booking installation! Please try again.'); window.location.href='installation.php';</script>";
+}
+
+$stmt->close();
+?>
+
+
+
+
+
+<?php
+session_start();
+include '../account/db.php';
+
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+    exit();
+}
+
+$customerID = $_SESSION['user_id'];
+$selectedDate = $_POST['selectedDate'];
+$selectedTime = $_POST['selectedTime'];
+$consultationType = $_POST['consultation_type'];
+
+// Ensure date is in YYYY-MM-DD format
+$selectedDate = date('Y-m-d', strtotime($selectedDate));
+
+// Get the current date and time
+$currentDate = date('Y-m-d');
+$currentTime = date('H:i'); // Current time in HH:MM format
+
+// If the selected date is today, check if the selected time has already passed
+if ($selectedDate == $currentDate && $selectedTime <= $currentTime) {
+    echo "<script>
+            alert('Earlier times can\\'t be booked. Please choose a later time.');
+            window.location.href='consultation.php?date=$selectedDate';
+          </script>";
+    exit();
+}
+
+// Check if the selected time slot is already booked
+$query = "SELECT * FROM consultations WHERE selectedDate = ? AND selectedTime = ?";
+$stmt = $conn->prepare($query);
+$stmt->bind_param("ss", $selectedDate, $selectedTime);
+$stmt->execute();
+$result = $stmt->get_result();
+
+if ($result->num_rows > 0) {
+    echo "<script>
+            alert('The selected time slot ($selectedTime) on $selectedDate is already booked. Please choose a different time.');
+            window.location.href='consultation.php?date=$selectedDate';
+          </script>";
+    exit();
+}
+
+// Insert booking into database
+$query = "INSERT INTO consultations (customerID, consultation_type, selectedDate, selectedTime) 
+          VALUES (?, ?, ?, ?)";
+$stmt = $conn->prepare($query);
+$stmt->bind_param("isss", $customerID, $consultationType, $selectedDate, $selectedTime);
+
+if ($stmt->execute()) {
+    echo "<script>
+            alert('Consultation successfully booked for $selectedDate at $selectedTime.');
+            window.location.href='../account/personal.php';
+          </script>";
+} else {
+    echo "<script>
+            alert('Error booking consultation! Please try again.');
+            window.location.href='consultation.php';
+          </script>";
+}
+
+$stmt->close();
+?>
