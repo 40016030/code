@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .slider-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+        .result {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: green;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+        .info-section {
+            background-color: #E8E8E8;
+            height: auto;
+            width: 100%;
+            min-height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-position: top;
+        }
+
+        /* Text styling */
+        .info-section h1 {
+            color: #FFFFFF;
+            font-size: 7rem;
+            font-weight: bold;
+        }
+        
+        .text-center {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        /* About Section */
+        .about-section {
+            background-color: #E8E8E8;
+            text-align: center;
+            padding: 80px 10%;
+        }
+
+        .about-title {
+            font-size: 48px;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 30px;
+        }
+
+        .about-text {
+            font-size: 24px;
+            font-weight: normal;
+            color: #000000;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+        <!--Navbar-->
+    <?php include '../global/navbar.php'; ?>
+
+    <!--Solar Banner -->
+    <section class="info-section">
+        <h1>Carbon Footprint Calculator</h1>
+    </section>
+
+<div class="container">
+
+    <!-- Heating Type Selection -->
+    <label class="text-center"><input type="radio" name="heatingType" value="electric" checked> Electric</label>
+    <label class="text-center"><input type="radio" name="heatingType" value="gas"> Gas</label>
+
+    <!-- Energy Consumption Slider -->
+    <p class="text-center"><strong>Monthly Energy Consumption: <span id="energyValue">500</span> <span id="unit">kWh</span></strong></p>
+    <div class="slider-container">
+        <span>0</span>
+        <input type="range" id="energySlider" min="0" max="1000" value="500">
+        <span>1000</span>
+    </div>
+
+    <!-- Carbon Footprint Result -->
+    <p class="result">Estimated CO₂: <span id="carbonFootprint">200.00</span> kg/month</p>
+</div>
+
+<section class="about-section">
+        <h2 class="about-title">Recommendations:</h2>
+        <p class="about-text">
+        To save energy, unplug devices when not in use, 
+        as they can still consume power even when turned off. 
+        Improve your home's insulation by sealing windows and doors, 
+        which helps keep heat in and reduces the need for constant heating. 
+        It is also recommended to add a smart home energy-saving system, 
+        which allows you to monitor and control your energy usage more efficiently.
+        </p>
+</section>
+
+        <!--Footer-->
+    <?php include '../global/footer.php'; ?>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const heatingTypeInputs = document.querySelectorAll("input[name='heatingType']");
+        const energySlider = document.getElementById("energySlider");
+        const energyValue = document.getElementById("energyValue");
+        const carbonFootprintElement = document.getElementById("carbonFootprint");
+        const unit = document.getElementById("unit");
+
+        // Carbon footprint factors (kg CO2 per unit)
+        const carbonFactors = {
+            electric: 0.4, // kg CO2 per kWh
+            gas: 2.2       // kg CO2 per cubic meter
+        };
+
+        function updateFootprint() {
+            const heatingType = document.querySelector("input[name='heatingType']:checked").value;
+            const consumption = parseInt(energySlider.value);
+            const footprint = (consumption * carbonFactors[heatingType]).toFixed(2);
+
+            energyValue.textContent = consumption;
+            carbonFootprintElement.textContent = footprint;
+            unit.textContent = heatingType === "electric" ? "kWh" : "m³";
+        }
+
+        // Update when slider is moved or heating type is changed
+        energySlider.addEventListener("input", updateFootprint);
+        heatingTypeInputs.forEach(input => input.addEventListener("change", updateFootprint));
+
+        // Initial calculation
+        updateFootprint();
+    });
+</script>
+
+</body>
+</html>
