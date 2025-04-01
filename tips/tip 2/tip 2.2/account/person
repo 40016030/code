@@ -1,0 +1,176 @@
+<?php
+session_start();
+include '../account/db.php';
+
+// Redirect if not logged in
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+    exit();
+}
+
+$customerID = $_SESSION['user_id'];
+$firstname = $_SESSION['firstname'];
+
+// Fetch consultations
+$consultations = [];
+$stmt = $conn->prepare("SELECT bookingID, consultation_type, selectedDate, selectedTime FROM consultations WHERE customerID = ? ORDER BY selectedDate ASC");
+$stmt->bind_param("i", $customerID);
+$stmt->execute();
+$result = $stmt->get_result();
+
+while ($row = $result->fetch_assoc()) {
+    $consultations[] = $row;
+}
+
+// Fetch installations
+$installations = [];
+$stmt = $conn->prepare("SELECT bookingID, installation_type, p_address, selectedDate, selectedTime FROM installations WHERE customerID = ? ORDER BY selectedDate ASC");
+$stmt->bind_param("i", $customerID);
+$stmt->execute();
+$result = $stmt->get_result();
+
+while ($row = $result->fetch_assoc()) {
+    $installations[] = $row;
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Account</title>
+    <link rel="stylesheet" href="personalstyle.css">
+</head>
+<body>
+    <?php include '../global/navbar.php'; ?>
+
+    <div class="account-container">
+        <h1>Welcome, <?php echo htmlspecialchars($firstname); ?>!</h1>
+
+        <h3>Your Consultations:</h3>
+        <?php if (empty($consultations)): ?>
+            <p>No consultations booked.</p>
+        <?php else: ?>
+            <ul>
+                <?php foreach ($consultations as $consultation): ?>
+                    <h5>
+                        <?php echo $consultation['consultation_type']; ?> - 
+                        <?php echo $consultation['selectedDate']; ?> at 
+                        <?php echo $consultation['selectedTime']; ?>
+                        <form method="POST" action="../booking/cancel_booking.php" style="display:inline;">
+                            <input type="hidden" name="bookingID" value="<?php echo $consultation['bookingID']; ?>">
+                            <input type="hidden" name="type" value="consultation">
+                            <button type="submit" class="cancel-button">Cancel</button>
+                        </form>
+                    </h5>
+                <?php endforeach; ?>
+            </ul>
+        <?php endif; ?>
+
+        <h3>Your Installations:</h3>
+        <?php if (empty($installations)): ?>
+            <p>No installations booked.</p>
+        <?php else: ?>
+            <ul>
+                <?php foreach ($installations as $installation): ?>
+                    <h5>
+                        <?php echo $installation['installation_type']; ?> - 
+                        <?php echo $installation['selectedDate']; ?> at 
+                        <?php echo $installation['selectedTime']; ?> 
+                        (Address: <?php echo htmlspecialchars($installation['p_address']); ?>)
+                        <form method="POST" action="../booking/cancel_booking.php" style="display:inline;">
+                            <input type="hidden" name="bookingID" value="<?php echo $installation['bookingID']; ?>">
+                            <input type="hidden" name="type" value="installation">
+                            <button type="submit" class="cancel-button">Cancel</button>
+                        </form>
+                    </h5>
+                <?php endforeach; ?>
+            </ul>
+        <?php endif; ?>
+
+        <form action="logout.php" method="post">
+            <button type="submit" class="logout-button">Log out</button>
+        </form>
+    </div>
+
+    <?php include '../global/footer.php'; ?>
+</body>
+</html>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: url('../images/solpanel3.jpg') no-repeat center center/cover; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.welcome {
+    margin-top: 50%;
+}
+
+.account-container {
+    text-align: center;
+    color: #FFFFFF;
+    width: 90%;
+    max-width: 600px;
+    margin-left: 25%;
+    margin-right: 35%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.bookings-section {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.booking-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.cancel-button {
+    background: transparent;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 5px 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logout-button {
+    background: transparent;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 5px 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cancel-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
