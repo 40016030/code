@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Panels</title>
+    <link rel="stylesheet" href="infostyle.css">
+</head>
+<body>
+
+    <!--Navbar-->
+    <?php include '../global/navbar.php'; ?>
+
+    <!--Solar Banner -->
+    <section class="info-reduce-section">
+        <h1>How to reduce carbon footprint</h1>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section class="about-section">
+        <h2 class="about-title">Information about how to reduce carbon footprint:</h2>
+        <p class="about-text">
+        Reducing your carbon footprint starts with using less energy. 
+        A few examples include turning off unused electronics, using public transport, 
+        or switching to an electric vehicle. Small daily actions add up, 
+        helping to protect the planet for the future.
+        </p>
+    </section>
+
+    <!-- Carbon Footprint Section -->
+    <section class="carbon-footprint">
+        <div class="carbon-footprint-content">
+            <h1 class="carbon-footprint-text">
+                Measure your carbon footprint with our calculator
+            </h1>
+            <a href="../calculators/carboncalc.php" class="carbon-footprint-button">Calculator</a>
+        </div>
+    </section>
+
+    <!-- Energy Usage Section -->
+    <section class="energy-usage">
+        <div class="energy-usage-content">
+            <h1 class="energy-usage-text">
+                Measure your energy usage with our calculator
+            </h1>
+            <a href="../calculators/energycalc.php" class="energy-usage-button">Calculator</a>
+        </div>
+    </section>
+
+    <!-- Links to other pages Section -->
+
+    <section class="other-links-reduce">
+        <div class="other-links-container">
+            <p>Check our solar panel page <a href="../information/solar.php" class="other-links-button">Link</a></p>
+            <p>Check our electric vehicle page <a href="../information/charger.php" class="other-links-button">Link</a></p>
+            <p>Check our smart home system page <a href="../information/home.php" class="other-links-button">Link</a></p>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <?php include '../global/footer.php'; ?>
+
+</body>
+</html>
