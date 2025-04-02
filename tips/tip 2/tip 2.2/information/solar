@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Panels</title>
+    <link rel="stylesheet" href="infostyle.css">
+</head>
+<body>
+
+    <!--Navbar-->
+    <?php include '../global/navbar.php'; ?>
+
+    <!--Solar Banner -->
+    <section class="info-solar-section">
+        <h1>Solar Panels</h1>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section class="about-section">
+        <h2 class="about-title">Information about Solar Panels:</h2>
+        <p class="about-text">
+        Solar panels take sunlight and turn it into electricity.
+        They have special cells that absorb sunlight and create an electric current.
+        This electricity can then power homes, and even charge electric cars. 
+        It also help to save money on energy bills.
+        </p>
+    </section>
+
+    <section class="comparison-section">
+        <h2>Comparison of products on the market</h2>
+        <div class="comparison-table">
+            <table>
+                <tr>
+                    <td><b>Features</b></td>
+                    <th>Option 1</th>
+                    <th>Option 2</th>
+                    <th>Option 3</th>
+                </tr>
+                <tr>
+                    <td>Efficiency</td>
+                    <td>+</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Space Requirement</td>
+                    <td>+</td>
+                    <td>+</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Durability</td>
+                    <td>-</td>
+                    <td>+</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Cost</td>
+                    <td>-</td>
+                    <td>+</td>
+                    <td>+</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Consultation Link Section -->
+    <section class="consultation-link">
+        <div class="consultation-link-content">
+            <h1 class="consultation-link-text">
+                Book a consultation to find out more
+            </h1>
+            <a href="../booking/consultation.php" class="consultation-link-button">Consultation</a>
+        </div>
+    </section>
+
+    <!-- Links to other pages Section -->
+
+    <section class="other-links-solar">
+        <div class="other-links-container">
+            <p>Check our electric vehicle page <a href="../information/charger.php" class="other-links-button">Link</a></p>
+            <p>Check our smart home systems page <a href="../information/home.php" class="other-links-button">Link</a></p>
+            <p>Check our reduce carbon footprint page <a href="../information/reduceinfo.php" class="other-links-button">Link</a></p>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <?php include '../global/footer.php'; ?>
+
+</body>
+</html>
