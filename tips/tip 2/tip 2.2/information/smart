@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Panels</title>
+    <link rel="stylesheet" href="infostyle.css">
+</head>
+<body>
+
+    <!--Navbar-->
+    <?php include '../global/navbar.php'; ?>
+
+    <!--Solar Banner -->
+    <section class="info-hom../information/-section">
+        <h1>Smart Home Systems</h1>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section class="about-section">
+        <h2 class="about-title">Information about Smart Home energy management system:</h2>
+        <p class="about-text">
+        A Smart Home Energy Management System helps control and optimise energy use in your home. 
+        It connects to appliances, monitors usage, and adjusts settings to save electricity. 
+        It helps to save money on energy bills, and reduces environmental impact.
+        </p>
+    </section>
+
+    <section class="comparison-section">
+        <h2>Comparison of products on the market</h2>
+        <div class="comparison-table">
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Option 1</th>
+                    <th>Option 2</th>
+                    <th>Option 3</th>
+                </tr>
+                <tr>
+                    <td>Efficiency</td>
+                    <td>+</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Space Requirement</td>
+                    <td>+</td>
+                    <td>+</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Durability</td>
+                    <td>-</td>
+                    <td>+</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Cost</td>
+                    <td>-</td>
+                    <td>+</td>
+                    <td>+</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Consultation Link Section -->
+    <section class="consultation-link">
+        <div class="consultation-link-content">
+            <h1 class="consultation-link-text">
+                Book a consultation to find out more
+            </h1>
+            <a href="../booking/consultation.php" class="consultation-link-button">Consultation</a>
+        </div>
+    </section>
+
+    <!-- Links to other pages Section -->
+
+    <section class="other-links-home">
+        <div class="other-links-container">
+            <p>Check our reduce carbon footprint page <a href="../information/reduceinfo.php" class="other-links-button">Link</a></p>
+            <p>Check our solar panel system page <a href="../information/solar.php" class="other-links-button">Link</a></p>
+            <p>Check our electric vehicle page <a href="../information/charger.php" class="other-links-button">Link</a></p>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <?php include '../global/footer.php'; ?>
+
+</body>
+</html>
