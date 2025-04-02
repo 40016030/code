@@ -1,0 +1,100 @@
+<footer style="background-color: #FFFFFF; color: #266429; padding: 20px 40px; border-top: 2px solid #266429; font-family: 'Inter', sans-serif;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: flex-start;">
+
+        <!-- Left Side: Logo & Social Media -->
+        <div style="min-width: 200px; text-align: left;">
+            <a href="index.php">
+                <img src="../images/logo.png" alt="Logo" style="width: 120px; height: auto;">
+            </a>
+            <div style="margin-top: 15px;">
+                <a href="https://facebook.com" class="social-link">
+                    <img src="../images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://linkedin.com" class="social-link">
+                    <img src="../images/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://youtube.com" class="social-link">
+                    <img src="../images/youtube.png" alt="YouTube">
+                </a>
+                <a href="https://instagram.com" class="social-link">
+                    <img src="../images/instagram.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+
+        <!-- Empty Space in the Middle -->
+        <div style="flex-grow: 1;"></div>
+
+        <!-- Right Side: Footer Links -->
+        <div style="display: flex; gap: 50px; flex-wrap: wrap;">
+            <div class="footer-column">
+                <ul>
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Smart Home Systems</a></li>
+                    <li><a href="#">Carbon Footprint Info</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Energy Consumption Calculator</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Installations</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Personal Account</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<style>
+    /* Remove underline from social media links */
+    .social-link {
+        text-decoration: none;
+        display: inline-block; /* Prevents extra space under images */
+    }
+
+    /* Ensure social media icons are the same size */
+    .social-link img {
+        width: 20px;
+        height: auto;
+        margin-right: 10px;
+        display: block; /* Ensures no underline or extra space */
+    }
+
+    /* Footer Links Styling */
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-column ul li {
+        margin-top: 20px;
+        margin-bottom: 10px; /* Space between options */
+        max-width: 200px; /* Ensure long text wraps */
+        word-wrap: break-word;
+    }
+
+    .footer-column ul li a {
+        color: #266429;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .footer-column ul li a:hover {
+        text-decoration: underline;
+    }
+</style>
