@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Panels</title>
+    <link rel="stylesheet" href="termsstyle.css">
+</head>
+<body>
+
+    <!--Navbar-->
+    <?php include '../global/navbar.php'; ?>
+
+    <!--Solar Banner -->
+    <section class="info-section">
+        <h1>Terms and Rules</h1>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section class="about-section">
+        <h2 class="about-title">Terms and Rules</h2>
+        <p class="about-text">
+        Terms and Rules
+        </p>
+    </section>
+
+    <!--Footer-->
+    <?php include '../global/footer.php'; ?>
+
+</body>
+</html>
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+.info-section {
+    background-color: #999999;
+    height: auto;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-position: top;
+}
+
+.info-section h1 {
+    color: #FFFFFF;
+    font-size: 7rem;
+    font-weight: bold;
+}
+
+.about-section {
+    background-color: #E8E8E8;
+    text-align: center;
+    padding: 100px 10%;
+}
+
+.about-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.about-text {
+    font-size: 24px;
+    font-weight: normal;
+    color: #000000;
+    line-height: 1.5;
+}
