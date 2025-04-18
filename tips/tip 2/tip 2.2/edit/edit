@@ -1,0 +1,220 @@
+<?php
+session_start();
+include '../account/db.php';
+
+// Redirect if not logged in.
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+    exit();
+}
+
+$userID = $_SESSION['user_id'];
+
+// Fetch current user details.
+$stmt = $conn->prepare("SELECT firstname, lastname, email FROM users WHERE customerID = ?");
+$stmt->bind_param("i", $userID);
+$stmt->execute();
+$result = $stmt->get_result();
+if ($row = $result->fetch_assoc()) {
+    $currentFirst = $row['firstname'];
+    $currentLast = $row['lastname'];
+    $currentEmail = $row['email'];
+} else {
+    // User not found (this should not happen if logged in)
+    header("Location: logout.php");
+    exit();
+}
+$stmt->close();
+
+$error = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $firstname = trim($_POST['first-name']);
+    $lastname = trim($_POST['last-name']);
+    $email = trim($_POST['email']);
+    $password = $_POST['password'];
+    $repeat_password = $_POST['repeat-password'];
+
+    // Choose the appropriate SQL query based on whether password is being updated.
+    if (!empty($password) || !empty($repeat_password)) {
+        if ($password !== $repeat_password) {
+            $error = "Passwords do not match!";
+        } else {
+            $hashed_password = password_hash($password, PASSWORD_BCRYPT);
+            $stmt = $conn->prepare("UPDATE users SET firstname = ?, lastname = ?, email = ?, password = ? WHERE customerID = ?");
+            $stmt->bind_param("ssssi", $firstname, $lastname, $email, $hashed_password, $userID);
+        }
+    } else {
+        $stmt = $conn->prepare("UPDATE users SET firstname = ?, lastname = ?, email = ? WHERE user_id = ?");
+        $stmt->bind_param("sssi", $firstname, $lastname, $email, $userID);
+    }
+
+    if (empty($error)) {
+        if ($stmt->execute()) {
+            $_SESSION['firstname'] = $firstname;
+            // Redirect to personal account page after successful update.
+            header("Location: personal.php");
+            exit();
+        } else {
+            $error = "Error updating profile. Please try again.";
+        }
+        $stmt->close();
+    }
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Personal Data</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="editstyle.css">
+</head>
+<body>
+    <?php include '../global/navbar.php'; ?>
+
+    <div class="profile-container">
+        <h1 class="text">Edit Your Personal Data</h1>
+
+        <?php
+            if ($error) {
+                echo "<p style='color: red;'>$error</p>";
+            }
+        ?>
+
+        <form method="post">
+            <div class="input-container">
+                <input type="text" name="first-name" class="input-field" value="<?php echo htmlspecialchars($currentFirst); ?>" required>
+                <label class="input-label">First Name</label>
+            </div>
+
+            <div class="input-container">
+                <input type="text" name="last-name" class="input-field" value="<?php echo htmlspecialchars($currentLast); ?>" required>
+                <label class="input-label">Last Name</label>
+            </div>
+
+            <div class="input-container">
+                <input type="email" name="email" class="input-field" value="<?php echo htmlspecialchars($currentEmail); ?>" required>
+                <label class="input-label">Email</label>
+            </div>
+
+            <!-- Optional Password Update Section -->
+            <hr>
+            <p class="text">If you want to change your password, enter a new one below. Otherwise, leave these fields blank.</p>
+            
+            <div class="input-container">
+                <input type="password" name="password" class="input-field">
+                <label class="input-label">New Password</label>
+            </div>
+
+            <div class="input-container">
+                <input type="password" name="repeat-password" class="input-field">
+                <label class="input-label">Repeat New Password</label>
+            </div>
+
+            <button type="submit" class="login-button">Save Changes</button>
+        </form>
+    </div>
+
+    <?php include '../global/footer.php'; ?>
+</body>
+</html>
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Body Background & Layout */
+body {
+    background: url('../images/solpanel3.jpg') no-repeat center center/cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+}
+
+/* Profile Container for Edit Profile Page */
+.profile-container {
+    background: /*rgba(0, 0, 0, 0.6);*/ transparent;
+    color: #FFFFFF;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+/* Headings */
+h1 {
+    font-size: 48px;
+    text-align: center;  /* Centers the heading */
+}
+
+.text {
+    margin-top: 5%;   /* Increase space above the heading */
+    margin-bottom: 5%; /* Increase space under the heading */
+}
+
+/* Input Container */
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Input Label Styling */
+.input-label {
+    font-size: 16px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    transition: 0.3s ease-in-out;
+    opacity: 0.8;
+}
+
+/* Input Field Styling */
+.input-field {
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+    outline: none;
+}
+
+/* Input Focus & Value Animation */
+.input-field:focus + .input-label, 
+.input-field:not(:placeholder-shown) + .input-label {
+    top: -15px;
+    font-size: 12px;
+    opacity: 1;
+}
+
+/* Button Styling (used for Save Changes) */
+.login-button {
+    background: transparent;
+    display: block;
+    margin: 20px auto;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 8px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.login-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
