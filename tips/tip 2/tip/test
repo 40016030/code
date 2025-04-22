@@ -1,0 +1,678 @@
+Description of test
+Test data to be used
+Expected outcome
+Actual outcome
+Comments and intended actions
+
+Navbar/footer
+
+Tested the basic structure of the navigation bar with menu items and dropdown menus.
+None	
+Navigation bar should display properly on large screens.	
+Navigation bar displayed correctly with dropdown menus.	
+Successfully established the basic navbar structure using Bootstrap.
+
+
+Checked the responsive behaviour of the navigation bar's ‘hamburger’ menu.
+Click on Hamburger menu when browser window is resized to small screen	‘Hamburger’ menu should appear on small screens and expand on click.
+‘Hamburger’ menu behaved as expected on small screens.    
+Responsive functionality added for all screen sizes.   
+
+
+Tested CSS styling (colours, padding, hover effects) for the navigation bar.
+None
+Links should have the chosen colours, padding, and hover effects.
+All styles were applied successfully, matching design requirements.
+Styling applied as planned using CSS.
+
+
+Tried centring navigation links using mx-auto on ul element in combination with flex display.
+None
+Links should be centred in the navbar. 
+Links were properly centred
+Centred navigation links work as intended.
+
+
+Hover-tested dropdown menus (Information, Calculators, Services).
+Hover test
+Dropdown menus should display sub-options on hover.
+Sub-options displayed successfully on hover.
+Added hover effect using CSS for better user experience on desktop.
+
+
+Attempted to show dropdown on hover using custom CSS
+Hover test
+Dropdown menus should appear on hover.
+Hower effect works successfully	
+Hower functionality achieved using: `.dropdown:hover .dropdown-menu { display: block; }`.
+
+
+Tested left and right alignment of footer logo, social media icons, and footer links.
+None
+Footer logo/social media icons should align left, links should align right.
+Alignments were correct.	
+Successfully implemented the footer layout with proper alignment using Flexbox.
+
+
+Click tested social media icons (Facebook, LinkedIn, YouTube, Instagram).
+Click on social media links
+Clicking icons should navigate to social media pages.
+All links navigated to the correct pages
+Social media links work as intended.
+
+
+Applied hover effect for footer links to ensure interactivity.
+Hover test on footer links
+Footer links should display an underline effect on hover.
+Hover effect successfully applied to footer links.
+interactivity for footer links using hover effect.  
+
+
+Tested responsiveness of footer links on small screens (browser resize).
+Resize browser window	
+Footer links should wrap into multiple rows on smaller screens while keeping alignment.
+Links wrapped and aligned correctly on smaller screens as expected.                                         
+Footer links wrapped and aligned as intended.
+
+
+Tested horizontal alignment of footer columns
+None
+Footer columns should maintain identical spacing and alignment.
+Footer columns alignment has identical spacing and alignment.
+alignment has identical spacing as planned
+
+
+Terms and Conditions page				
+
+Tested base structure of terms.php with HTML and included global navbar.php and footer.php
+None	
+Navigation bar and footer included across the page	
+As expected
+Reused common layout parts for consistency and maintainability
+
+
+Tested terms and conditions banner section with large title
+None
+Background colour of terms and conditions with a clear title in the centre
+As expected
+Created specific class in CSS: terms-section, for styling the banner
+
+
+Tested the description section with a title and paragraph describing terms and conditions.
+None	
+The text should display properly with a heading and describing terms and conditions of the company.
+The section displayed the heading of terms and conditions and description of terms and conditions with appropriate spacing and styling.
+Added terms and conditions section as intended.
+
+
+Home page				
+
+Tested the overall structure of the homepage to ensure all sections are present.
+None
+Homepage should display Navigation Bar, Hero Section, About, Services, Calculators, Testimonials, Footer.
+Homepage displayed correctly with all sections.                                                        
+All sections were implemented as planned. 
+
+Validated PHP includes for navigation bar and footer for a consistent structure.
+None
+Navigation bar and footer should display correctly on the homepage.
+Navbar and footer displayed as expected. 
+Successfully used `include` for reusable PHP components across the website. 
+
+
+Tested Hero Section display with background image and centred text.  
+Resize browser window
+Hero Section should fill the screen and centre text and buttons appropriately.
+Hero Section filled the screen with proper alignment and responsive design.	
+Achieved visual alignment using flexbox and background image styling.
+
+
+Clicked on the "Find out more" button in the Hero Section.
+Click on button	
+Button should redirect to the ‘How to reduce carbon footprint’ page.
+Button worked and navigated to the intended page.                                                     	
+Navigation functionality worked successfully.     
+
+
+Checked the display of the "Who We Are" section text.
+None 
+The heading and description should display properly with spacing and styling.
+Section displayed properly with all required elements.                                       
+Section worked as intended
+
+
+Click-tested links in the "We Provide" section.      
+Click on each service item
+Service items should display correctly and link to detailed pages.                              
+Links worked as expected, and service items appeared visually as designed.                            
+Successfully created visually appealing and functional service items.
+
+
+Tested responsiveness of the "We Provide" section across different screen sizes.
+Resize browser window  
+Service items should adjust their layout responsively.
+Service items adjusted correctly to smaller screens.
+Ensured responsive design for better user experience.
+
+
+Click-tested buttons in the Carbon Footprint Calculator and Energy Usage Calculator sections.
+Click on each button
+Buttons should navigate to their calculator pages.                 
+Buttons worked and led to calculator pages.
+Interactive calculators were successfully linked with good visual design.
+
+
+Reviewed Testimonials section for layout, placeholder content, and responsiveness.
+None
+Testimonial boxes should appear with appropriate spacing and responsive alignment.	
+Testimonial boxes displayed with proper styling and adapted to various screen sizes.	
+Templates for testimonials are created, text of which can be changed in future
+
+
+Tested overall responsiveness of the homepage.
+Resize browser window	
+All homepage elements should adjust to different screen sizes.	
+Elements adjusted responsively across all screen sizes as intended.
+Homepage successfully optimized for responsive design.
+
+
+Solar Panel				
+
+Tested the global inclusion of navbar.php and footer.php across all pages.
+None
+Navbar and footer should display correctly on all pages.
+Successfully displayed navbar and footer across all pages.
+Correct layout achieved using PHP includes.
+
+
+Validated Solar Panel banner section with background image styling.
+None
+Banner should have a background image and centred title.
+Banner appeared as expected.
+Applied CSS styling for clear and visually appealing design.
+
+
+Reviewed Solar Panel "Who We Are" text section for clarity.
+None
+Text should display correctly with proper spacing.
+Section displayed as expected.
+"Who We Are"  section displayed as intended
+
+
+Tested Solar Panel product comparison table for content and layout.
+None
+Table should display features and products in a readable format.
+Table appeared with proper alignment and content.
+Comparison table displayed as intended
+
+
+Tested Solar Panel "Book a Consultation" button functionality.
+Click on consultation button	
+Button should redirect to consultation.php page.	
+Button worked as expected.	
+Enhanced user interaction with styled buttons.
+
+
+Tested navigation links between related pages on Solar Panel page.
+Click on each link
+Links should lead to Charger, Home, and Reduce Carbon Footprint pages.
+Links redirected to correct pages.
+Links working as intended
+
+
+EV Charger			
+
+Tested the global inclusion of navbar.php and footer.php across all pages.
+None
+Navbar and footer should display correctly on all pages.
+Successfully displayed navbar and footer across all pages.
+Correct layout achieved using PHP includes.
+
+
+Verified EV Charger page structure and banner display.
+None
+Banner should display EV charging station image with centred heading.
+Banner appeared correctly.
+Styled with `infostyle.css` for consistent layout across sections.
+
+
+Reviewed EV Charger "Who We Are" text section for clarity.
+None
+Text should display correctly with proper spacing.
+Section displayed as expected.
+"Who We Are"  section displayed as intended
+
+
+Reviewed EV Charger comparison table for content clarity.
+None
+Table should display product features with readable structure.
+Table displayed correctly.
+Achieved user-friendly layout for product comparison.
+
+
+Tested EV Charger "Book a Consultation" button functionality.
+Click on consultation button
+Button should redirect to consultation.php page.
+Button worked as expected.
+Functionality for consultation button worked as intended.
+
+
+Tested navigation links between related pages on EV Charger page.
+Click on each link
+Links should lead to  Solar Panel, Home, and Reduce Carbon Footprint pages.
+Links redirected to correct pages.
+Links working as intended
+
+
+Smart Home				
+
+Tested the global inclusion of navbar.php and footer.php across all pages.	
+None
+Navbar and footer should display correctly on all pages.
+Successfully displayed navbar and footer across all pages.
+Correct layout achieved using PHP includes.
+
+
+Tested Smart Home System banner and "About" section for readability and styling.
+None
+Text should display correctly with proper styling.
+Elements displayed as expected.
+Elements displayed as intended.
+
+
+Reviewed Solar Panel "Who We Are" text section for clarity.
+None	
+Text should display correctly with proper spacing.	
+Section displayed as expected.
+"Who We Are"  section displayed as intended
+
+
+Tested Smart Home System product comparison table for content and layout.
+None	
+Table should display features and products in a readable format.
+Table appeared with proper alignment and content.	
+Comparison table displayed as intended
+
+
+Tested Solar Panel "Book a Consultation" button functionality.
+Click on button
+Button should redirect to consultation.php page.
+Button worked as expected.
+Functionality for consultation button worked as intended.
+
+
+Tested navigation links between related pages on Solar Panel page.
+Click on each link	
+Links should lead to Charger, Home, and Reduce Carbon Footprint pages.
+Links redirected to correct pages.	
+Links working as intended
+
+
+Reduce Carbon footprint				
+
+Tested the global inclusion of navbar.php and footer.php across all pages.
+None
+Navbar and footer should display correctly on all pages.
+Successfully displayed navbar and footer across all pages.
+Correct layout achieved using PHP includes.
+
+
+Tested Reduce Carbon Footprint banner section styling and functionality.
+None	
+Banner should appear visually consistent with the rest of the site.
+Banner displayed correctly.
+Banner displayed as expected.
+
+
+Reviewed “Reduce carbon footprint” "Who We Are" text section for clarity.	
+None	
+Text should display correctly with proper spacing.
+Section displayed as expected.	
+"Who We Are"  section displayed as intended
+
+
+Tested Reduce Carbon Footprint product comparison table for content and layout.
+None	
+Table should display features and products in a readable format.
+Table appeared with proper alignment and content.	
+Comparison table displayed as intended
+
+
+Tested Solar Panel "Book a Consultation" button functionality.
+Click on button
+Button should redirect to consultation.php page.	
+Button worked as expected.
+Enhanced user interaction with styled buttons.
+
+
+Reviewed "Links to other pages" sections across all pages for navigation.
+Click on each link
+Links should redirect to relevant pages like Solar, Charger, and Home.	
+Links navigated correctly across all pages.
+Improved site usability with clear and responsive navigation options.
+
+
+Validated responsive design across all pages with browser resizing.
+Resize browser window
+All pages should adjust to small screens without layout breaking.
+Pages were fully responsive as expected.
+Pages were fully responsive as intended.
+
+
+Carbon Calculator			
+
+Validated the structure of the Carbon Calculator page.
+None	
+Page should display title, slider, results, and recommendation sections without errors.
+Page structure appeared as expected.	
+Successfully created the layout with section for user interaction.
+
+
+Tested navigation bar and footer for the Carbon Calculator.
+None	
+Navbar and footer should display correctly.	
+Successfully displayed navbar and footer.
+Successfully displayed navbar and footer as intended.
+
+
+Tested heating type selection using radio buttons.
+Electric, Gas	
+User should be able to select between electric and gas options.
+Switching options worked as expected.
+Developed functional radio buttons for energy source selection.
+
+
+Tested dynamic updates to carbon footprint calculations using JS script.
+Electric 500, Gas 500	
+Correct CO2 estimation displayed and updated in real-time.	
+Calculations appeared and updated correctly based on user input.
+Calculations appeared and updated correctly based on user input as intended.
+
+
+Tested slider functionality for energy consumption selection.
+Values: 0 to 1000
+Slider should adjust consumption value within the specified range.
+Slider worked correctly, limiting values between 0 and 1000.
+Ensured user-friendly input slider for energy consumption.
+
+
+Tested Recommendations Section for visibility and information.
+None
+Energy-saving tips should display clearly below the calculation section.
+Section displayed with informative content as expected.
+Added a helpful section to guide users on reducing carbon footprint.
+
+
+Tested validation for slider input limits.
+-50, 2000 (manual change)
+Values outside the range should not be allowed.
+Values were automatically limited to 0-1000.
+Slider input limits work as intended.
+
+
+Tested responsiveness of the Carbon Calculator page on small screens.
+Resize browser window
+Page elements should adjust to fit smaller screens.
+Page was fully responsive.
+Page was fully responsive as intended.
+
+
+Tested Energy Usage Calculator page structure and layout.
+None
+Page should display title, sections for appliance selection, sliders, and results.
+Structure appeared as expected.
+Clean and intuitive layout is displayed as intended.
+
+
+Tested appliance checkbox system functionality.	
+Refrigerator, Washing Machine	
+User should be able to select appliances using checkboxes.
+Checkboxes worked correctly, and appliance inputs displayed dynamically.
+Used containers to organize appliance sections with sliders for usability.
+
+
+Verified energy usage calculation based on wattage, usage time, and appliance count.
+Refrigerator (150W), 5 hours, 3 appliances	
+Correct total energy usage should be displayed dynamically.                                      
+Calculation appeared correct based on user inputs.
+Implemented energy calculation logic to ensure real-time response.
+
+
+Tested dynamic update functionality for Energy Usage Calculator.       
+Adjust sliders for multiple appliances
+Total energy consumption should recalculate instantly whenever sliders are adjusted.
+Updates appeared dynamically as expected.	
+Slider updates are linked to calculation logic as intended.
+
+
+Tested Recommendations Section for energy-saving tips visibility.
+None
+Section should display informative recommendations.
+Recommendations displayed correctly.
+Recommendations displayed correctly as intended.
+
+
+Tested responsiveness of the Energy Usage Calculator page on small screens.
+Resize browser window
+Page elements should adjust without breaking the layout.
+Page was fully responsive.
+Page was fully responsive as intended.
+
+
+Login/Register/Personal			
+
+Tested basic login form display on login.php page.	
+None
+Login form with email and password fields should display correctly.	
+Login form displayed as expected.	
+Successfully created basic structure for the login page.
+
+
+Verified navigation bar and footer on login page using PHP includes.
+None
+Navigation bar and footer should appear consistently.
+Displayed correctly across the login page.	
+Displayed correctly across the login page as intended.
+
+
+Tested user authentication with correct credentials.	
+Correct email, correct password
+User should be redirected to personal.php.	
+User redirected as expected.
+User redirected as intended.
+
+
+Checked invalid login attempts with incorrect credentials.
+Wrong email	
+Error message should display "Invalid email or password!"	
+Error messages displayed appropriately.
+Improved user experience by providing meaningful feedback for invalid inputs.
+
+
+Tested session handling for storing user data after successful login.
+Correct email and password
+Session should be set with user ID and firstname for personalized experience.
+User redirected to personal.php.
+Session handling works as expected
+
+
+Verified registration form on register.php for displaying all input fields.	
+None
+Registration form with first name, last name, email, password and repeat password fields should display correctly.
+Form displayed as expected.	
+Basic structure for user registration is created.
+
+
+Tested password validation to ensure both password fields match.	
+Different passwords entered
+Error message should display "Passwords do not match!"
+Error message displayed correctly.
+User-friendly error handling for mismatched passwords.
+
+
+Checked email uniqueness during registration.	
+Same email entered twice	
+Error message should display "Email already exists!"	
+The system works as expected.	
+Ensured unique emails by checking for existing emails before inserting user data.
+
+
+Tested secure password storage in database.	
+johndoe1
+Password should be hashed and stored securely.	
+Password hashed and stored successfully.
+Enhanced security using `password_hash()` and by avoiding plain text password storage.
+
+
+Tested checkbox system to accept rules and terms of the company
+Tick a checkbox
+User can agree to terms and conditions of the company using checkbox
+Worked as expected
+Used checkboxes for user to agree to terms and conditions of the company.
+
+
+Tested personal.php page for displaying user-specific data after login.
+None
+Page should display "Welcome, [Firstname]!".
+Personal greeting displayed as expected.
+Personal greeting displayed as intended.
+
+
+Tested consultations section for fetching and displaying user bookings from database.	
+User with 2 consultations booked	
+List of consultations should appear with details like type, date, and time.
+Consultations displayed successfully.
+Consultations displayed successfully as intended.
+
+
+Verified cancel booking feature for consultations and installations.
+Cancel consultation booking
+Booking should be removed from database.
+Booking removed successfully.
+Booking removed successfully as intended.
+
+
+Checked account page responsiveness across different screen sizes.
+Resize browser window
+Content should adjust to fit screen sizes.
+Content adapted as expected.
+Content adapted as intended.
+
+
+Edit Account Page				
+
+Tested if structure of the page is correct	
+None	
+All of the sections of the website should be properly structures.
+The website structure is correct, as expected	
+The website structure is correct, as intended
+
+
+Tested if system’s functional part works correctly if the user provides correct inputs
+Input correct information. Click on “Save Changes”
+The system should save the new information about user in database, and redirect them to personal account page.	
+The system worked as expected
+The system worked as intended
+
+
+Tested if system’s functional part works correctly if the user provides same inputs as already existing ones
+Input same information. Click on “Save Changes”
+The system should accept the same information about user and save it in database, and redirect them to personal account page.
+The system worked as expected	
+The system worked as intended
+
+
+Tested if system’s functional part works correctly if the user clicks “Save Changes” but don’t provide any information	
+None
+The system should ask the user to input information if the user presses “Save Changes” button when input bars are blank.
+The system worked as expected
+The system worked as intended
+
+
+Consultation page			
+
+Tested HTML structure of the Consultation page with form fields.
+None	
+Consultation form with type and time fields should display correctly.
+Form fields displayed as expected.
+The basic layout is used for user consultation booking.
+
+
+Checked session validation for logged in users accessing Consultation page.
+None
+Non-logged in user should be redirected to login.php.
+Redirection worked successfully.
+Improved security by ensuring only logged in users can book consultations.
+
+
+Tested past date selection logic in Consultation page.	
+2023/01/01	
+User should be restricted from selecting past dates.
+Restriction worked successfully.	
+Restriction worked successfully as intended.
+
+
+-- Verified booked time slots display as disabled in Consultation page.	
+Existing data in consultations table
+Already booked slots should appear disabled and styled differently (grey colour).
+Worked successfully; booked slots displayed with correct styling.
+Used prepared statements to fetch and manage time slot availability securely. --
+
+
+Tested changing date functionality with previous and next buttons.	
+Navigated dates using buttons
+Booking slots should reload dynamically with each date change.
+Date functionality worked as expected.
+Date functionality worked as intended.
+
+
+Tested responsiveness of time slot layout on Consultation page.	
+Resize browser window
+Time slot layout should adjust to different screen sizes.
+Layout adjusted correctly.
+Layout adjusted correctly as intended.
+
+
+Installation page				
+
+Tested HTML structure of the Installation page with form fields.
+None
+Installation form with type and time fields should display correctly.
+Form fields displayed as expected.
+The basic layout is used for user installation booking.
+
+
+Checked session validation for logged in users accessing Installation page.
+None
+Non-logged in user should be redirected to login.php.
+Redirection worked as expected.	
+Improved security by ensuring only logged in users can book installations.
+
+
+Tested past date selection logic in Installation page.	
+2023/01/01
+User should be restricted from selecting past dates.	
+Restriction worked successfully.
+Restriction worked successfully as intended.
+
+
+ -- Verified booked time slots display as disabled in Installation page.
+Existing data in Installation table	
+Already booked slots should appear disabled and styled differently (grey colour).
+Worked successfully; booked slots displayed with correct styling.
+Used prepared statements to fetch and manage time slot availability securely. -- 
+
+
+Tested changing date functionality with previous and next buttons.
+Navigated dates using buttons
+Booking slots should reload dynamically with each date change.
+Date functionality worked as expected.
+Date functionality worked as intended.
+
+
+Tested responsiveness of time slot layout on Installation page.
+Resize browser window	
+Time slot layout should adjust to different screen sizes.
+Layout adjusted correctly.
+Layout adjusted correctly as intended.
+
