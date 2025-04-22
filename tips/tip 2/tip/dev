@@ -1,0 +1,1135 @@
+Description of test
+Data to be used
+Expected outcome
+Actual outcome
+Comments and intended actions
+
+  
+Navigation Bar		
+  
+Created the basic structure of the navigation bar using Bootstrap. Added navigation links and dropdown menus.	
+None
+Navigation bar with menu items and dropdowns should appear properly on large screens.	
+Successfully displayed the navigation bar with dropdown menus.
+Navbar structure setup is successful
+
+  
+Added responsive ‘hamburger’ menu for smaller screens using Bootstrap.
+  None
+  ‘Hamburger’ menu should appear on smaller screens and expand on click.
+  ‘Hamburger’ menu appeared and worked correctly on small screens.
+  Responsive behaviour is added for all screen sizes.
+Applied CSS styles for navbar design (colours, padding, spacing, hover effects).	
+  None	Navigation links should have specific colours, padding and hover effect.	
+  All styles applied as expected. 
+  Colours and spacing visually matched the design requirements.
+  Styling successful using CSS.
+Tried to centre the navigation links using justify-content: centre only.	
+  None	Links should be centred in the navbar.	
+  Links were not properly centred due to Bootstrap's default styling.	
+  Unsuccessful attempt. 
+  Resolved by using mx-auto on ul element in combination with flex display.
+Added dropdown menus for Information, Calculators, Services using Bootstrap dropdown class.
+  Hover or click test	Dropdown should display sub-options on hover or click.	
+  Dropdown worked successfully. 
+  Sub-options displayed correctly.	
+  Dropdown hover enhanced with CSS for desktop view.
+Added styling for dropdown items (padding, colour, hover background).	
+  None	Dropdown items should look clean with padding and colour changes on hover.
+  Styling applied correctly.
+  Dropdown items improved visually.	
+  Added hover effect for user experience enhancement.
+Attempted to show dropdown on hover using only Bootstrap default classes.
+  Hover test	
+  Dropdown appears on hover.
+  Not working as Bootstrap default only supports click for toggling dropdown.
+  Unsuccessful attempt. Resolved by adding CSS: .dropdown:hover .dropdown-menu { display: block; }
+Created a right-aligned Account section with dropdown menu.
+  None
+  Account menu should align to the far right of the navbar.
+  Successfully aligned Account section to the right.
+  Used account-nav class with margin-left: auto.
+Tried to remove space from body and html using margin and padding reset.
+  None	
+  No unwanted space around navbar or body.
+  Successfully removed extra space. Layout was clean.
+  Used html, body { margin: 0; padding: 0; }.
+Linked Google Fonts (Inter) to apply globally for the website's typography.	
+  None	
+  All text within navbar should use Inter font.	
+  Font applied successfully across navbar elements.
+  Added to <head> section and applied globally via body { font-family: 'Inter', sans-serif; }.
+
+  
+Footer				
+  
+Created the basic structure of the footer with left-aligned logo and social media icons, and right-aligned footer links.
+  None
+  The footer should have the logo and social media links on the left, and footer links on the right.
+  Footer displayed correctly with the logo, social media links, and footer links properly aligned.
+  Basic layout of the footer is added.
+
+    
+Added social media icons with links to Facebook, LinkedIn, YouTube, and Instagram, with appropriate alt attributes.
+  Click on each social media link
+  Social media links should navigate to the correct external pages when clicked.	
+  Social media links worked correctly, leading to the platforms. But there is an underline near each social media icon.
+  Added alt attributes for better accessibility. I will remove an underlines near each social media icons.
+
+    
+Applied custom styling for social media icons to remove underline, ensure uniform size, and add margin between icons.
+    Hover over icons	
+    Icons should appear without underlines, with consistent sizes and spacing.
+    Icons appeared as expected: no underline, consistent size, and spacing.	
+    Good user experience with proper icon display is added.
+
+      
+Used flexbox for layout control the left side with logo and social icons, and the right side with footer links.
+      None	
+      The layout should use flexbox to distribute space between the left and right footer sections.
+      Layout successfully implemented using flexbox with space properly distributed.
+      Flexbox effectively used to create responsive design.
+
+      
+Created footer links divided into 4 sections using unordered lists.
+      None
+      Footer links should be organized in 4 columns with proper alignment and wrapping.	
+      Footer links were divided into 4 columns, wrapped properly on smaller screens.	
+      Ensured proper use of lists for structure and readability.
+
+
+Styled footer links to add margin between the links.
+      Click on footer links
+      Footer links should have spacing between each link.
+      Footer links displayed with appropriate spacing.	
+      Applied margin and padding for clear structure.
+
+      
+Attempted to make footer links responsive by allowing them to wrap based on screen size.	
+      Resize browser window
+      Footer links should wrap into multiple rows on smaller screens, keeping proper alignment.
+      Links wrapped correctly on smaller screens as expected.
+      Responsive design for small screen users is added. Used flex-wrap: wrap; for flexible column layout.
+
+      
+Applied hover effect for footer links to underline them when hovered.	
+      Hover over footer links
+      Footer links should display an underline effect on hover to indicate interactivity of footer.	
+      Hover effect successfully applied to footer links.	
+      Footer link hover effect is added for better user interaction.
+
+
+Attempted to make footer columns horizontally aligned by adjusting flex-grow.	
+      None
+      Footer columns should maintain horizontal alignment with even spacing.	
+      Columns aligned correctly, but additional spacing issues appeared on small screens.	
+      Unsuccessful attempt, which was resolved by gap and flex-wrap properties for better small screens alignment.
+
+      
+Customized the footer's background colour and added border-top styling for separation.
+      None
+      Footer should have a white background with a green border at the top.
+      Background colour and border-top styling worked as expected.
+      Added styling to separate the footer from the body and make it visually stand out.
+
+      
+Terms and Conditions page			
+      
+Created base structure of terms.php with HTML and included global navbar.php and footer.php
+      None	
+      Navigation bar and footer included across the page
+      As expected
+      Reused common layout parts for consistency and maintainability
+
+      
+Added terms and conditions banner section with large title
+      None
+      Background colour of terms and conditions with a clear title in the centre	
+      As expected
+      Created specific class in CSS: terms-section, for styling the banner
+
+      
+Added the small description section with a title and paragraph describing terms and conditions.	
+      None	
+      The text should display properly with a heading and describing terms and conditions of the company.	
+      The section displayed the heading of terms and conditions and description of terms and conditions with appropriate spacing and styling.
+      Added terms and conditions section as intended.
+
+      
+Home Page				
+      
+Created the basic structure for the homepage with a Navigation Bar, Hero Section, About Section, Services Section, Carbon Footprint Calculator, Energy Usage Calculator, Testimonials, and Footer.
+      None
+      The homepage should display the Navigation Bar, Hero Section, About Section, Services, Carbon Footprint Calculator, Energy Usage Calculator, Testimonials, and Footer.	
+      Homepage displayed correctly with all sections.
+      All key sections were present.
+
+      
+Added PHP includes for global navbar and footer
+      None
+      Navbar and footer are displayed correctly
+      As expected	
+      Used include for navbar.php and footer.php to ensure a consistent site structure.
+
+      
+Implemented the Hero Section with a large background image and centred text "green energy solutions".
+      Change screen sizes	
+      The Hero section should fill the screen with a background image and centre the text and button.	
+      Hero section filled the screen with background, centred text, and a working button.	
+      Added proper layout using flexbox and background image styling.
+
+      
+Added a "Find out more" button in the Hero Section that links to ‘How to reduce carbon footprint’ information page.	
+  Click on button
+	The button should lead to ‘How to reduce carbon footprint’ information page.	
+  Button worked correctly and led to the correct page.
+  "Find out more" button in the Hero Section works correctly
+
+      
+Added the "Who We Are" section with a title and paragraph describing the company.	
+      None	
+      The text should display properly with a heading and description of the company.	
+      The section displayed the heading and description with appropriate spacing and styling.
+      Added about us section, focusing on branding and company introduction.
+
+      
+Created the "We Provide" section, which includes 3 services with images, titles, and links.
+      Click on each service item	
+      Each service item should be displayed with an image, title, and link to a detailed page when clicked.
+      Service items were displayed correctly with images and links working as expected.	
+      Services offered by the company are designed with flexbox for responsive design.
+
+      
+Applied flexbox to the "We Provide" section for responsive layout and ensured the service images and text aligned properly.	
+      Resize the browser window
+      Service items should be laid out in a flexible row that adjusts based on screen size.
+      The service items adjusted their layout responsively on different screen sizes.
+      Ensured the responsiveness of service items using flexbox.
+
+      
+Created the Carbon Footprint Calculator and Energy Usage Calculator sections with a background image and button for the calculators.
+      Click on each button
+      The background should display correctly, and the buttons should redirect to their calculators.
+      Background images and buttons worked as expected.	
+      Interactive buttons leading to calculators for carbon footprint and energy usage.
+
+      
+Created the Testimonials section with a title and three testimonial boxes displaying placeholder names and feedback.	
+      None
+      The testimonials section should display 3 testimonial boxes, each containing a name and feedback.	
+      Testimonial boxes displayed correctly with the sample text inside.	
+      Customer feedback section. The content in testimonials section can be changed in future.
+
+      
+Styled the Testimonials section with appropriate spacing, box shadows, and a responsive layout.	
+      Resize the browser window	
+      The testimonial boxes should appear with appropriate margins, shadows, and should be responsive.	
+      The testimonial boxes displayed properly with consistent spacing, and responsive adjustments worked.	
+      Ensured good User Experience by styling testimonial boxes with shadows, margins, and flexbox layout.
+
+      
+Applied responsive design principles to ensure the layout adjusts for small screens.	
+      Resize browser window	
+      The entire homepage should be responsive, with elements adjusting to different screen sizes.	
+      Works as expected
+      Homepage is responsive, and all elements are adjusting to different screen sizes
+
+      
+Information Page				
+      
+Solar Panel				
+      
+Created base structure of solpanel.php with HTML and included global navbar.php and footer.php
+      None
+      Navigation bar and footer included across the page
+      As expected	
+      Reused common layout parts for consistency and maintainability
+
+      
+Added solar panel banner section with background image and large title	
+      None
+      Background image of solar panels with a clear title in the centre
+      As expected
+      Created specific class in CSS: info-solar-section, for styling the banner
+
+      
+Developed "Who We Are" section with basic text information about solar panels	
+      None
+      Section should display information text about solar panels
+      As expected
+      about-section used for basic content display
+
+      
+Created product comparison table with 4 features across 3 solar panel options
+      None
+      Table should display product comparisons in a clean, readable format
+      As expected
+      comparison-section structured with HTML table and styled using CSS
+
+      
+Attempted to add image icons inside the comparison table cells for better visualisation
+      None
+      Small icons next to '+' and '-' signs	
+      Icons did not align well and affected table layout
+      Removed icons due to layout issues and kept simple '+' and '-' symbols
+
+      
+Added "Book a Consultation" section with styled button linking to consultation.php	
+      Click on button
+      Redirects user to consultation booking page	
+      As expected
+      consultation-link section designed with flex layout for responsiveness
+      
+Developed "Links to other pages" section for better navigation with background image
+      Click on each link
+      Redirects to other information pages
+      As expected
+      other-links-solar used for linking to charger.php, home.php, reduceinfo.php with background styling
+
+      
+Styled entire page with infostyle.css including background images, flexbox layouts, text styling	
+      None
+      Consistent and responsive page layout with clear readability	
+      As expected
+      Used separated stylesheet infostyle.css for better code management
+
+      
+Applied responsive design values to be sure that the layout adjusts for small screens.
+      Resize browser window	
+      The entire solar panel page should be responsive, with elements adjusting to different screen sizes.
+      Works as expected
+      Solar panel page is responsive, and all elements are adjusting to different screen sizes
+
+      
+EV Charger			
+      
+Created the basic structure of charger.php page with HTML linked to infostyle.css
+      None
+      Webpage should display correctly with no styling errors
+      Page structure loaded as expected	
+      Reused common layout parts for consistency and maintainability
+
+      
+Added PHP includes for global navbar and footer
+      None
+      Navbar and footer are displayed correctly
+      As expected
+      Used include for navbar.php and footer.php to ensure a consistent site structure.
+
+      
+Created info-charger-section with EV Charging Stations banner and background image
+      None	
+      Image background of EV charger with centred heading text	
+      Correct image and text position
+      Used separate CSS class infostyle.css for EV chargers
+
+      
+Added informative About Section explaining what EV charging stations are	
+      None	
+      Clear and readable information displayed in centre	
+      Correct layout and content	
+      Improves user understanding of the product
+
+      
+Developed Comparison Table with 4 features for 3 EV charging products	
+      None	
+      Table should display product comparison in a readable format	
+      Correct display with styling	
+      Provides product comparison for customers
+
+      
+Created consultation link section to redirect users to booking page
+      Click on consultation button
+      Button redirects to consultation.php	
+      Link working properly	
+      Improves user interaction with the website
+
+      
+Created links to other information pages in other-links-charger section
+      Click on each link	
+      Links should redirect to home.php, reduceinfo.php, and solar.php	
+      All links redirect correctly	
+      Improves navigation between pages
+
+      
+Added background images for sections using CSS background-image property	
+      None
+      Each section should have relevant background images	
+      Correct images applied without errors	
+      Improves visual appeal
+
+      
+Applied responsive design principles to ensure the layout adjusts for small screens.	
+      Resize browser window	
+      The entire EV charger page should be responsive, with elements adjusting to different screen sizes.	
+      Works as expected
+      EV charger page is responsive, and all elements are adjusting to different screen sizes
+
+      
+Smart Home System			
+      
+Created smartsystem.php file with basic HTML structure	
+      None
+      The page structure displays correctly with head, body and PHP includes	
+      Page displayed without issues
+      Initial setup of HTML structure for Smart Home System page
+
+      
+Added PHP includes for global navbar and footer	
+      None
+      Navbar and footer are displayed correctly
+      As expected
+      Used include for navbar.php and footer.php to ensure a consistent site structure.
+
+      
+Developed Hero Banner section with background image smarthome1.jpg	
+      None
+      Background image shows with centered heading	
+      Worked as expected
+      Created .info-home-section class in CSS for background styling
+
+      
+Created About Section with information text about Smart Home Energy Management System	
+      None
+      Informative paragraph displayed under title	
+      Displayed as expected	
+      Added .about-section styling from existing CSS structure
+
+      
+Developed Comparison Table of Smart Home Products
+      None
+      Table showing comparison of product features	
+      Displayed correctly	
+      Used table structure for clarity which are styled with .comparison-table class
+
+      
+Added "Book a Consultation" section with styled button linking to consultation.php	
+      Click on button	
+      Button redirects to consultation booking page	
+      Link worked correctly
+      Styled using .consultation-link class for design consistency
+
+      
+Developed "Links to other pages" section for better navigation with background image	
+      Click on each link
+      Redirects to other information pages	
+      As expected	
+      other-links-solar used for linking to charger.php, solar.php, reduceinfo.php with background styling
+
+      
+Applied responsive design principles to ensure the layout adjusts for small screens.	
+      Resize browser window	
+      The entire Smart Home system page should be responsive, with elements adjusting to different screen sizes.	
+      Works as expected	
+      Smart Home system page is responsive, and all elements are adjusting to different screen sizes
+
+      
+How to reduce carbon footprint				
+      
+Created basic page structure with PHP	
+      None
+      The page structure displays correctly with head, body and PHP includes	
+      Worked as expected	
+      Initial setup of HTML structure for ‘How to reduce Carbon Footprint’ page
+      
+Added PHP includes for global navbar and footer	
+      None
+      Navbar and footer are displayed correctly	
+      As expected
+      Used include for navbar.php and footer.php to ensure a consistent site structure.
+
+      
+Added banner section with background image solpanel3.jpg	
+      None	
+      Background image shows with centred heading	
+      Worked as expected
+      Created .info-home-section class in CSS for background styling
+
+      
+Added "About" section explaining ways to reduce carbon footprint	
+      None	
+      Informative text should display correctly	
+      Worked as expected	
+      Main content section explaining how to reduce carbon footprint
+
+      
+Created a section with link to book consultation	
+      None
+      Button linking to consultation.php	
+      Link worked correctly	
+      Call to action for user engagement
+
+      
+Developed "Links to other pages" section for better navigation with background image	
+      Click on each link	
+      Redirects to other information pages	
+      As expected	
+      other-links-solar used for linking to charger.php, home.php, solar.php with background styling
+
+      
+Added custom CSS for new section (info-reduce-section, comparison table styling)	
+      None
+      Page should be visually consistent with rest of website
+      Worked as expected	
+      Ensured consistent styling across site
+
+      
+Applied responsive design principles to ensure the layout adjusts for small screens.	
+      Resize browser window
+      The entire Reduce Carbon Footprint page should be responsive, with elements adjusting to different screen sizes.	
+      Works as expected	
+      Reduce Carbon Footprint page is responsive, and all elements are adjusting to different screen sizes
+
+      
+Carbon Calculator				
+      
+Created the page structure using HTML	
+      None
+      Basic webpage structure with title and sections	
+      As expected
+      Set up <head> and <body> sections for the calculator page.
+
+      
+Designed page layout using internal CSS for styling	
+      None	
+      Clean layout with distinct sections like header, slider, results, and recommendations
+      As expected	
+      Used flexbox for alignment; customized typography and colours. Added responsive behaviour.
+
+      
+Added PHP includes for global navbar and footer	
+      None
+      Navigation bar and footer appear on the page	
+      As expected
+      Used include function for navbar.php and footer.php. Promotes code reusability.
+
+      
+Developed radio buttons for heating type selection (electric/gas)	
+      Electric, Gas
+      User can switch between electric and gas options	
+      As expected
+      Used <input type="radio"> for selecting energy source.
+
+      
+Added range slider to select energy consumption	
+      Values: 0 to 1000
+      Slider to adjust consumption from 0 to 1000
+      As expected	
+      Used <input type="range"> with min, max, and value. Initial value set to 500.
+
+      
+Created JS script to calculate and display carbon footprint dynamically	
+      Electric 500, Gas 500	
+      Correct CO2 estimation displayed and updated real-time	
+      As expected	
+      Used event listeners for input and change events to update values.
+
+      
+Applied different carbon factors for Electric (0.4) and Gas (2.2)	
+      Electric 500 to 200kg CO2, Gas 500 to 1100kg CO2	
+      Correct calculation displayed	
+      As expected	
+      Handled unit changes (kWh or m3) and applied different multipliers.
+
+      
+Added Recommendations Section with energy-saving tips
+      None
+    	Informative section visible on page	
+      As expected
+      Content designed for user awareness on reducing carbon footprint.
+
+      
+Attempted to add form submission to store user input to database	
+      Test inputs: Electric, 500
+      Expected data to store in MySQL database	
+      Failed	
+      Realized storing wasn't necessary for this calculator. Removed to keep page dynamic and simple.
+
+      
+Tested validation for slider input limits	
+      -50, 2000 (manual change)	
+      Prevent values beyond 0-1000	
+      As expected	
+      Slider input already limits values between 0-1000 by default. No further validation needed.
+
+      
+Applied responsive design principles to ensure the layout adjusts for small screens.	
+      Resize browser window	
+      The entire Carbon Calculator page should be responsive, with elements adjusting to different screen sizes.
+      Works as expected
+      Carbon Calculator page is responsive, and all elements are adjusting to different screen sizes
+
+      
+Energy Usage Calculator				
+      
+Created basic page layout using HTML	
+      None	
+      Basic structure with title and sections	
+      As expected	
+      Set up the <head> and <body> sections for the Energy Usage Calculator.
+
+      
+Styled the page using internal CSS	
+      None
+      Clean, centred layout with styling for appliances, sliders, and results
+      As expected
+      Applied flexbox for alignment and designed an intuitive UI for selecting appliances.
+
+      
+Added PHP includes for global navbar and footer
+      None	
+      Navbar and footer are displayed correctly
+      As expected
+      Used include for navbar.php and footer.php to ensure a consistent site structure.
+
+      
+Developed checkbox system to select appliances	
+      Refrigerator, Washing Machine, Light Bulb, Microwave
+      User can select appliances using checkboxes
+      As expected	
+      Used checkboxes for appliance selection. The list can be easily extended.
+
+      
+Created input section for each appliance	
+      Checked "Refrigerator" to Inputs for usage time and number of appliances displayed	
+      Inputs for each selected appliance appear dynamically
+      As expected
+      Created a container for each appliance with sliders for usage time and appliance count.
+
+      
+Added functionality to adjust appliance usage time and count using sliders	
+      Usage time: 5 hours, Appliances count: 3	
+      Sliders update values for appliance usage and number	
+      As expected	
+      Added event listeners to sliders to dynamically update appliance values.
+
+      
+Implemented energy calculation logic based on wattage, usage time, and appliance count	
+      Refrigerator (150W), 5 hours, 3 appliances
+      Total energy consumption displayed correctly	
+      As expected	
+      Total energy usage calculated in kWh based on appliance data and displayed in real-time.
+
+      
+Created a dynamic update function to recalculate energy usage whenever sliders are adjusted	
+      Adjusted sliders for light bulb and microwave	
+      Total energy usage recalculates instantly
+      As expected
+      Each slider update triggers an update to the total energy usage, ensuring the result is accurate.
+
+      
+Added recommendations for energy-saving tips	
+      None	
+      Energy-saving tips displayed at the bottom	
+      As expected
+      Added an informative section about reducing energy consumption.
+
+      
+Attempted to add form submission to calculate energy usage for user accounts	
+      Test inputs: Appliances selected, energy usage calculated	
+      Expected to submit data to the backend	
+      Unsuccessful	
+      Realized it wasn’t required for this feature, as the calculator was meant for real-time estimation.
+
+      
+Applied responsive design principles to ensure the layout adjusts for small screens.	
+      Resize browser window	
+      The entire Energy Usage page should be responsive, with elements adjusting to different screen sizes.
+      Works as expected
+      Energy Usage page is responsive, and all elements are adjusting to different screen sizes
+
+      
+Login/Register/Personal			
+      
+Login				
+      
+Setup of login.php page with HTML form (email, password fields)	
+      None
+      Basic login form displayed
+      As expected	
+      Basic form structure ready for next development stage
+
+      
+Added PHP includes for global navbar and footer	
+      None
+      Navbar and footer are displayed correctly	
+      As expected	
+      Used include for navbar.php and footer.php to ensure a consistent site structure.
+
+      
+Connect to database using include db.php	
+      None	
+      Database connection established	
+      As expected
+      Prepared for querying user data from database
+
+      
+Added user verification by querying the database with prepared statement using email	
+      Correct email, correct password	
+      User redirected to personal.php	
+      As expected	
+      Ensured protection against SQL Injection
+
+      
+Added password_verify function to check password hash	
+      Correct email, wrong password	
+      Error message "Invalid email or password!"	
+      As expected	
+      Correct validation with hashed password
+
+      
+Handled incorrect email input (email not existing in database)	
+      Wrong email	
+      Error message "Invalid email or password!"	
+      As expected	
+      Used $stmt->num_rows to check if user exists
+
+      
+Added error message display for invalid login attempts	
+      Wrong email/wrong password
+      Error message shown on login page	
+      As expected
+      Better user experience by providing feedback
+
+      
+Added session handling to store user_id and firstname after successful login	
+      Correct email and password	
+      User redirected to personal.php with session set	
+      As expected
+      Better for personalized user experience
+
+      
+Tried direct SQL query without prepared statements	
+      Correct email/password
+      SQL Injection risk	
+      Security concern identified	
+      Replaced with prepared statements for security
+
+      
+Forgot to close statement using $stmt->close()	
+      Correct login	
+      Warning in PHP error logs	
+      Resolved	
+      Statement is closed
+
+      
+CSS Styling of login page (centered form, responsive design)	
+      None
+      Clean, responsive login page with background image	
+      As expected
+	    design used from style.css
+
+      
+Added redirect if already logged in using isset($_SESSION['user_id'])	
+      Already logged in user
+      Redirect to personal.php	
+      As expected
+      Prevents unnecessary login attempts
+
+      
+Added link to register.php if user doesn’t have an account	
+      Click register
+      Redirect to register page
+      As expected	
+      Improved usability
+
+      
+Forgot to validate empty fields in form	
+      Empty fields
+      PHP error due to undefined array index	
+      Resolved
+      Added required attribute to inputs for front-end validation
+
+      
+Register				
+      
+Created basic HTML structure with form for user registration (first name, last name, email, password, repeat password)	
+      None
+      Form fields displayed correctly	
+      As expected
+      Basic structure set up for register page
+
+      
+Added PHP includes for global navbar and footer	
+      None
+      Navbar and footer are displayed correctly
+      As expected
+      Used include for navbar.php and footer.php to ensure a consistent site structure.
+
+      
+Connected to database using db.php and started session for user management	
+      None
+      Connection established
+      As expected	
+      Prepared for inserting user data into database
+
+      
+Added PHP logic to check if user already logged in, then redirect to personal.php	
+      Already logged in user
+      User redirected to personal.php	
+      As expected	
+      Prevents registered users from accessing register page
+
+      
+Implemented form submission handling and data retrieval via $_POST	
+      Input test data in form	
+      Data retrieved successfully	
+      As expected	
+      Ready for data validation
+
+      
+Added validation to check if passwords match	
+      Different passwords entered	
+      Error message: "Passwords do not match!"	
+      As expected	
+      Added user-friendly error message
+
+      
+Attempted to check if email already exists using prepare and execute on INSERT query	
+      Same email twice	
+      Expected error: "Email already exists!"	
+      Unsuccessful — Duplicate entry error shown from database	
+      Issue: INSERT query doesn’t check for existing emails. Need to add SELECT check first
+
+      
+Fixed email uniqueness check by adding SELECT query before INSERT
+      Register twice with same email	
+      Error message: "Email already exists!"	
+      Successful after adding SELECT statement
+      Added SELECT query and conditional error handling before INSERT
+
+      
+Hashed password using password_hash() for security	
+      Input password: test123	
+      Password hashed in database
+      As expected
+      Ensured password stored securely
+
+      
+Implemented storing user data in users table (firstname, lastname, email, password) using prepared statements	
+      Register with valid data	
+      User inserted into database
+      As expected
+      Used bind_param for security
+
+      
+Developed checkbox system to accept rules and terms of the company	
+      Tick a checkbox	
+      User can agree to terms and conditions of the company using checkbox	
+      As expected
+      Used checkboxes for user to agree to terms and conditions of the company.
+
+      
+Created user session after successful registration and redirected to personal.php	
+      Register new user	
+      User redirected to personal.php	
+      As expected
+      User logged in immediately after registration
+
+      
+Styled register page using external style.css file for design	
+      None
+      Responsive, clean design	
+      As expected	
+      style.css document is applied to the page
+
+      
+Added dynamic error message display for users
+      Leave password fields mismatching	
+      Error message shown in red	
+      As expected	
+      Helpful for user experience
+
+      
+Personal page				
+      
+Initial setup of personal.php to display user information after login using HTML.	
+      Logged in user: ID, firstname	
+      User is redirected to personal page displaying "Welcome, John!"	
+      Worked as expected. User greeted properly.	
+      Intended for personal greeting section using $_SESSION variables.
+
+      
+Added PHP includes for global navbar and footer	
+      None	
+      Navbar and footer are displayed correctly
+      As expected	
+      Used include for navbar.php and footer.php to ensure a consistent site structure.
+
+      
+Fetch and display user consultations from database (MySQL SELECT query).	
+      User with 2 consultations booked	
+      List of consultations displayed with type, date, time	
+      Successfully displayed the correct bookings	
+      Intended for Consultations Section.
+
+      
+Fetch and display user installations from database (MySQL SELECT query).	
+      User with 1 installation booking	
+      Installation displayed with type, date, time, address	
+      Displayed correctly	
+      Intended for Installations Section.
+
+      
+Added Cancel booking functionality for consultations and installations (POST form with hidden bookingID).	
+      Try cancelling consultation	
+      Booking should be removed from database	
+      Cancel worked successfully	
+      Handled via cancel_booking.php.
+
+      
+Attempted to show cancelled booking message after cancel	
+      Booking cancelled, expected message "Booking cancelled"	
+      No message displayed	
+      No redirect or session message handling implemented
+      Need to improve feedback for user actions.
+
+      
+Styled account page using CSS for dark transparent theme	
+      Visual inspection
+      Clear white text on background image	
+      Worked well, visually clean	
+      Used .account-container and buttons style from style.css.
+
+      
+Validated login status at the top of personal.php (checking if user is logged in)	
+      Not logged in user accessing personal.php directly	
+      Redirected to login.php	
+      Worked as expected
+      Important for security handling sessions properly.
+
+      
+Attempted to order bookings from latest to oldest
+      Booking dates varied	
+      Expected newest first
+      Bookings were ordered from earliest to latest	
+      I decided to leave as earliest-first for clarity to user.
+
+      
+Added buttons to book new Consultation or Installation	
+      Visual test clicking buttons	
+      Redirects to consultation.php or installation.php	
+      Worked as expected	
+      Enhances user navigation experience.
+
+      
+Implemented responsive design using % width and max-width for content	
+      Resize browser window	
+      Content adapts to any screen sizes	
+      Worked as expected	
+      Done via .account-container CSS styling.
+      
+
+Added “Delete Account” button which deletes users account	
+      Click on “Delete Account” button	
+      The users account will be deleted	
+      “Delete Account” feature works as expected	
+      “Delete Account” feature works as intended
+
+      
+Edit Account Page				
+      
+Created basic HTML structure with input bars for user information
+      None
+      Input bars displayed correctly	
+      As expected
+      Input bars displayed as intended
+
+      
+Added PHP includes for global navbar and footer
+      None
+      Navbar and footer are displayed correctly
+      As expected	
+      Used include for navbar.php and footer.php to ensure a consistent site structure.
+
+      
+Added a “Save Changes” button which when clicked, will save new information about user	
+      Click on “Save Changes”
+      The system will work as expected, and will save new users information	
+      As expected	
+      The system works as intended
+
+      
+Consultation page			
+      
+Created basic HTML structure with form for user consultation (consultation type, time)	
+      None
+      Form fields displayed correctly
+      As expected
+      Basic structure set up for consultation page
+
+      
+Added PHP includes for global navbar and footer	
+      None
+      Navbar and footer are displayed correctly
+      As expected
+      Used include for navbar.php and footer.php to ensure a consistent site structure.
+
+      
+Created session validation to check if user is logged in	
+      User logged in & user not logged in	
+      Redirect to login page if not logged in
+      Worked as expected
+      Intended for session management and security check
+
+      
+Connected to database using db.php	
+      None	
+      Successful connection to database	
+      Connected successfully
+      Used for accessing the consultation bookings
+
+      
+Added logic to prevent booking in the past	
+      Selected a past date like 2023-01-01	
+      User should not be able to select past dates	
+      Worked successfully	
+      Used date() and conditional checking to restrict past dates
+
+      
+Attempted to restrict past dates only using JavaScript date validation	
+      Selected past date manually in URL	
+      Past date still opened in browser	
+      Failed, as JS validation only worked for UI
+      Realized I need server-side validation as well, and moved to PHP for security
+
+      
+Fetched already booked slots from database using prepared statements	
+      Existing data in consultations table	
+      Booked times should be disabled	
+      Worked successfully
+      Helped prevent double-booking. It is intended for time slot management
+
+      
+Created dynamic time slots using PHP loop	
+      None
+      Slots should appear dynamically
+      Worked successfully
+      Easy to modify in the future if time changes needed
+
+      
+ -- Added dynamic styling for booked vs available time slots	
+      Booked slot should show grey, available green	
+      Correct colour coding for slots	
+      Worked as expected
+      Used CSS classes .booked and .available for clarity -- 
+
+      
+Attempted to use JavaScript alert for booked slots	
+      Clicked on booked time	
+      Alert showed, but button still clickable	
+      Failed, as not user-friendly	
+      Decided disabling button is better UX than alert pop-ups
+
+      
+Implemented changing date functionality with previous and next buttons	
+      Navigated through dates	
+      Date should change and reload booked slots	
+      Worked successfully
+      Used JS function changeDate() and passed date via GET method
+
+      
+Designed responsive layout with CSS grid for time slots
+      Various screen sizes	
+      Slots adjust accordingly	
+      Worked as expected	
+      Used grid-template-columns for flexible layout
+
+      
+Styled the entire booking section	
+      None
+      Clean and user-friendly interface
+      Looked modern and professional
+      Used consistent styling from constyle.css
+
+      
+Installation Page				
+      
+Created basic HTML structure with form for user installation (installation type, physical address, time)	
+      None
+      Form fields displayed correctly
+      As expected
+      Basic structure set up for installation page
+
+      
+Added PHP includes for global navbar and footer	
+      None
+      Navbar and footer are displayed correctly	
+      As expected
+      Used include for navbar.php and footer.php to ensure a consistent site structure.
+
+      
+Created session check and redirect for non-logged in users	
+      None
+      Non-logged-in users should be redirected to login.php
+      Worked as expected
+      Security feature to ensure only logged-in users can access installation page
+      
+Added date selection logic that prevents selecting past dates	
+      URL with ?date=2023-01-01
+      Redirects to today's date if past date is selected
+      Worked correctly
+      Validation of selected date
+
+      
+Developed database query to fetch booked time slots for selected date	
+      Selected future date
+      Already booked time slots should be disabled	
+      Worked successfully	
+      Efficient SQL query using prepared statements
+
+      
+Attempted to disable booked slots using inline PHP inside foreach loop	
+      None
+      Expected to disable booked slots
+      Syntax error in inline PHP
+      Resolved by adjusting PHP logic with ternary operator
+
+      
+-- Designed time slot buttons dynamically, changing color if booked	
+      Various booked slots in DB	
+      Booked slots show red and cannot be clicked	
+      Fully functional	
+      Visual indication of booked/available slots --
+
+      
+Added form with select option for installation type and address input	
+      Select “Solar Panel” and physical address	
+      Should allow user to enter details and submit	
+      Worked as expected
+      Required fields with HTML validation
+
+      
+Implemented JavaScript function to navigate days forward or back while preventing past dates	
+      Click left arrow on today	
+      Should not go back to previous day	
+      Worked correctly	
+      Client side date validation
+
+      
+Forgot to update hidden input with new date	
+      Click next date	Date 
+      changes visually but form still submits old date	
+      Bug identified and resolved by updating hidden input value	
+      Consistency is ensured between visible and form data
+
+      
+Styled booking page using custom CSS	
+      None
+      Clean responsive layout with readable time slots
+      Styling successful
+      Used grid for time slot layout and modern user interface design
+
+      
+Added hover effects for available time slots	
+      Hover on available slot	
+      Button background changes on hover
+      Worked successfully
+      Enhances user experience
+
+      
+Attempted to set "today" using JavaScript without setting hours to 0 (bug found)	
+      Navigating to previous day
+      Date selector allowed going to previous day if time was close to midnight	
+      Bug fixed by resetting time with today.setHours(0,0,0,0)	
+      It is important to keep precise date handling in JS
