@@ -1,0 +1,46 @@
+Aim of feedback:
+The aim of gathering feedback is trying to find out how effective the current prototype of the website is in meeting functional and non-functional experience goals. It is important to identify on what users like or don’t like, as their feedback will help to improve the website.
+To gather the best feedback for every side, there will be two questionnaires, one for technical users (e.g., developers or IT professionals), and one for non-technical users (e.g., clients, general users). The technical users will be asked about code quality, performance, functionality, and structure. While non-technical users will be asked to evaluate usability, navigation, design, clarity, and relevance of content.
+The feedback will be gathered using structured questionnaires, one to each audience, and designed to cover all key sections of the website prototype. These include specific features such as calculators, account pages, and booking functionality. There also will be generic questions asking about overall opinion about the website. I believe that this approach of testing the prototype will be evaluated within client requirements and user expectations, and also support clear planning for future development iterations.
+
+
+Choosing Of Prototype Option:
+There were a lot of options on how to gather feedback
+but after comparing all of the methods I decided to choose the one that involves sending an email with link to the
+website, and to both questionnaires as objectively this method is
+the most convenient, flexible and efficient for this project. 
+
+Firstly, it gives the tester the opportunity to check out the website by themselves,
+and without any rush complete the questionnaire the one that dedicated to them with the ability to recheck any website features,
+but the only aspect is that testers should be connected to one network and the localhost should be running because without it the website can not be accessed.
+But as all of the testers are within one network, the testers will be able to test the websites on their computers.
+
+Secondly, In difference of the one I chose, there are other methods that have been thought about, but in the result refused them.
+The first method as planned would involve me to show the website by myself, or showed the video of the website,
+and then asked to complete questionnaire. It would come up with inaccurate results
+or it would be very long, because if for example the tester will forget
+any aspect of the website, they will have to watch the video again to find the specific section they were intended to test.
+These methods would rather match to some more real life projects, where the opinion of employees would be gathered in a real time
+Or if I will present the website by myself it would lead to the same issues, but also I will have to show the website again
+only for specific people if they forgot something, which will cause inconveniences. 
+So in the end I decided to give up with those variants, and choose the email one which I find the best.
+
+
+Prototype that will be produced:
+The questionnaires were created in hierarchal position and from the pages that were developed the earliest, starting from home page.
+
+The questionnaires will be created that way they will tackle chosen page asking the tester, to check different features of the website.
+In the process it will be like the questionnaire will guide a tester across the page, by pointing their attention on specific section to be tested, and rated.
+
+The questionnaires will consist of detailed questions covering general, and focusing on specific sections of the website and code,
+asking for crucial aspects of the website, to ensure, the website can be improved in a future.
+
+Throughout the questionnaire, the specific questions that require special attention, screenshots will be added, both to functional and non-functional
+questionnaires, to provide the best experience, by immediately pointing out an object of testing, so the tester don't have to access the hard accessible
+parts of the website, or the parts, that they can't enter from the website, for example, database, this will ensure better feedback or rating from testers.
+
+
+Method of gathering feedback:
+I thought of Google Forms and Microsoft Forms, and chose Google Forms because Google Forms are more user-friendly in using. Google Forms have a big tool stack, which would be useful, to gather more specific information, which is crucially important to find the exact aspect of the website, to make it better in the future. 
+There are lots of useful functionality to be used for gathering feedback, for example the platform allows to create a question with multiple choice answers, by choosing only one or typing your own answer, also the rating system. Also, the function of attaching pictures, or videos, to enhance the experience of testers. Very important feature of Google Forms, 
+is the ability to convert taken information from all testers to graphics, charts, pie charts. The visualisation helps to see a general conclusion of which choices testers has chosen. And overall, the platform is user-friendly, and intuitive in using, which is a positive for such tasks.
