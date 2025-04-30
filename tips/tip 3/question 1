@@ -1,0 +1,139 @@
+OVERALL FIRST IMPRESSION SECTION:
+
+Please rate your first impression from the home page of the website
+1-10
+
+Does the website loads quick enough?
+Yes, No
+
+Do you find the colour palette of the website successfully chosen, reliyng on the purpose of the website?
+Yes, No
+
+
+NAVIGATION BAR AND FOOTER:
+
+Is the placement of dropdowns in navigation bar is acceptable?
+Yes, No
+
+Is the placement of links in footer is acceptable?
+Yes, No
+
+Do all navigation links route to the correct pages?
+Yes, No
+
+Is the navigation bar usable and clearly visible on all screen sizes?
+Yes, No
+
+Is the footer usable and clearly visible on all screen sizes?
+Yes, No
+
+Does the footer and navigation bar remain sticked to their places of the page on different screen sizes?
+Yes, No
+
+
+TERMS AND CONDITIONS:
+
+Is the Terms and Conditions link accessible from all relevant entry points, for example navigation bar, footer?
+Yes, No
+
+Is the “I agree to the Terms and Conditions” checkbox in register section required and properly validated?
+Yes, No
+
+
+CARBON FOOTPRINT CALCULATOR:
+
+Does the calculator use the correct formulas or emission factors to calculate the results?
+Yes, No
+
+Was the calculation quick?
+Yes, No
+
+Do sliders respond correctly to changes in state and update the output in real time?
+Yes, No
+
+What is your overall opinion on Carbon Footprint Calculator?
+Input text
+
+
+ENERGY USAGE CALCULATOR:
+
+Is the calculation logic of the calculator is correct?
+Yes, No
+
+Was the calculation quick?
+Yes, No
+
+Do sliders respond correctly to changes in state and update the output in real time?
+Yes, No
+
+Does the sections with appliances appear correctly when their checkbox is picked?
+Yes, No
+
+What is your overall opinion on Energy Usage Calculator?
+Input text
+
+
+LOGIN PAGE:
+
+Are email/username and password inputs properly validated for format and required fields?
+Yes, No
+
+Does the form prevent submission with invalid or incomplete data, and display helpful error messages?
+Yes, No
+
+What is your overall opinion on Login Page System?
+Input text
+
+
+REGISTRATION PAGE:
+
+Are all required fields for example email, password, confirm password, properly validated for format, and presence?
+Yes, No
+
+Is the “confirm password” field accurately checking for exact matches with the password field?
+Yes, No
+
+Is the checkbox that asks to agree to terms and conditions of the company works correctly?
+Yes, No
+
+What is your overall opinion on Register Page System?
+Input text
+
+
+PERSONAL ACCOUNT PAGE:
+
+Is the Welcome sign outputs the corrct name of the user that was inputed during registration?
+Yes, No
+
+Are all buttons on the page (for example book consultation, book installation, logout etc.) functional and work as intended?
+Yes, No
+
+Is the output of booked consultations, and installations correctly structured?
+Yes, No
+
+What is your overall opinion on Personal Account Page?
+Input text
+
+EDIT PERSONAL ACCOUNT INFORMATION:
+
+Does the system works fast?
+Yes, No
+
+Does the system works correctly if the user decided, not to change password?
+Yes, No
+
+What is your overall opinion on Edit Personal Account Information Page?
+Input text
+
+
+
+
+
+
+
+
+
+
+
+
+
