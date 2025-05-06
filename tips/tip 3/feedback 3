@@ -1,0 +1,410 @@
+Aim of feedback:
+The aim of gathering feedback is trying to find out how effective the current prototype of the website is in meeting functional and non-functional experience goals. It is important to identify on what users like or don’t like, as their feedback will help to improve the website.
+To gather the best feedback for every side, there will be two questionnaires, one for technical users (e.g., developers or IT professionals), and one for non-technical users (e.g., clients, general users). The technical users will be asked about code quality, performance, functionality, and structure. While non-technical users will be asked to evaluate usability, navigation, design, clarity, and relevance of content.
+The feedback will be gathered using structured questionnaires, one to each audience, and designed to cover all key sections of the website prototype. These include specific features such as calculators, account pages, and booking functionality. There also will be generic questions asking about overall opinion about the website. I believe that this approach of testing the prototype will be evaluated within client requirements and user expectations, and also support clear planning for future development iterations.
+
+Choosing Of Prototype Option:
+There were a lot of options for gathering feedback, but after comparing all of the methods, I decided to choose the one that involves sending an email with a link to the website and to both questionnaires, as objectively this method is the most convenient, flexible, and efficient for this project.
+Firstly, it gives the tester the opportunity to check out the website by themselves and complete the questionnaire dedicated to them without any rush, with the ability to recheck any website features. However, the only requirement is that testers should be connected to one network and the localhost should be running because, without it, the website cannot be accessed. But as all of the testers are within one network, they will be able to test the website on their computers.
+Secondly, in contrast to the method I chose, there were other methods considered but ultimately rejected. The first method, as planned, would involve me showing the website myself or showing a video of the website, and then asking testers to complete the questionnaire. This would result in inaccurate responses or a very long process because, for example, if a tester forgets any aspect of the website, they would have to watch the video again to find the specific section they were meant to test. These methods would be more suitable for real-life projects where employees' opinions are gathered in real-time.
+Additionally, if I were to present the website myself, it would lead to the same issues, but I would also have to show the website again to specific people if they forgot something, causing inconveniences. So, in the end, I decided to abandon those variants and choose the email method, which I find the best.
+
+Prototype that will be produced:
+The questionnaires were created in hierarchical position and from the pages that were developed the earliest, starting from the home page.
+The questionnaires will be created in a way that they will tackle a chosen page, asking the tester to check different features of the website. In the process, it will be as though the questionnaire will guide the tester across the page by pointing their attention to specific sections to be tested and rated.
+The questionnaires will consist of detailed questions covering general aspects and focusing on specific sections of the website and code, asking for crucial aspects of the website to ensure that the website can be improved in the future.
+Throughout the questionnaire, for specific questions that require special attention, screenshots will be added to both functional and non-functional questionnaires to provide the best experience by immediately pointing out the object of testing, so the tester doesn't have to access the hard-to-access parts of the website, or the parts that they can't enter from the website—for example, the database. This will ensure better feedback and ratings from testers.
+
+Questions for Non-Functional questionnaire about the prototype:
+-
+Questions for Functional questionnaire about the prototype:
+-
+
+Method of gathering feedback:
+I thought of Google Forms and Microsoft Forms and chose Google Forms because Google Forms is more user-friendly to use. Google Forms has a big tool stack, which would be useful for gathering more specific information, which is crucially important to find the exact aspect of the website needed to make it better in the future.
+There is lots of useful functionality available for gathering feedback - for example, the platform allows users to create a question with multiple-choice answers, either by choosing only one or typing their own answer, as well as the rating system. Also, the function of attaching pictures or videos enhances the experience of testers. A very important feature of Google Forms is the ability to convert collected information from all testers into graphics, charts, and pie charts. The visualization helps users see a general conclusion of which choices testers have chosen.
+And overall, the platform is user-friendly and intuitive to use, which is a big advantage for such tasks.
+
+Who to get feedback from and why:
+For the questionnaire project, I decided to select testers from different backgrounds to gather as much useful feedback as possible. The testers will be divided into two groups. The first group with little experience in computer technologies and, the second group who work closely with computer technologies. The group with less experience will be asked to complete a non-technical questionnaire, and the more experienced group will complete a functional questionnaire. I will specify which test each tester should complete based on their level of understanding of the topic.
+
+Synopsis of who was asked for feedback:
+
+I decided to select an equal number of testers for the functional and non-functional categories to make the equal number of results for each questionnaire. To gather feedback, I chose 6 people. 3 will complete the functional questionnaire, and 3 will complete the non-functional questionnaire. For the people with less experience in web technologies I asked to complete non-functional questionnaire, and for people who have a better understanding of how websites work I asked to complete the functional questionnaire.
+
+Synopsis of who responded and provided feedback:
+
+At the end of collecting feedback, I received 6 completed forms, 3 functional and 3 non-functional, from the testers I sent the questionnaires to.
+
+
+Summary of Feedback in detail
+Overall First Impression
+I have gathered 6 feedback answers, from which 3 are functional, and another 3 are non-functional. The both sides were asked about first impression of the website, and the results are […], which is very good mark, and it proves that decent work was done. The lowest mark from both sides is 7 and the highest is 10 which is very good. When testers were asked if the website gives a clear understanding of its purpose, all 6 testers, answered “Yes”, which is very successful for the further development, as the main task of the website, to keep users attention, is successful.
+The only issues my digital solution is containing, are the error message from the server, when user tries to register, the email address that already exist in the database, and the issue with pages that have background image, is when the screen is resized to a bigger size, the footer does not remain at the bottom, and the background image could be seen under it. Testers from technical audience were able to notice this issue, as they were trying to test every detail on each page, and also there was a question about it. I understand that this issue is an important part of overall user experience, but my main focus was on backend functionality, so all processes that involve database worked correctly, as they are mostly.
+The majority of all the answers are positive, mostly it is about styling, easiness of use, and user friendliness of the website. The high ratings of the questionnaires from both groups of testers prove the high quality of the digital solution.
+
+All topics were divided on separate sections.
+
+
+Navigation Bar
+- Technical
+Testers from technical auditory were asked the questions that combined questions about navigation bar and footer, as these 2 sections of the website, are quite similar in development.
+First question was: “Is the placement of dropdowns in navigation bar is acceptable?” The answer of which were “Yes” or “No”. In the result 2 testers chose “Yes”, and the 1 chose “No” 
+<picture>.
+I assume is due to cohesion of options, about which the tester is stated in another question: 
+<picture>.
+I find this comment quite subjective and not that important, because the other testers found the space between dropdowns acceptable. And personally I think that visually more appealing to have all the dropdowns in one area, dividing them from other areas.
+The other feedbacks from another testers were about “What should be added or removed?”, and 2 of the testers pointed out that the white colour of dropdowns merges with the navigation bar, which also white. I agree with this, and I assume, the change of colour for example light green, or at least boundaries of dark green colour, would solve this issue, and will improve user experience. 
+<picture>
+But on the bright side, all 3 testers agreed that the navigation bar functions as it should:
+<picture>
+- Non-Technical
+Testers were asked their opinion about placement of dropdowns and what do they think about colour scheme of navigation bar of the website prototype. All of 3 testers thought that the placement of dropdowns are acceptable: 
+<picture>. 
+When they were asked about the colours chosen for the navigation bar, there were different comments, which mostly were positive: 
+<picture>.
+Based on the answers given earlier, I can investigate that all of the testers like, that the colour scheme chosen for navigation bar is correspond to what the company does, and what message the company is bringing with it.
+- Overall rating
+Testers from both groups were asked to rate the navigation bar on the scale from 1 to 10, and the answers are:
+<picture>.
+Which I find as success, as navigation bar/footer, is the important part of the website that user always looks at.
+Footer
+- Technical
+Testers from technical auditory were asked the questions that combined questions about navigation bar and footer, as these 2 sections of the website, are quite similar in development.
+All the testers gave a positive answer about the placement of links in the footer section, about clearness, and navigation of the links.
+<picture>
+It is very good for user experience that everything is functional in the footer section.
+- Non-Technical
+The testers were asked about if placement of the links is acceptable, and all 3 of them responded “Yes”.
+<picture>
+When testers were asked about colour palette of the Footer. They responded quite the same as to navigation bar, which is very positive for the websites overall style is visually consistent.
+<picture>
+
+- Overall rating
+Testers from both groups were asked to rate the footer on the scale from 1 to 10, and the answers are:
+<picture>
+The high ratings from both groups of testers symbolising that the website is developing in the positive side.
+
+Home Page
+- Technical
+Testers were asked: “Do you think the hero image and buttons are acceptable size?” and the answers were:
+<picture>
+It is very positive that the technical audience accepted the hero image and buttons size.
+Another question was about “What do you think of the content sections on the homepage?” and the answers were:
+<picture>
+The answers are positive, and one of the testers, pointed out the division of the sections, which was my goal, that I achieved.
+When testers were asked “Are there any suggestions you would make to the homepage?”, 2 of testers answered that they would like more descriptive text to the homepage.
+<picture>
+I agree, that there is not a lot text on sections, and it could be improved by adding more information about sections.
+Finally, testers were asked if the home page greets users well so they wouldn't bounce off, and testers response were:
+<picture>
+Which I agree with, because I used all my knowledge to create a homepage that will attract new users.
+- Non-Technical
+Testers were asked “What do you think of the content sections on the homepage?”. The answers are:
+<picture>
+The testers liked the styling, of the sections, which is a positive for user experience.
+Testers were asked “Is there anything you particularly like/dislike about the homepage?”. The answers are:
+<picture>
+There is a response from one tester: “I like that every section is clearly divided from each other”, which is very pleasing to hear, as that was my main target, to create a visual division of the sections. I am very happy that I managed to convey my idea to the end user. Overall I think the target is achieved, because in the next question: “Are there any suggestions you would make to the homepage?”. The answers were “No” which means that all of the basic user’s needs were accomplished:
+<picture>
+On the question, if the Homepage could keep an interest of the user to stay on the website, all testers answered “Yes”, which I find as a success, because on my opinion, one of the most important attributes of the website, is the ability to keep an interest of the user.
+- Overall rating
+Testers from both groups were asked to rate the home page on the scale from 1 to 10, and the answers are:
+<picture>
+The high ratings from both groups of testers show that the website’s development is successful.
+Information Pages
+- Technical
+The users were asked “Do you think there should be more content on the page?” and the answers are:
+<picture>
+There are 2 people who think that there is enough content on information pages, but 1 tester think that there could be more information. I think there is enough content on the information pages.
+The users were asked “What do you think of the comparison table on the Information Pages?” and the answers are:
+<picture>
+I decided to present products that company provides with a comparison table, so users can quickly choose the best variant for them. All 3 testers found this feature as a creative way to present different products.
+The users were asked “Would you like more context in information pages (Solar Panels, Electric Vehicle Chargers, Smart Home Systems, How to reduce carbon footprint)?” and the answers are:
+<picture>
+The users were asked “Are there any other features you would add to the page, is there anything you particularly like/dislike about the page?” and the answers are:
+<picture>
+- Non-Technical
+The users were asked “Please give an opinion about styling of the information page” and the answers are:
+<picture>
+Testers found the styling of the information page acceptable.
+The users were asked “What do you think about comparison table section?” and the answers are:
+<picture>
+The users were asked “What is your opinion on link sections?” and the answers are:
+<picture>
+
+- Overall rating
+Testers from both groups were asked to rate the information page on the scale from 1 to 10, and the answers are:
+<picture>
+The high ratings from both groups of testers show that the website’s development is successful.
+Terms and Conditions Page
+- Technical
+The users were asked “Is the Terms and Conditions link accessible from all relevant entry points, for example navigation bar, footer?” and the answers are:
+<picture>
+The users were asked “Is the “I agree to the Terms and Conditions” checkbox in register section required and properly validated?” and the answers are:
+<picture>
+- Non-Technical
+The users were asked “Please give your opinion on the layout of the Terms and Conditions Pages” and the answers are:
+<picture>
+- Overall rating
+Testers from both groups were asked to rate the terms and conditions page on the scale from 1 to 10, and the answers are:
+<picture>
+The high ratings from both groups of testers show that the website’s development is successful.
+Carbon Footprint Calculator Page
+- Technical
+The users were asked “Does the calculator use the correct formulas or emission factors to calculate the results?” and the answers are:
+<picture>
+The users were asked “Was the calculation quick?” and the answers are:
+<picture>
+The users were asked “Do sliders respond correctly to changes in state and update the output in real time?” and the answers are:
+<picture>
+The users were asked “What is your overall opinion on Carbon Footprint Calculator?” and the answers are:
+<picture>
+The testers find the calculator very useful, and easy to use, which I agree with, as users just have to choose their energy consumption type, and drug the slider under it, to see estimated carbon footprint.
+- Non-Technical
+The users were asked “Give your opinion on the structure of the Carbon Footprint Calculator Page” and the answers are:
+<picture>
+The testers like the structure of the page, but one of testers, stated that that the text could be bigger. And I agree with this, but on the other side, it is easy to make the text bigger.
+The users were asked “Please give a comment about what do you think of the Carbon Footprint Calculator functionality” and the answers are:
+<picture>
+- Overall rating
+Testers from both groups were asked to rate the carbon footprint calculator page on the scale from 1 to 10, and the answers are:
+<picture>
+The high ratings from both groups of testers show that the website’s development is successful.
+Energy Usage Calculator Page
+- Technical
+The users were asked “Is the calculation logic of the calculator is correct?” and the answers are:
+<picture>
+The users were asked “Was the calculation quick?” and the answers are:
+<picture>
+The users were asked “Do sliders respond correctly to changes in state and update the output in real time?” and the answers are:
+<picture>
+The users were asked “Does the sections with appliances appear correctly when their checkbox is picked?” and the answers are:
+<picture>
+The users were asked “What is your overall opinion on Energy Usage Calculator?” and the answers are:
+<picture>
+Testers find energy usage calculator user friendly, and well structured, but 1 tester thinks that the energy usage calculators design could be improved. I agree that the design of the energy usage calculator could be improved, and it is easy to do in the future.
+- Non-Technical
+The users were asked “Give your opinion on the structure of the Energy Usage Calculator Page” and the answers are:
+<picture>
+The users were asked “Please give a comment about what do you think of the Energy Usage Calculator functionality” and the answers are:
+<picture>
+- Overall rating
+Testers from both groups were asked to rate the energy usage calculator page on the scale from 1 to 10, and the answers are:
+<picture>
+The high ratings from both groups of testers show that the website’s development is successful.
+Login Page
+- Technical
+The users were asked “Are email/username and password inputs properly validated for format and required fields?” and the answers are:
+<picture>
+The users were asked “Does the form prevent submission with invalid or incomplete data, and display helpful error messages?” and the answers are:
+<picture>
+The users were asked “What is your overall opinion on Login Page System?” and the answers are:
+<picture>
+Testers are pointing out that the login system works as it should, and it has well chosen design, which I find successful for the website.
+
+- Non-Technical
+The users were asked “What do you think of the design of the Login page?” and the answers are:
+<picture>
+The users were asked “Was it easy to find the Login and Registration pages?” and the answers are:
+<picture>
+The users were asked “Did you think the error messages were useful, are there any suggestions?” and the answers are:
+<picture>
+The users were asked “Are there any suggestions you would add to the page?” and the answers are:
+<picture>
+
+- Overall rating
+Testers from both groups were asked to rate the login page on the scale from 1 to 10, and the answers are:
+<picture>
+The high ratings from both groups of testers show that the website’s development is successful.
+Registration Page
+- Technical
+The users were asked “Are all required fields for example email, password, confirm password, properly validated for format, and presence?” and the answers are:
+<picture>
+The users were asked “Is the “repeat password” field accurately checking for exact matches with the password field?” and the answers are:
+<picture>
+The users were asked “Is the checkbox that asks to agree to terms and conditions of the company works correctly?” and the answers are:
+<picture>
+The users were asked “What is your overall opinion on Register Page System?” and the answers are:
+<picture>
+Testers are pointing out that the register system works as it should, and it has well chosen design, which I find successful for the website.
+
+- Non-Technical
+The users were asked “What do you think of the design of the Registration page?” and the answers are:
+<picture>
+The users were asked “Was it easy to find the Login and Registration pages?” and the answers are:
+<picture>
+The users were asked “Did you think the error messages were useful, are there any suggestions?” and the answers are:
+<picture>
+The users were asked “Are there any suggestions you would add to the page?” and the answers are:
+<picture>
+
+- Overall rating
+Testers from both groups were asked to rate the registration page on the scale from 1 to 10, and the answers are:
+<picture>
+The high ratings from both groups of testers show that the website’s development is successful.
+
+Personal Account Page
+- Technical
+The users were asked “Is the Welcome sign outputs the correct name of the user that was inputted during registration?” and the answers are:
+<picture>
+The users were asked “Are all buttons on the page (for example book consultation, book installation, logout etc.) functional and work as intended?” and the answers are:
+<picture>
+The users were asked “Is the output of booked consultations, and installations correctly structured?” and the answers are:
+<picture>
+The users were asked “What is your overall opinion on Personal Account Page?” and the answers are:
+<picture>
+
+- Non-Technical
+The users were asked “What do you think of the page design on the Personal Account page?” and the answers are:
+<picture>
+The users were asked “Do you like/dislike the cancel consultation and installation options on the Personal Account page?” and the answers are:
+<picture>
+The users were asked “What do you think of the placement of booked consultations and installations and buttons” and the answers are:
+<picture>
+The users were asked “What do you think about delete account buttons placed together with other buttons?” and the answers are:
+<picture>
+The users were asked “Is there anything you particularly like/dislike about the Personal Account page?” and the answers are:
+<picture>
+The users were asked “Are there any suggestions you would add to the Personal Account page?” and the answers are:
+<picture>
+
+- Overall rating
+Testers from both groups were asked to rate the personal account page on the scale from 1 to 10, and the answers are:
+<picture>
+The high ratings from both groups of testers show that the website’s development is successful.
+
+Edit Personal Information Page
+- Technical
+The users were asked “Does the system works fast?” and the answers are:
+<picture>
+The users were asked “Does the system works correctly if the user decided, not to change password?” and the answers are:
+<picture>
+The users were asked “What is your overall opinion on Edit Personal Account Information Page?” and the answers are:
+<picture>
+
+- Non-Technical
+The users were asked “What do you think on the structure of the Edit Personal Account Information Page?” and the answers are:
+<picture>
+The users were asked “What is your overall opinion to the Edit Personal Account Information Page?” and the answers are:
+<picture>
+
+- Overall rating
+Testers from both groups were asked to rate the edit personal information page on the scale from 1 to 10, and the answers are:
+<picture>
+The high ratings from both groups of testers show that the website’s development is successful.
+
+Consultation Booking Page
+- Technical
+The users were asked “Do you think the layout is easy to use on the Booking page?” and the answers are:
+<picture>
+The users were asked “Is there anything you particularly like/dislike about the page?” and the answers are:
+<picture>
+
+- Non-Technical
+The users were asked “What do you think of the structure of the Consultation Booking Page?” and the answers are:
+<picture>
+The users were asked “What do you think of the design and colour palette of the Consultation Booking Page” and the answers are:
+<picture>
+The users were asked “Did you think the error messages were useful, are there any suggestions?” and the answers are:
+<picture>
+The users were asked “Do you think if the consultation page is user-friendly?” and the answers are:
+<picture>
+
+- Overall rating
+Testers from both groups were asked to rate the consultation booking page on the scale from 1 to 10, and the answers are:
+<picture>
+The high ratings from both groups of testers show that the website’s development is successful.
+
+Installation Booking Page
+- Technical
+The users were asked “Do you think the layout is easy to use on the Booking page?” and the answers are:
+<picture>
+The users were asked “Is there anything you particularly like/dislike about the page?” and the answers are:
+<picture>
+
+- Non-Technical
+The users were asked “What do you think of the structure of the Installation Booking Page?” and the answers are:
+<picture>
+The users were asked “What do you think of the design and colour palette of the Installation Booking Page” and the answers are:
+<picture>
+The users were asked “Did you think the error messages were useful, are there any suggestions?” and the answers are:
+<picture>
+The users were asked “Do you think if the installation page is user-friendly?” and the answers are:
+<picture>
+
+- Overall rating
+Testers from both groups were asked to rate the installation booking page on the scale from 1 to 10, and the answers are:
+<picture>
+The high ratings from both groups of testers show that the website’s development is successful.
+
+General Questions
+- Technical
+The users were asked “Does the site resize correctly? If not, where?” and the answers are:
+<picture>
+All of the testers have come out with an issue when the screen is resized to a bigger size, the background image appears under the footer. There is an issue that I wasn’t been able to fix in time with resizing of the pages with image as a background. I agree that this is the important part of the website that should be solved, but on the other side it is a prototype, meaning that it still can be fixed in time before going live.
+The users were asked “What do you think about the overall theme and colour scheme?” and the answers are:
+<picture>
+The users were asked “What do you think about the font choices, are they easy/hard to read?” and the answers are:
+<picture>
+The users were asked “What do you think about the navigation, is it easy/hard to find pages?” and the answers are:
+<picture>
+The users were asked “What do you think about the layout of the pages, is it easy/hard to read?” and the answers are:
+<picture>
+The users were asked “What do you think about the accessibility of the website?” and the answers are:
+<picture>
+
+- Non-Technical
+The users were asked “Can you state your opinion regarding the font choice. Is it easy or hard to read it?” and the answers are:
+<picture>
+The users were asked “Can you provide your feedback on navigation of the website, and if it is easy or hard to find pages?” and the answers are:
+<picture>
+The users were asked “Can you state your opinion regarding the layout of the pages. Is it easy or hard to read it?” and the answers are:
+<picture>
+The users were asked “What is your opinion on accessibility of the digital solution?” and the answers are:
+<picture>
+The users were asked “Can you please provide your feedback on overall style and colour scheme?” and the answers are:
+<picture>
+The users were asked “Was the form long?” and the answers are:
+<picture>
+The users were asked “What is your overall feedback of the website?” and the answers are:
+<picture>
+
+- Overall rating
+Testers from both groups were asked to rate the entire website on the scale from 1 to 10, and the answers are:
+<picture>
+The high ratings from both groups of testers show that the website’s development is successful.
+
+What should be Improved 
+The main focus on what should be fixed and improved, are: the error message from database that appears when user wants to register with the email, that is already stored in database, and the issue with resizing, when the background image appears under the footer. 
+After fixing all main issues, more informational text could be added to home page. Also, more improved design could be implemented.
+Also, useful features or API’s could be added, such as dark mode, translation on different language, and more.
+Overall Conclusion of the questionnaires
+Looking on the overall feedback from both, technical, and non-technical groups of testers, I believe that the prototype that is created for my client is a success, because all of the wanted features are present, and they working as they should, except some minor issues, that can be easily fixed in a future.
+Looking over on what have been done, it is a good quality smart digital solution prototype, that allows to create a secure account, with which users can: book consultations and installations, edit personal information, cancel unwanted bookings, log out, and delete an account. Also, if a non-logged in user tries to book a consultation or installation, they will be redirected to the login page, which I think is also an important point.
+The project can be picked up by other people in the future, that will fix all the minor issues and errors about which I told earlier.
+What should I add:
+For technical:
+-Please look at the database. In your opinion are the naming conventions for the tables reasonable? Is the customers table structured in the most efficient way? If not, what changes would you make to improve it?
+
+Answer: 
+
+Yes they are structured in an efficient way
+
+Yea it is efficient and nothing is needed to be changed
+
+Yes they are reasonable and easy to understand for anyone else looking at the database
+
+Yes, looks good, the fact it is within one database and the password is encrypted
+
+The naming conventions are appropriate and security was considered via password hashing
+
+- Please look at the naming conventions and the folder structure. Is it somewhat clear? How easy would that be to continue working on the project in case of reassigning it to you?
+
+Answer: 
+It looks very clear as a technical suer and like how it separated in different folder
+	
+It is clear and well structured. it might take some time to understand the naming but it will be pretty easy to continue working on the project.
+the naming conventions are very clear and they would help any other developer once they're working on it
+
+The folder structure is clear to understand as files are segmented according to their respective languages.
