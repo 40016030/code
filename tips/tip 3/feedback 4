@@ -1,0 +1,41 @@
+Introduction
+In this section, I will assess the digital solution prototype I developed, and also I will evaluate how well it aligns with my client's requirements. I will also share my thoughts on how to improve the prototype in the future.
+The effectiveness of the assets and content used
+
+	The reasoning behind selection
+All images that are used in the website were found at the design stage of development. Only the most suitable images were selected to fully represent what the client’s company – Rolsa Technologies does and what it represents.
+For each page, images were carefully selected that would be nice to look at, and in the same time to show directly what the page is for.
+	Home page background:
+For the home page, several images were selected, one picture per section. Going from the top of the website, from very beginning of the home page there is an image of solar panels and the sky, as if immediately showing what the company specialises in. Going down below there will be three images in the sections with services and products that the company provides that lead to information pages, these images were added to immediately give the user an idea about what this page will be about. Even lower there are two sections with calculators, one is carbon footprint calculator, and another one is energy usage calculator. For the carbon footprint calculator, an image was chosen with a fog at the top, indirectly symbolising carbon emissions into nature. And the energy usage calculator has an image of a lightbulb lying on the grass, which means energy savings to preserve the purity of nature.
+It is also worth noting that if the client wants to change the pictures, they can easily replace them by simply replacing the images in the asset folder.
+	Information Pages
+For each information page (solar panel page, electric vehicle charger page, smart home system page and “How to reduce carbon footprint” page), 2 pictures were selected, one at the beginning of the page, the other at the end of the page, the first image is in the very first section, which says in which page a user in, and the second image is at the end of the page, in the section with links to other information pages. The exception is “How to reduce carbon footprint”, this page also has sections with calculators, and the same pictures as on the home page, which was mentioned earlier.
+For each information page, the images were carefully selected so that they accurately represent the content of the page
+Other Pages
+The other pages (login page, register page, personal account page, consultation booking page, installation booking page, edit personal information page), contain only one image that is used like a background. The image is a house in the forests.
+	The validity and reliability
+All images featured on the website have been sourced from reliable platforms such as Pixabay, Pexels, Unsplash, and Icons8. Each of these platforms providing high-quality, license-free images for unrestricted use.
+Additionally, some sections of the website, such as the "Testimonials" section on the homepage, the "Terms and Conditions" page, and the "Comparison Table" in the information pages, have been intentionally left without text. This decision was made as the client did not provide content for these areas. My role in the project was to develop, design and structure these sections, which I think were done on a solid level. The client can easily add text in the future, as the foundational framework is already developed.
+
+	Legal and ethical implications
+All legal and ethical considerations were fully respected throughout this project. Only copyright-free images were used to comply with all regulations.
+I also would like to remind that the client has the option to replace these images with ones they find more suitable. I have selected the images that in my opinion are suitable in the context of this project.
+ 
+How the digital solution meets the requirements
+of the solution
+
+Functional and non-functional requirements
+	
+	Functional requirements
+At the beginning of the project, when planning how the website will look. Page options were chosen that would be a good fit for the final version of the prototype. These were home page, information pages (solar panel page, electric vehicle charger page, smart home system page, “How to reduce carbon footprint” page), carbon footprint calculator page, energy usage calculator page, login page, register page, personal account page, consultation booking page, installation booking page. To these all pages were added “terms and conditions” page and edit personal information page during the website development, to make the website overall even better.
+All systems were created according to plannings created earlier in the planning phase, which I also find as a success. A lot of work was created to introduce logic into the website that would make it easier for users to navigate the website, and which generally improved the user experience.
+Starting with login system and register systems. Links to these two pages, are located in the upper right corner of the website, in the “account” dropdown in the navigation bar section. And also in the lower right corner, in the footer. By clicking on them, the website takes the user to the login or registration page, depending on what a user clicket. If a user has entered the login page, but he does not have an account, right above the input bars there will be a small sentence in which it will be written “Do you already have an account?” and next to it there will be a registration button that will take the user to registration page, exactly the same situation with the registration page, which in case the user already has an account, he wants to log into, user can click on the “login” button to redirect to the login page.
+Now about booking consultations and installations. After the user is logged in, they have the opportunity to book a consultation and installation. I added a lot of links of the consultation page, the navigation bar and the footer, the information pages, and the personal account page, to make it easier for user to find this page. I will also add that if the user isn’t logged in, and click on the consultation booking page link (or installation booking page link, personal account page), they will be redirected to the login page. Also, I added logic to the booking of consultations and installations, which in my opinion logically fits the prototype, it is the dependence of consultations and installations on each other, or to be more clear, that the user will not be able to book an installation if a consultation of the same type has not been booked, if the user tries to do it, an error will display. The system works that way, if that consultation and installation can’t be booked on the same day, and if user tries to do that the error message will appear. If a user wants to cancel a consultation booking, the system will alert user that, if the consultation booking is cancelled, the installation for it wouldn’t be actual anymore.
+	Non-functional requirements
+	Security considerations
+
+	Accessibility features
+
+	KPI's
+
+How the prototype could be developed further
